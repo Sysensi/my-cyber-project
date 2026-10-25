@@ -1,3 +1,12 @@
-body {
+/* body {
   
+} */
+
+nav {
+    font-size: 12px;
+    font-family: arial, sans-serif;
+}
+
+footer {
+    font-size: 9px;
 }
