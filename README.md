@@ -15,5 +15,4 @@ Sysensi is a cybersecurity website providing news, tools and educational resourc
 - [View the deployed website](https://username.github.io/codingclub/)
 
 ## Credits
-- The code for the social media icon animations was taken from [website name](https://username2.github.io/projectname/)
-- Thanks to my mentor Catherine Transfield for her patience and support as I built out this project.
+
