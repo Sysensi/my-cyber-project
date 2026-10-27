@@ -2,18 +2,22 @@
   
 } */
 
-/* * {
-    aspect-ratio: 1/1;
-} */
-
 nav {
     font-size: 12px;
-    font-family: arial, sans-serif;
+    font-family: system-ui, sans-serif;
 }
 
-.nav-item-color {
-    color: rgb(60, 60, 60);
-} 
+/* Asked Github co-pilot for assitance with light text over dark background. It suggested the following nav-bar code snippet to override bootstrap's default styles, which I have added to the styles.css file. */
+
+.navbar .nav-link {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar .nav-link.active {
+    color: #ffffff;
+}
 
 footer {
     font-size: 9px;

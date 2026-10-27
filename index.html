@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
 
 <head>
   <meta charset="utf-8">
@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  
+
   <!-- External Library: Bootstrap
   Source: https://getbootstrap.com/
   Purpose: Responsive grid and layout components.
@@ -20,14 +20,16 @@
 
   <!-- ==== HEADER ==== -->
 
+  <!-- create brand logo for light and dark mode. -->
+
   <header>
-    <nav class="navbar bg-body-tertiary">
+    <nav class="navbar navbar-dark bg-dark">
       <div class="container">
         <a class="navbar-brand" href="index.html">
-          <img src="assets/images/sysensi-logo.svg" alt="Logo" width="120">
+          <img src="assets/images/sysensi-logo-light.svg" alt="Sysensi" width="120">
         </a>
         <ul class="nav nav-underline">
-          <li class="nav-item">
+          <li class="nav-ite">
             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
@@ -68,11 +70,13 @@
 
   <!-- ==== Footer ==== -->
 
-  <footer class=" bg-secondary text-white py-2">
-    &copy; 2024 <strong>Sysensi</strong>. All rights reserved.
+  <footer class="bg-dark text-white justify-content-center d-flex py-2">
+    &copy; 2024 Sysensi. All rights reserved.
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
   </script>
 </body>
+
+</html>
