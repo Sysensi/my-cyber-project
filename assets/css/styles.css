@@ -17,6 +17,12 @@ nav .nav-link.active {
     color: #ffffff;
 }
 
+.btn-primary {
+    /* background-color: #ffea00;
+    border-color: #09ff00; */
+    
+}
+
 footer {
     font-size: 11px;
     /* aspect-ratio: 1/1; */
