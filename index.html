@@ -4,32 +4,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sysensi</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <title>Sysensi - Cybersecurity News & Insights</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="icon" href="assets/images/sysensi-icon-dark.svg" type="image/svg+xml">
   <meta name="description"
     content="Sysensi: Your source for the latest cybersecurity news, threats, vulnerability reports, and practical security insights.">
-  <!-- meta tag goes here -->
 </head>
 
 <body>
 
-  <!-- External Library: Bootstrap
-  Source: https://getbootstrap.com/
-  Purpose: Responsive grid and layout components.
-  I adapted and added custom classes for styling. -->
-
   <!-- ==== HEADER ==== -->
-
-  <!-- create brand logo for light and dark mode. -->
-
   <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark" aria-label="Main Navigation">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
-          <img src="assets/images/sysensi-logo-light.svg" alt="Sysensi" width="120">
+          <img src="assets/images/sysensi-logo-light.svg" alt="Sysensi Logo" width="120">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,7 +34,7 @@
               <a class="nav-link" href="#news-updates">News</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
+              <a class="nav-link" href="#">Link</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
@@ -55,123 +45,93 @@
     </nav>
   </header>
 
-
-  <!-- ==== Hero Section ==== -->
-
+  <!-- ==== MAIN CONTENT ==== -->
   <main>
-    <div class="px-4 my-5 text-center border-bottom">
+    <!-- Hero Section -->
+    <section class="px-4 my-5 text-center">
       <h1 class="display-4 fw-bold text-body-emphasis">Think Security. Think Sysensi.</h1>
       <div class="col-lg-6 mx-auto">
         <p class="lead mb-4">We bring you the latest cybersecurity news, emerging threats,
           vulnerability reports, and practical security insights. Whether you're a business, a security enthusiast, or
           simply looking to stay protected, discover the knowledge and tools you need to navigate today's digital
           landscape with confidence.</p>
-        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5"> <button type="button"
-            class="btn btn-primary btn-md px-4 me-sm-3">Primary button</button> <button type="button"
-            class="btn btn-outline-secondary btn-md px-4">Secondary</button> </div>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+          <button type="button" class="btn btn-primary btn-md px-4 me-sm-3">Get Started</button>
+          <button type="button" class="btn btn-outline-secondary btn-md px-4">Learn More</button>
+        </div>
       </div>
       <div class="overflow-hidden" style="max-height: 30vh;">
-        <div class="container px-5"> <img src="assets/images/code-image.jpg"
-            class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500"
-            loading="lazy"> </div>
+        <div class="container px-5">
+          <img src="assets/images/code-image.jpg" class="img-fluid border rounded-3 shadow-lg mb-4"
+            alt="Cybersecurity code visualization" width="700" height="500" loading="lazy">
+        </div>
       </div>
-    </div>
+    </section>
+
+    <!-- News & Updates Section -->
+    <section class="bg-dark text-white p-5" aria-labelledby="news-updates">
+      <div class="container">
+        <h2 class="h5 border-bottom pb-2 mb-4" id="news-updates">News</h2>
+      </div>
+
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3">
+          
+          <!-- News Card 1 -->
+          <div class="col">
+            <article class="card shadow-sm h-100">
+              <img src="assets/images/php-image.jpeg" class="card-img-top" alt="PHP programming language logo">
+              <div class="card-body">
+                <h3 class="card-title h6">
+                  <strong>The NCSC urges UK organisations to mitigate critical PHP vulnerabilities (CVE-2026-109618 and CVE-2026-109619).</strong>
+                </h3>
+                <a href="https://www.ncsc.gov.uk/news/critical-security-issue-affecting-php"
+                  class="btn btn-sm btn-outline-secondary mt-2" target="_blank" rel="noopener noreferrer">
+                  Read NCSC PHP Advisory <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- News Card 2 -->
+          <div class="col">
+            <article class="card shadow-sm h-100">
+              <img src="assets/images/binance.jpg" class="card-img-top" alt="Binance cryptocurrency exchange branding">
+              <div class="card-body">
+                <h3 class="card-title h5">Crypto giant Binance hit by $6.3bn hack suspected to be largest in history</h3>
+                <p class="card-text fs-6">
+                  Binance, the world's largest cryptocurrency exchange, has suffered a massive hack resulting in the theft
+                  of $6.3 billion worth of digital assets. The breach is suspected to be the largest in history...
+                </p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View Article</button>
+                  </div>
+                  <time class="text-body-secondary small" datetime="PT9M">9 mins</time>
+                </div>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container py-5 text-center">
+      <h2 class="h4">Get in Touch</h2>
+      <p class="text-muted">Have a security disclosure or inquiry? Contact the Sysensi security desk.</p>
+    </section>
   </main>
 
-  <!-- ==== News & Updates Section ==== -->
-
-  <article class="bg-dark text-white p-5">
+  <!-- ==== FOOTER ==== -->
+  <footer class="bg-dark text-white text-center py-3">
     <div class="container">
-      <h5 class="border-bottom" id="news-updates">News</h5>
+      <small>&copy; 2026 Sysensi. All rights reserved.</small>
     </div>
-
-    <!-- ==== Card Section ==== -->
-
-    <div class="container">
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-2">
-        <div class="col">
-          <div class="card shadow-sm"> <img src="assets/images/php-image.jpeg" class="card-img-top"
-              alt="PHP Security Issue">
-            <div class="card-body">
-              <p class="card-text"><strong>The NCSC is encouraging UK organisations to take immediate action to mitigate
-                  a
-                  security issue affecting PHP (CVE-2026-109618 and CVE-2026-109619).</strong></p>
-              <a href="https://www.ncsc.gov.uk/news/critical-security-issue-affecting-php"
-                class="btn btn-sm btn-outline-secondary" target="_blank" rel="noopener noreferrer">
-                Click here
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm"> <img src="assets/images/php-image.jpeg" class="card-img-top"
-              alt="PHP Security Issue">
-            <div class="card-body">
-              <p class="card-text">
-                <h6>The NCSC is encouraging UK organisations to take immediate action to mitigate a
-                  security issue affecting PHP.</h6>
-              </p>
-              <a href="https://www.ncsc.gov.uk/news/critical-security-issue-affecting-php"
-                class="btn btn-sm btn-outline-secondary" target="_blank" rel="noopener noreferrer">
-                Click here
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- === default card template === -->
-
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="assets/images/binance.jpg" class="card-img-top" alt="Thumbnail for the card" />
-
-            <div class="card-body">
-              <p class="card-text">
-                <h5>Crypto giant Binance hit by $6.3bn hack suspected to be largest in history</h5>
-              </p>
-              <p class="fs-6">
-                Binance, the world's largest cryptocurrency exchange, has suffered a massive hack resulting in the theft
-                of
-                $6.3 billion worth of digital assets. The breach is suspected to be the largest in history, raising
-                concerns about the security of cryptocurrency platforms and the need for enhanced cybersecurity measures
-                in
-                the rapidly growing digital asset industry.
-              </p>
-
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">
-                    View
-                  </button>
-                </div>
-
-                <small class="text-body-secondary">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </article>
-
-  <!-- ==== Footer ==== -->
-
-  <secion>
-    <div class="container" id="contact">
-      <p class="text-center">
-        This is a simple footer.
-      </p>
-    </div>
-  </secion>
-  
-
-  <footer class="bg-dark text-white justify-content-center d-flex py-2">
-    &copy; 2024 Sysensi. All rights reserved.
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
