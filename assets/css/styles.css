@@ -17,16 +17,14 @@ nav .nav-link.active {
     color: #ffffff;
 }
 
-/* #news-updates {
-  margin-left: 10px;   /* moves it right */
-  margin-top: 20px;    /* moves it down */
-} */
+ /* #news-updates {
+  margin-left: 10px;   
+  margin-top: 20px;   
+}  */
 
-.btn-primary {
-    /* background-color: #ffea00;
-    border-color: #09ff00; */
-    
-}
+/* article {
+    background-color: black;
+} */
 
 footer {
     font-size: 11px;
