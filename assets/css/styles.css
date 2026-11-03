@@ -17,6 +17,11 @@ nav .nav-link.active {
     color: #ffffff;
 }
 
+/* #news-updates {
+  margin-left: 10px;   /* moves it right */
+  margin-top: 20px;    /* moves it down */
+} */
+
 .btn-primary {
     /* background-color: #ffea00;
     border-color: #09ff00; */
