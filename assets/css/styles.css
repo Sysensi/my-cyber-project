@@ -20,6 +20,9 @@ nav .nav-link.active {
   }
 }
 
+.text-center {
+    text-align: center !important;
+}
  /* #news-updates {
   margin-left: 10px;   
   margin-top: 20px;   
