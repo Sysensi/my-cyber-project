@@ -6,15 +6,18 @@ nav {
     font-family: system-ui, sans-serif;
 }
 
-/* Asked Github co-pilot for assitance with light text over dark background. It suggested the following 'nav-bar' code snippet to override Bootstrap's default styles, which I have added to the styles.css file. */
-nav .nav-link {
-    color: rgba(255, 255, 255, 0.75);
-}
+/* Asked Github co-pilot for assitance with light text over dark background. It suggested the following 'nav-bar' code snippet to override Bootstrap's default styles, which I have my own custom styles e.g. green hover effects. */
 
 nav .nav-link:hover,
 nav .nav-link:focus,
 nav .nav-link.active {
-    color: #ffffff;
+    color: #00ff37;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
 }
 
  /* #news-updates {
@@ -30,3 +33,4 @@ footer {
     font-size: 11px;
     /* aspect-ratio: 1/1; */
 }
+
