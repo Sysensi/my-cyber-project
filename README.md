@@ -16,4 +16,4 @@ Sysensi is a cybersecurity website providing news, tools and educational resourc
 
 ## Credits
 
-
+![alt text](SCR-20261104-syot.png)
