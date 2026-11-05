@@ -17,22 +17,6 @@
         content="Sysensi: Your source for the latest cybersecurity news, threats, vulnerability reports, and practical security insights.">
 </head>
 
-<!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AegisSOC // Tier-2 Security Operations & SOAR Workbench</title>
-    <!-- Bootstrap 5.3 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Google Fonts: Inter & JetBrains Mono -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
-        rel="stylesheet">
-
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark"
@@ -66,493 +50,478 @@
         </nav>
     </header>
 
-    <main>
-        <!DOCTYPE html>
-        <html lang="en" data-bs-theme="dark">
+    <main class="container-fluid" style="padding-top: 60px;">
 
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>AegisSOC // Tier-2 Security Operations & SOAR Workbench</title>
-            <!-- Bootstrap 5.3 CSS -->
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-            <!-- Google Fonts: Inter & JetBrains Mono -->
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link
-                href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
-                rel="stylesheet">
+        <style>
+            :root,
+            [data-bs-theme="dark"] {
+                --soc-bg-main: #0b0f17;
+                --soc-bg-surface: #111827;
+                --soc-bg-elevated: #1e293b;
+                --soc-bg-glass: rgba(17, 24, 39, 0.85);
+                --soc-border: #26334d;
+                --soc-text-primary: #f8fafc;
+                --soc-text-secondary: #94a3b8;
+                --soc-text-muted: #64748b;
+                --soc-accent: #38bdf8;
+                --soc-accent-glow: rgba(56, 189, 248, 0.15);
+                --soc-crit: #ef4444;
+                --soc-crit-bg: rgba(239, 68, 68, 0.15);
+                --soc-high: #f97316;
+                --soc-high-bg: rgba(249, 115, 22, 0.15);
+                --soc-med: #eab308;
+                --soc-med-bg: rgba(234, 179, 8, 0.15);
+                --soc-low: #10b981;
+                --soc-low-bg: rgba(16, 185, 129, 0.15);
+                --soc-terminal-bg: #05080f;
+                --soc-row-hover: rgba(56, 189, 248, 0.06);
+                --soc-row-active: rgba(56, 189, 248, 0.13);
+            }
 
-            <style>
-                :root,
-                [data-bs-theme="dark"] {
-                    --soc-bg-main: #0b0f17;
-                    --soc-bg-surface: #111827;
-                    --soc-bg-elevated: #1e293b;
-                    --soc-bg-glass: rgba(17, 24, 39, 0.85);
-                    --soc-border: #26334d;
-                    --soc-text-primary: #f8fafc;
-                    --soc-text-secondary: #94a3b8;
-                    --soc-text-muted: #64748b;
-                    --soc-accent: #38bdf8;
-                    --soc-accent-glow: rgba(56, 189, 248, 0.15);
-                    --soc-crit: #ef4444;
-                    --soc-crit-bg: rgba(239, 68, 68, 0.15);
-                    --soc-high: #f97316;
-                    --soc-high-bg: rgba(249, 115, 22, 0.15);
-                    --soc-med: #eab308;
-                    --soc-med-bg: rgba(234, 179, 8, 0.15);
-                    --soc-low: #10b981;
-                    --soc-low-bg: rgba(16, 185, 129, 0.15);
-                    --soc-terminal-bg: #05080f;
-                    --soc-row-hover: rgba(56, 189, 248, 0.06);
-                    --soc-row-active: rgba(56, 189, 248, 0.13);
+            [data-bs-theme="light"] {
+                --soc-bg-main: #f1f5f9;
+                --soc-bg-surface: #ffffff;
+                --soc-bg-elevated: #f8fafc;
+                --soc-bg-glass: rgba(255, 255, 255, 0.9);
+                --soc-border: #cbd5e1;
+                --soc-text-primary: #0f172a;
+                --soc-text-secondary: #475569;
+                --soc-text-muted: #64748b;
+                --soc-accent: #0284c7;
+                --soc-accent-glow: rgba(2, 132, 199, 0.12);
+                --soc-crit: #dc2626;
+                --soc-crit-bg: rgba(220, 38, 38, 0.12);
+                --soc-high: #ea580c;
+                --soc-high-bg: rgba(234, 88, 12, 0.12);
+                --soc-med: #ca8a04;
+                --soc-med-bg: rgba(202, 138, 4, 0.12);
+                --soc-low: #059669;
+                --soc-low-bg: rgba(5, 150, 105, 0.12);
+                --soc-terminal-bg: #0f172a;
+                --soc-row-hover: rgba(2, 132, 199, 0.05);
+                --soc-row-active: rgba(2, 132, 199, 0.12);
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+                background-color: var(--soc-bg-main);
+                color: var(--soc-text-primary);
+                margin: 0;
+                overflow-x: hidden;
+                font-size: 0.875rem;
+            }
+
+            .mono {
+                font-family: 'JetBrains Mono', monospace;
+            }
+
+            /* Layout Architecture */
+            .soc-wrapper {
+                display: flex;
+                min-height: 100vh;
+                width: 100vw;
+            }
+
+            /* Left Navigation Sidebar */
+            .soc-sidebar {
+                width: 240px;
+                background-color: var(--soc-bg-surface);
+                border-right: 1px solid var(--soc-border);
+                display: flex;
+                flex-direction: column;
+                flex-shrink: 0;
+                z-index: 1020;
+                transition: all 0.25s ease;
+            }
+
+            .soc-brand {
+                padding: 1rem 1.15rem;
+                border-bottom: 1px solid var(--soc-border);
+                display: flex;
+                align-items: center;
+                gap: 0.75rem;
+            }
+
+            .soc-nav-link {
+                display: flex;
+                align-items: center;
+                gap: 0.75rem;
+                padding: 0.7rem 1rem;
+                margin: 0.2rem 0.65rem;
+                border-radius: 0.5rem;
+                color: var(--soc-text-secondary);
+                text-decoration: none;
+                font-weight: 500;
+                transition: all 0.15s ease;
+                cursor: pointer;
+                border: 1px solid transparent;
+            }
+
+            .soc-nav-link:hover {
+                color: var(--soc-text-primary);
+                background-color: var(--soc-row-hover);
+            }
+
+            .soc-nav-link.active {
+                color: var(--soc-accent);
+                background-color: var(--soc-accent-glow);
+                border-color: rgba(56, 189, 248, 0.3);
+                font-weight: 600;
+            }
+
+            /* Main Content + Right Drawer Container */
+            .soc-main-container {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                min-width: 0;
+                height: 100vh;
+                overflow: hidden;
+            }
+
+            /* Top KPI & Telemetry Bar */
+            .soc-topbar {
+                background-color: var(--soc-bg-surface);
+                border-bottom: 1px solid var(--soc-border);
+                padding: 0.65rem 1.25rem;
+            }
+
+            .kpi-card {
+                background-color: var(--soc-bg-elevated);
+                border: 1px solid var(--soc-border);
+                border-radius: 0.5rem;
+                padding: 0.55rem 0.9rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                transition: transform 0.15s ease, border-color 0.2s ease;
+            }
+
+            .kpi-card:hover {
+                border-color: var(--soc-accent);
+            }
+
+            .kpi-value {
+                font-size: 1.25rem;
+                font-weight: 700;
+                line-height: 1.1;
+                font-family: 'JetBrains Mono', monospace;
+            }
+
+            .kpi-label {
+                font-size: 0.72rem;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+                color: var(--soc-text-secondary);
+                font-weight: 600;
+            }
+
+            /* Advisory Live Ticker Bar */
+            .advisory-ticker-bar {
+                background-color: var(--soc-bg-elevated);
+                border-bottom: 1px solid var(--soc-border);
+                padding: 0.35rem 1.25rem;
+                display: flex;
+                align-items: center;
+                gap: 0.75rem;
+                font-size: 0.78rem;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+
+            .ticker-content {
+                display: inline-flex;
+                gap: 2.5rem;
+                animation: tickerSlide 38s linear infinite;
+            }
+
+            .ticker-content:hover {
+                animation-play-state: paused;
+            }
+
+            @keyframes tickerSlide {
+                0% {
+                    transform: translateX(0);
                 }
 
-                [data-bs-theme="light"] {
-                    --soc-bg-main: #f1f5f9;
-                    --soc-bg-surface: #ffffff;
-                    --soc-bg-elevated: #f8fafc;
-                    --soc-bg-glass: rgba(255, 255, 255, 0.9);
-                    --soc-border: #cbd5e1;
-                    --soc-text-primary: #0f172a;
-                    --soc-text-secondary: #475569;
-                    --soc-text-muted: #64748b;
-                    --soc-accent: #0284c7;
-                    --soc-accent-glow: rgba(2, 132, 199, 0.12);
-                    --soc-crit: #dc2626;
-                    --soc-crit-bg: rgba(220, 38, 38, 0.12);
-                    --soc-high: #ea580c;
-                    --soc-high-bg: rgba(234, 88, 12, 0.12);
-                    --soc-med: #ca8a04;
-                    --soc-med-bg: rgba(202, 138, 4, 0.12);
-                    --soc-low: #059669;
-                    --soc-low-bg: rgba(5, 150, 105, 0.12);
-                    --soc-terminal-bg: #0f172a;
-                    --soc-row-hover: rgba(2, 132, 199, 0.05);
-                    --soc-row-active: rgba(2, 132, 199, 0.12);
+                100% {
+                    transform: translateX(-50%);
+                }
+            }
+
+            /* Split Workspace Area (Center + Right Investigation Drawer) */
+            .soc-workspace-split {
+                flex: 1;
+                display: flex;
+                min-height: 0;
+                overflow: hidden;
+                position: relative;
+            }
+
+            .soc-center-pane {
+                flex: 1;
+                overflow-y: auto;
+                padding: 1.15rem 1.25rem;
+                min-width: 0;
+            }
+
+            .soc-right-drawer {
+                width: 470px;
+                background-color: var(--soc-bg-surface);
+                border-left: 1px solid var(--soc-border);
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                flex-shrink: 0;
+                transition: margin-right 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+                z-index: 1010;
+            }
+
+            .soc-right-drawer.collapsed {
+                margin-right: -470px;
+            }
+
+            /* Severity & Status Badges */
+            .badge-sev {
+                font-family: 'JetBrains Mono', monospace;
+                font-size: 0.7rem;
+                font-weight: 600;
+                padding: 0.25rem 0.55rem;
+                border-radius: 0.35rem;
+                text-transform: uppercase;
+                letter-spacing: 0.03em;
+                display: inline-flex;
+                align-items: center;
+                gap: 0.35rem;
+            }
+
+            .sev-Critical {
+                background-color: var(--soc-crit-bg);
+                color: var(--soc-crit);
+                border: 1px solid rgba(239, 68, 68, 0.35);
+            }
+
+            .sev-High {
+                background-color: var(--soc-high-bg);
+                color: var(--soc-high);
+                border: 1px solid rgba(249, 115, 22, 0.35);
+            }
+
+            .sev-Medium {
+                background-color: var(--soc-med-bg);
+                color: var(--soc-med);
+                border: 1px solid rgba(234, 179, 8, 0.35);
+            }
+
+            .sev-Low {
+                background-color: var(--soc-low-bg);
+                color: var(--soc-low);
+                border: 1px solid rgba(16, 185, 129, 0.35);
+            }
+
+            /* SIEM Table Styling */
+            .soc-card {
+                background-color: var(--soc-bg-surface);
+                border: 1px solid var(--soc-border);
+                border-radius: 0.6rem;
+            }
+
+            .siem-table {
+                margin-bottom: 0;
+                vertical-align: middle;
+            }
+
+            .siem-table thead th {
+                background-color: var(--soc-bg-elevated);
+                color: var(--soc-text-secondary);
+                font-size: 0.73rem;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+                font-weight: 600;
+                border-bottom: 1px solid var(--soc-border);
+                padding: 0.65rem 0.75rem;
+            }
+
+            .siem-table tbody tr {
+                border-bottom: 1px solid var(--soc-border);
+                cursor: pointer;
+                transition: background-color 0.12s ease;
+            }
+
+            .siem-table tbody tr:hover {
+                background-color: var(--soc-row-hover);
+            }
+
+            .siem-table tbody tr.active-alert-row {
+                background-color: var(--soc-row-active);
+                border-left: 3px solid var(--soc-accent);
+            }
+
+            .siem-table td {
+                padding: 0.7rem 0.75rem;
+                color: var(--soc-text-primary);
+                background: transparent;
+            }
+
+            /* Terminal Output Console */
+            .soar-terminal {
+                background-color: var(--soc-terminal-bg);
+                color: #e2e8f0;
+                font-family: 'JetBrains Mono', monospace;
+                font-size: 0.75rem;
+                border-radius: 0.5rem;
+                border: 1px solid #1e293b;
+                padding: 0.75rem;
+                max-height: 210px;
+                overflow-y: auto;
+                line-height: 1.5;
+            }
+
+            .term-line {
+                margin-bottom: 0.25rem;
+                word-break: break-all;
+            }
+
+            .term-ts {
+                color: #64748b;
+            }
+
+            .term-cmd {
+                color: #38bdf8;
+                font-weight: 600;
+            }
+
+            .term-ok {
+                color: #10b981;
+            }
+
+            .term-warn {
+                color: #f59e0b;
+            }
+
+            .term-err {
+                color: #ef4444;
+            }
+
+            /* Pulse Indicator */
+            .live-dot {
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background-color: #ef4444;
+                display: inline-block;
+                box-shadow: 0 0 0 rgba(239, 68, 68, 0.7);
+                animation: pulseRed 1.8s infinite;
+            }
+
+            @keyframes pulseRed {
+                0% {
+                    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
                 }
 
-                * {
-                    box-sizing: border-box;
+                70% {
+                    box-shadow: 0 0 0 7px rgba(239, 68, 68, 0);
                 }
 
-                body {
-                    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-                    background-color: var(--soc-bg-main);
-                    color: var(--soc-text-primary);
-                    margin: 0;
-                    overflow-x: hidden;
-                    font-size: 0.875rem;
+                100% {
+                    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
                 }
+            }
 
-                .mono {
-                    font-family: 'JetBrains Mono', monospace;
-                }
+            /* Risk Gauge SVG */
+            .gauge-ring {
+                transition: stroke-dashoffset 0.7s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.3s ease;
+            }
 
-                /* Layout Architecture */
-                .soc-wrapper {
-                    display: flex;
-                    min-height: 100vh;
-                    width: 100vw;
-                }
+            /* Custom Scrollbars */
+            ::-webkit-scrollbar {
+                width: 6px;
+                height: 6px;
+            }
 
-                /* Left Navigation Sidebar */
-                .soc-sidebar {
-                    width: 240px;
-                    background-color: var(--soc-bg-surface);
-                    border-right: 1px solid var(--soc-border);
-                    display: flex;
-                    flex-direction: column;
-                    flex-shrink: 0;
-                    z-index: 1020;
-                    transition: all 0.25s ease;
-                }
+            ::-webkit-scrollbar-track {
+                background: var(--soc-bg-main);
+            }
 
-                .soc-brand {
-                    padding: 1rem 1.15rem;
-                    border-bottom: 1px solid var(--soc-border);
-                    display: flex;
-                    align-items: center;
-                    gap: 0.75rem;
-                }
+            ::-webkit-scrollbar-thumb {
+                background: var(--soc-border);
+                border-radius: 3px;
+            }
 
-                .soc-nav-link {
-                    display: flex;
-                    align-items: center;
-                    gap: 0.75rem;
-                    padding: 0.7rem 1rem;
-                    margin: 0.2rem 0.65rem;
-                    border-radius: 0.5rem;
-                    color: var(--soc-text-secondary);
-                    text-decoration: none;
-                    font-weight: 500;
-                    transition: all 0.15s ease;
-                    cursor: pointer;
-                    border: 1px solid transparent;
-                }
+            ::-webkit-scrollbar-thumb:hover {
+                background: var(--soc-text-muted);
+            }
 
-                .soc-nav-link:hover {
-                    color: var(--soc-text-primary);
-                    background-color: var(--soc-row-hover);
-                }
-
-                .soc-nav-link.active {
-                    color: var(--soc-accent);
-                    background-color: var(--soc-accent-glow);
-                    border-color: rgba(56, 189, 248, 0.3);
-                    font-weight: 600;
-                }
-
-                /* Main Content + Right Drawer Container */
-                .soc-main-container {
-                    flex: 1;
-                    display: flex;
-                    flex-direction: column;
-                    min-width: 0;
-                    height: 100vh;
-                    overflow: hidden;
-                }
-
-                /* Top KPI & Telemetry Bar */
-                .soc-topbar {
-                    background-color: var(--soc-bg-surface);
-                    border-bottom: 1px solid var(--soc-border);
-                    padding: 0.65rem 1.25rem;
-                }
-
-                .kpi-card {
-                    background-color: var(--soc-bg-elevated);
-                    border: 1px solid var(--soc-border);
-                    border-radius: 0.5rem;
-                    padding: 0.55rem 0.9rem;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    transition: transform 0.15s ease, border-color 0.2s ease;
-                }
-
-                .kpi-card:hover {
-                    border-color: var(--soc-accent);
-                }
-
-                .kpi-value {
-                    font-size: 1.25rem;
-                    font-weight: 700;
-                    line-height: 1.1;
-                    font-family: 'JetBrains Mono', monospace;
-                }
-
-                .kpi-label {
-                    font-size: 0.72rem;
-                    text-transform: uppercase;
-                    letter-spacing: 0.05em;
-                    color: var(--soc-text-secondary);
-                    font-weight: 600;
-                }
-
-                /* Advisory Live Ticker Bar */
-                .advisory-ticker-bar {
-                    background-color: var(--soc-bg-elevated);
-                    border-bottom: 1px solid var(--soc-border);
-                    padding: 0.35rem 1.25rem;
-                    display: flex;
-                    align-items: center;
-                    gap: 0.75rem;
-                    font-size: 0.78rem;
-                    overflow: hidden;
-                    white-space: nowrap;
-                }
-
-                .ticker-content {
-                    display: inline-flex;
-                    gap: 2.5rem;
-                    animation: tickerSlide 38s linear infinite;
-                }
-
-                .ticker-content:hover {
-                    animation-play-state: paused;
-                }
-
-                @keyframes tickerSlide {
-                    0% {
-                        transform: translateX(0);
-                    }
-
-                    100% {
-                        transform: translateX(-50%);
-                    }
-                }
-
-                /* Split Workspace Area (Center + Right Investigation Drawer) */
-                .soc-workspace-split {
-                    flex: 1;
-                    display: flex;
-                    min-height: 0;
-                    overflow: hidden;
-                    position: relative;
-                }
-
-                .soc-center-pane {
-                    flex: 1;
-                    overflow-y: auto;
-                    padding: 1.15rem 1.25rem;
-                    min-width: 0;
-                }
-
+            /* Responsive adjustments for smaller screens */
+            @media (max-width: 1199.98px) {
                 .soc-right-drawer {
-                    width: 470px;
-                    background-color: var(--soc-bg-surface);
-                    border-left: 1px solid var(--soc-border);
-                    display: flex;
-                    flex-direction: column;
-                    height: 100%;
-                    flex-shrink: 0;
-                    transition: margin-right 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-                    z-index: 1010;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    box-shadow: -8px 0 24px rgba(0, 0, 0, 0.45);
+                    max-width: 100vw;
+                }
+            }
+
+            @media (max-width: 991.98px) {
+                .soc-sidebar {
+                    position: fixed;
+                    left: -240px;
+                    top: 0;
+                    bottom: 0;
                 }
 
-                .soc-right-drawer.collapsed {
-                    margin-right: -470px;
+                .soc-sidebar.mobile-open {
+                    left: 0;
                 }
+            }
 
-                /* Severity & Status Badges */
-                .badge-sev {
-                    font-family: 'JetBrains Mono', monospace;
-                    font-size: 0.7rem;
-                    font-weight: 600;
-                    padding: 0.25rem 0.55rem;
-                    border-radius: 0.35rem;
-                    text-transform: uppercase;
-                    letter-spacing: 0.03em;
-                    display: inline-flex;
-                    align-items: center;
-                    gap: 0.35rem;
-                }
+            .sample-chip {
+                font-family: 'JetBrains Mono', monospace;
+                font-size: 0.73rem;
+                padding: 0.25rem 0.6rem;
+                border-radius: 999px;
+                border: 1px solid var(--soc-border);
+                background-color: var(--soc-bg-elevated);
+                color: var(--soc-text-primary);
+                cursor: pointer;
+                transition: all 0.15s ease;
+            }
 
-                .sev-Critical {
-                    background-color: var(--soc-crit-bg);
-                    color: var(--soc-crit);
-                    border: 1px solid rgba(239, 68, 68, 0.35);
-                }
+            .sample-chip:hover {
+                border-color: var(--soc-accent);
+                color: var(--soc-accent);
+            }
 
-                .sev-High {
-                    background-color: var(--soc-high-bg);
-                    color: var(--soc-high);
-                    border: 1px solid rgba(249, 115, 22, 0.35);
-                }
+            /* JSON Syntax Highlighting */
+            .json-key {
+                color: #38bdf8;
+                font-weight: 600;
+            }
 
-                .sev-Medium {
-                    background-color: var(--soc-med-bg);
-                    color: var(--soc-med);
-                    border: 1px solid rgba(234, 179, 8, 0.35);
-                }
+            .json-string {
+                color: #10b981;
+            }
 
-                .sev-Low {
-                    background-color: var(--soc-low-bg);
-                    color: var(--soc-low);
-                    border: 1px solid rgba(16, 185, 129, 0.35);
-                }
+            .json-number {
+                color: #f59e0b;
+            }
 
-                /* SIEM Table Styling */
-                .soc-card {
-                    background-color: var(--soc-bg-surface);
-                    border: 1px solid var(--soc-border);
-                    border-radius: 0.6rem;
-                }
+            .json-boolean {
+                color: #ef4444;
+                font-weight: bold;
+            }
 
-                .siem-table {
-                    margin-bottom: 0;
-                    vertical-align: middle;
-                }
-
-                .siem-table thead th {
-                    background-color: var(--soc-bg-elevated);
-                    color: var(--soc-text-secondary);
-                    font-size: 0.73rem;
-                    text-transform: uppercase;
-                    letter-spacing: 0.05em;
-                    font-weight: 600;
-                    border-bottom: 1px solid var(--soc-border);
-                    padding: 0.65rem 0.75rem;
-                }
-
-                .siem-table tbody tr {
-                    border-bottom: 1px solid var(--soc-border);
-                    cursor: pointer;
-                    transition: background-color 0.12s ease;
-                }
-
-                .siem-table tbody tr:hover {
-                    background-color: var(--soc-row-hover);
-                }
-
-                .siem-table tbody tr.active-alert-row {
-                    background-color: var(--soc-row-active);
-                    border-left: 3px solid var(--soc-accent);
-                }
-
-                .siem-table td {
-                    padding: 0.7rem 0.75rem;
-                    color: var(--soc-text-primary);
-                    background: transparent;
-                }
-
-                /* Terminal Output Console */
-                .soar-terminal {
-                    background-color: var(--soc-terminal-bg);
-                    color: #e2e8f0;
-                    font-family: 'JetBrains Mono', monospace;
-                    font-size: 0.75rem;
-                    border-radius: 0.5rem;
-                    border: 1px solid #1e293b;
-                    padding: 0.75rem;
-                    max-height: 210px;
-                    overflow-y: auto;
-                    line-height: 1.5;
-                }
-
-                .term-line {
-                    margin-bottom: 0.25rem;
-                    word-break: break-all;
-                }
-
-                .term-ts {
-                    color: #64748b;
-                }
-
-                .term-cmd {
-                    color: #38bdf8;
-                    font-weight: 600;
-                }
-
-                .term-ok {
-                    color: #10b981;
-                }
-
-                .term-warn {
-                    color: #f59e0b;
-                }
-
-                .term-err {
-                    color: #ef4444;
-                }
-
-                /* Pulse Indicator */
-                .live-dot {
-                    width: 8px;
-                    height: 8px;
-                    border-radius: 50%;
-                    background-color: #ef4444;
-                    display: inline-block;
-                    box-shadow: 0 0 0 rgba(239, 68, 68, 0.7);
-                    animation: pulseRed 1.8s infinite;
-                }
-
-                @keyframes pulseRed {
-                    0% {
-                        box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
-                    }
-
-                    70% {
-                        box-shadow: 0 0 0 7px rgba(239, 68, 68, 0);
-                    }
-
-                    100% {
-                        box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
-                    }
-                }
-
-                /* Risk Gauge SVG */
-                .gauge-ring {
-                    transition: stroke-dashoffset 0.7s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.3s ease;
-                }
-
-                /* Custom Scrollbars */
-                ::-webkit-scrollbar {
-                    width: 6px;
-                    height: 6px;
-                }
-
-                ::-webkit-scrollbar-track {
-                    background: var(--soc-bg-main);
-                }
-
-                ::-webkit-scrollbar-thumb {
-                    background: var(--soc-border);
-                    border-radius: 3px;
-                }
-
-                ::-webkit-scrollbar-thumb:hover {
-                    background: var(--soc-text-muted);
-                }
-
-                /* Responsive adjustments for smaller screens */
-                @media (max-width: 1199.98px) {
-                    .soc-right-drawer {
-                        position: absolute;
-                        right: 0;
-                        top: 0;
-                        bottom: 0;
-                        box-shadow: -8px 0 24px rgba(0, 0, 0, 0.45);
-                        max-width: 100vw;
-                    }
-                }
-
-                @media (max-width: 991.98px) {
-                    .soc-sidebar {
-                        position: fixed;
-                        left: -240px;
-                        top: 0;
-                        bottom: 0;
-                    }
-
-                    .soc-sidebar.mobile-open {
-                        left: 0;
-                    }
-                }
-
-                .sample-chip {
-                    font-family: 'JetBrains Mono', monospace;
-                    font-size: 0.73rem;
-                    padding: 0.25rem 0.6rem;
-                    border-radius: 999px;
-                    border: 1px solid var(--soc-border);
-                    background-color: var(--soc-bg-elevated);
-                    color: var(--soc-text-primary);
-                    cursor: pointer;
-                    transition: all 0.15s ease;
-                }
-
-                .sample-chip:hover {
-                    border-color: var(--soc-accent);
-                    color: var(--soc-accent);
-                }
-
-                /* JSON Syntax Highlighting */
-                .json-key {
-                    color: #38bdf8;
-                    font-weight: 600;
-                }
-
-                .json-string {
-                    color: #10b981;
-                }
-
-                .json-number {
-                    color: #f59e0b;
-                }
-
-                .json-boolean {
-                    color: #ef4444;
-                    font-weight: bold;
-                }
-
-                .json-null {
-                    color: #94a3b8;
-                    font-style: italic;
-                }
-            </style>
+            .json-null {
+                color: #94a3b8;
+                font-style: italic;
+            }
+        </style>
         </head>
 
         <body>
@@ -690,7 +659,7 @@
                                     stroke-width="2">
                                     <path
                                         d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2" />
-                                    </svg>
+                                </svg>
                                 Simulate Alert
                             </button>
                         </div>
@@ -823,7 +792,8 @@
                                             stroke="currentColor" stroke-width="1.5" class="mb-2 opacity-50">
                                             <circle cx="11" cy="11" r="8" />
                                             <line x1="21" y1="21" x2="16.65" y2="16.65" /></svg>
-                                        <div class="mono small">Awaiting Indicator Input for Threat Intel Sweep...</div>
+                                        <div class="mono small">Awaiting Indicator Input for Threat Intel Sweep...
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -915,7 +885,8 @@
                                 <div class="p-2 rounded bg-dark border border-secondary" style="font-size: 0.75rem;">
                                     <div class="row g-2 mono">
                                         <div class="col-6">
-                                            <div class="text-secondary" style="font-size: 0.65rem;">Source / Attacker IP
+                                            <div class="text-secondary" style="font-size: 0.65rem;">Source /
+                                                Attacker IP
                                             </div>
                                             <div class="text-warning d-flex align-items-center gap-1 cursor-pointer"
                                                 onclick="pivotiocFromDrawer()" title="Pivot to Threat Intel">
@@ -934,7 +905,8 @@
                                             <div class="text-light fw-bold" id="drawerHostname">HOST</div>
                                         </div>
                                         <div class="col-12 mt-1 border-top pt-1 border-secondary">
-                                            <div class="text-secondary" style="font-size: 0.65rem;">MITRE ATT&CK / CVE
+                                            <div class="text-secondary" style="font-size: 0.65rem;">MITRE ATT&CK /
+                                                CVE
                                             </div>
                                             <div class="text-light text-truncate" id="drawerMitre">T0000</div>
                                             <div class="text-warning" id="drawerCve">CVE-0000</div>
@@ -994,7 +966,8 @@
                                 <!-- Playbook Checklist -->
                                 <div>
                                     <h6 class="text-uppercase text-secondary fw-bold mono mb-2"
-                                        style="font-size: 0.7rem; letter-spacing: 0.05em;">Analyst Playbook Verification
+                                        style="font-size: 0.7rem; letter-spacing: 0.05em;">Analyst Playbook
+                                        Verification
                                     </h6>
                                     <div class="soc-card p-2" id="drawerChecklist">
                                         <!-- Rendered via JS -->
@@ -1004,7 +977,8 @@
                                 <!-- Active Investigation Log -->
                                 <div class="flex-grow-1 d-flex flex-column">
                                     <h6 class="text-uppercase text-secondary fw-bold mono mb-2"
-                                        style="font-size: 0.7rem; letter-spacing: 0.05em;">Investigation Timeline</h6>
+                                        style="font-size: 0.7rem; letter-spacing: 0.05em;">Investigation Timeline
+                                    </h6>
                                     <div class="flex-grow-1 overflow-auto d-flex flex-column gap-2 mb-2"
                                         id="drawerNotesList" style="min-height: 100px;">
                                         <!-- Rendered via JS -->
@@ -1857,7 +1831,8 @@
                                 `Adding ${alert.srcIp}/32 to Dynamic Address Group [DAG-SOC-BLOCKLIST]...`,
                                 "term-cmd");
                             appendTerminalLine(nowTs, "PANOS_COMMIT",
-                                `SUCCESS: Commit job #4912 completed on FW-EDGE-LON01. Traffic dropped.`, "term-ok");
+                                `SUCCESS: Commit job #4912 completed on FW-EDGE-LON01. Traffic dropped.`,
+                                "term-ok");
                             alert.notes.unshift({
                                 ts: nowTs,
                                 author: "SOAR Playbook",
@@ -1865,7 +1840,8 @@
                             });
                             showSocToast(`Blocked ${alert.srcIp} at Edge Firewall`, "warning");
                         } else {
-                            appendTerminalLine(nowTs, "PANOS_XMLAPI", `Removed ${alert.srcIp} from DAG-SOC-BLOCKLIST.`,
+                            appendTerminalLine(nowTs, "PANOS_XMLAPI",
+                                `Removed ${alert.srcIp} from DAG-SOC-BLOCKLIST.`,
                                 "term-warn");
                             showSocToast(`Removed ${alert.srcIp} from firewall blocklist`, "info");
                         }
@@ -2019,7 +1995,8 @@
                  * 6. SIMULATE INCOMING SIEM ALERT
                  ********************************************************************/
                 function simulateIncomingAlert() {
-                    const template = incomingAlertTemplates[Math.floor(Math.random() * incomingAlertTemplates.length)];
+                    const template = incomingAlertTemplates[Math.floor(Math.random() * incomingAlertTemplates
+                        .length)];
                     const nowTs = new Date().toISOString().substring(11, 19) + " UTC";
                     const newId = `ALT-${simCounter++}`;
 
@@ -2099,7 +2076,7 @@
                     };
 
                     const scoreColor = intel.riskScore >= 75 ? "#ef4444" : intel.riskScore >= 40 ? "#eab308" :
-                    "#10b981";
+                        "#10b981";
                     const circumference = 2 * Math.PI * 44;
                     const dashOffset = circumference - (intel.riskScore / 100) * circumference;
 
@@ -2273,7 +2250,8 @@
                         selectAlert(matches[0].id);
                         showSocToast(`ALERT: Found ${matches.length} local SIEM match(es) for ${cve}!`, "danger");
                     } else {
-                        showSocToast(`Sweep Complete: 0 local SIEM assets matched indicators for ${cve}.`, "success");
+                        showSocToast(`Sweep Complete: 0 local SIEM assets matched indicators for ${cve}.`,
+                            "success");
                     }
                 }
 
@@ -2433,10 +2411,14 @@ ${JSON.stringify(alert.rawLog, null, 2)}
                     rawLogModal.show();
                 }
             </script>
-        </body>
-
-        </html>
     </main>
+
+    <!-- ==== FOOTER ==== -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <small>&copy; 2026 Sysensi. All rights reserved.</small>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
