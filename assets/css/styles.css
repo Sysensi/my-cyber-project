@@ -18,6 +18,10 @@ nav .nav-link.disabled {
     color: #00ff37;  /* This is the current page, so disabled and added a focus style to the link */
 }
 
+#news {
+    scroll-margin-top: 80px;
+}
+
 @media (max-width: 600px) {
   body {
     background-color: lightblue;
