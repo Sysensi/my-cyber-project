@@ -25,9 +25,10 @@ nav .nav-link.active {
 }
 
 .form-control:focus {
-  border-color: #3cff00;
+  border-color: #00ff37;
   box-shadow: 0 0 0 0.25rem rgba(34, 206, 3, 0.568);
 }
+
  /* #news-updates {
   margin-left: 10px;   
   margin-top: 20px;   
