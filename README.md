@@ -12,7 +12,7 @@ Sysensi is a cybersecurity website providing news, tools and educational resourc
 4. Contact section
 
 ## How to View the Project
-- [View the deployed website](https://username.github.io/codingclub/)
+- [View the deployed website](https://pazzyb.github.io/codingclub/)
 
 ## Credits
 
