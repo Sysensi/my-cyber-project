@@ -1,5 +1,7 @@
-/* body {
-  
+/* * {
+    justify-content: center;
+    align-items: center;
+    display: flex;
 } */
 
 nav {
@@ -16,6 +18,10 @@ nav .nav-link.active {
 
 nav .nav-link.disabled {
     color: #00ff37;  /* This is the current page, so disabled and added a focus style to the link */
+}
+
+main {
+  padding-top: 40px;
 }
 
 #news {
@@ -37,14 +43,11 @@ nav .nav-link.disabled {
   box-shadow: 0 0 0 0.25rem rgba(34, 206, 3, 0.568);
 }
 
- /* #news-updates {
-  margin-left: 10px;   
-  margin-top: 20px;   
-}  */
 
-/* article {
-    background-color: black;
+
+ /* #news-updates {
 } */
+
 
 footer {
     font-size: 11px;
