@@ -43,11 +43,9 @@ main {
   box-shadow: 0 0 0 0.25rem rgba(34, 206, 3, 0.568);
 }
 
-
-
- /* #news-updates {
-} */
-
+.social-icons a {
+    color: #000000;
+}
 
 footer {
     font-size: 11px;
