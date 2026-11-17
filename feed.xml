@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:media="http://search.yahoo.com/mrss/"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/">
+  <channel>
+    <title>My Site + The Hacker News Feed</title>
+    <link>https://example.com</link>
+    <description>Combined tech and cybersecurity updates</description>
+
+    <!-- Your own post -->
+    <item>
+      <title>Building Fast Static Sites in 2026</title>
+      <link>https://example.com/posts/fast-static-sites</link>
+      <guid isPermaLink="true">https://example.com/posts/fast-static-sites</guid>
+      <pubDate>Mon, 16 Nov 2026 20:00:00 +0000</pubDate>
+      <description>Learn how modern asset pipelines make static sites faster.</description>
+    </item>
+
+    <!-- Imported item from The Hacker News -->
+    <item>
+      <title>Google Finds Hackers Using AI Agents to Build and Run Exploits From Software Patches</title>
+      <description><![CDATA[ Google on Monday revealed that adversarial use of artificial intelligence (AI) by threat actors has gone beyond manual prompting... ]]></description>
+      <link>https://thehackernews.com/2026/11/google-finds-hackers-using-ai-agents-to.html</link>
+      <guid isPermaLink="false">https://thehackernews.com/2026/11/google-finds-hackers-using-ai-agents-to.html</guid>
+      <pubDate>Mon, 16 Nov 2026 19:30:00 +0530</pubDate>
+      <author>info@thehackernews.com (The Hacker News)</author>
+      <source url="https://feeds.feedburner.com/TheHackersNews">The Hacker News</source>
+      <enclosure length="12216320" type="image/jpeg" url="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpEBmKLWFpEn8sSoJLtj1ZR7FPMd8GxxKN2v4IzyBkydma_g4gXzaWEEkK5CTPwidrBPw6QPdoByiEC14ufVP2pvezWKtH_dmqHttARDKzDOopkw0vzUdTYZubCh9Qy76nlmVSbhtTSvDOuT1c70E4TVPw8T4hUhMdR-saHjQPW1S9IZNmg2_RfsMsmJLb/s1600/google.jpg"/>
+    </item>
+
+  </channel>
+</rss>

@@ -10,6 +10,8 @@
   <link rel="icon" href="assets/images/sysensi-icon-dark.svg" type="image/svg+xml">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
+  <link rel="alternate" type="application/rss+xml" title="Example Tech Blog RSS Feed" href="./feed.xml" />
+
   <link rel="canonical" href=""> <!-- Add the canonical URL of the page here -->
 
   <!-- Open Graph metadata -->
@@ -42,10 +44,13 @@
               <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#news">News</a>
+              <a class="nav-link" href="index.html#news">News</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="learn.html">Learn</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="app.html">App</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="index.html#contact">Contact</a>
@@ -67,14 +72,14 @@
           simply looking to stay protected, discover the knowledge and tools you need to navigate today's digital
           landscape with confidence.</p>
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-          <a href="learn.html" class="btn btn-success btn-md px-4 me-sm-3 text-center">Learn More</a>
+          <a href="app.html" class="btn btn-success btn-md px-4 me-sm-3 text-center">Try our SOC Simulator</a>
           <!-- <button type="button" class="btn btn-outline-secondary btn-md px-4">Learn More</button> -->
         </div>
       </div>
       <div class="overflow-hidden" style="max-height: 30vh;">
         <div class="container px-5">
           <img src="assets/images/hero-image.jpg" class="img-fluid border rounded-3 shadow-lg mb-4"
-            alt="Cybersecurity code visualization" width="700" height="500" loading="lazy">
+            alt="Cybersecurity code visualization" width="700" height="500">
         </div>
       </div>
     </section>
@@ -87,23 +92,25 @@
       </div>
 
       <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4">
 
-          <!-- === Article Section ==== -->
+          <!-- Article 1 -->
           <div class="col">
             <article class="card shadow-sm h-100">
               <img
-                src="https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/db6d/live/6afb9b70-d6cd-11f1-ac20-7783925c811f.jpg.webp"
-                class="card-img-top" alt="PHP programming language logo">
-              <div class="card-body">
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCKDXT71QJSnAqaPKmcBticVRjN0Q1diDWoOGKhoZ-wL5WIgLAPHX6dmetOkddYjLcZGIfxDAfLLN1LwbOV4zHqzONN7i8cIyMJLR-rc2t6LF7MnTzJAAoN54aIPEYoWPBf01znenuq43oDLwcVksxZbvP5xPnFsC-G-sDSjpzDegalBNU87YIe7z0YcI/s1700-nu-rw-lo-l85-e365/Optimizely-hacked.jpg"
+                class="card-img-top" alt="Server room hardware">
+              <div class="card-body d-flex flex-column">
                 <h3 class="card-title h6">
-                  <strong>If hackers can take control of a supermarket freezer, how vulnerable is other tech?</strong>
+                  <strong>Hijacked Optimizely Scripts Served Card Skimmer and iOS Exploit Kits to CNN, BBC and Zoom
+                    Visitors</strong>
                 </h3>
-                <p>Supermarkets across Europe have been hit by a suspected cyber-attack affecting their fridges and
-                  freezers, and raising concern about the vulnerabilities of internet-connected hardware from industrial
-                  machinery to humble domestic appliances.</p>
-                <a href="https://www.bbc.co.uk/news/videos/cmwyvrgk9p0ro" class="btn btn-sm btn-outline-secondary mt-2"
-                  target="_blank" rel="noopener noreferrer">
+                <p class="card-text fs-6 flex-grow-1">An attacker exploited a flaw in Optimizely Web Experimentation to
+                  plant malicious code in some of the scripts that customers' websites load from the service, Optimizely
+                  said early today.
+                </p>
+                <a href="https://thehackernews.com/2026/11/hijacked-optimizely-scripts-served-card.html"
+                  class="btn btn-sm btn-outline-secondary mt-2" target="_blank" rel="noopener noreferrer">
                   Read more <span class="visually-hidden">(opens in a new tab)</span>
                 </a>
               </div>
@@ -112,58 +119,289 @@
 
           <div class="col">
             <article class="card shadow-sm h-100">
-              <img
-                src="https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/d3db/live/57d6aa20-d769-11f1-a956-ff083523ef77.jpg.webp"
-                class="card-img-top" alt="PHP programming language logo">
-              <div class="card-body">
+              <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80"
+                class="card-img-top" alt="Cyber security code on screen">
+              <div class="card-body d-flex flex-column">
                 <h3 class="card-title h6">
-                  <strong>UK meat industry hit by cyber-attack which targeted European supermarket freezers</strong>
+                  <strong>UK government services unavailable due to global cyber-security issue</strong>
                 </h3>
-                <p>Businesses in the UK's food supply chain have been impacted by the cyber-attack which hit supermarket
-                  fridges and freezers across Europe...</p>
-                <a href="https://www.bbc.co.uk/news/videos/cmwyvrgk9p0ro" class="btn btn-sm btn-outline-secondary mt-2"
-                  target="_blank" rel="noopener noreferrer">
-                  Read BBC News article <span class="visually-hidden">(opens in a new tab)</span>
+                <p class="card-text fs-6 flex-grow-1">A critical flaw found in PHP has caused a global cyber-security
+                  alert, forcing millions of websites and UK government portals to scramble for a fix.</p>
+                <a href="https://www.bbc.co.uk/news" class="btn btn-sm btn-outline-secondary mt-2" target="_blank"
+                  rel="noopener noreferrer">
+                  Read more <span class="visually-hidden">(opens in a new tab)</span>
                 </a>
               </div>
             </article>
           </div>
 
+          <!-- Article 2 -->
           <div class="col">
             <article class="card shadow-sm h-100">
-              <img src="assets/images/binance.jpg" class="card-img-top" alt="Binance cryptocurrency exchange branding">
-              <div class="card-body">
-                <h3 class="card-title h6"><strong>Crypto giant Binance hit by $6.3bn hack suspected to be largest in
-                    history
-                  </strong></h3>
-                <p class="card-text fs-6">
-                  Binance, the world's largest cryptocurrency exchange, has suffered a massive hack resulting in the
-                  theft
-                  of $6.3 billion worth of digital assets. The breach is suspected to be the largest in history...
-                </p>
-                <div class="d-flex justify-content-between align-items-center mt-3">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View Article</button>
-                  </div>
-                  <time class="text-body-secondary small" datetime="PT9M">9 mins</time>
-                </div>
+              <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80"
+                class="card-img-top" alt="Matrix style digital rain">
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title h6">
+                  <strong>Websites taken down worldwide as AI reveals critical cyber-security threat</strong>
+                </h3>
+                <p class="card-text fs-6 flex-grow-1">Governments and agencies are urging organizations to address a
+                  critical programming weakness immediately after AI systems exposed a decade-old vulnerability.</p>
+                <a href="https://www.bbc.co.uk/news" class="btn btn-sm btn-outline-secondary mt-2" target="_blank"
+                  rel="noopener noreferrer">
+                  Read more <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
               </div>
             </article>
           </div>
 
+          <!-- Article 3 -->
+
+
+          <!-- Article 4 -->
           <div class="col">
             <article class="card shadow-sm h-100">
-              <img src="assets/images/php-image.jpeg" class="card-img-top" alt="PHP programming language logo">
-              <div class="card-body">
+              <img
+                src="https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/db6d/live/6afb9b70-d6cd-11f1-ac20-7783925c811f.jpg.webp"
+                class="card-img-top" alt="Supermarket freezer aisle">
+              <div class="card-body d-flex flex-column">
                 <h3 class="card-title h6">
-                  <strong>The NCSC urges UK organisations to mitigate critical PHP vulnerabilities (CVE-2026-109618 and
-                    CVE-2026-109619).</strong>
+                  <strong>If hackers can take control of a supermarket freezer, how vulnerable is other tech?</strong>
                 </h3>
-                <p>PHP has published a security update to address a critical security issue that may allow attackers to
-                  execute commands on any web server running PHP.</p>
-                <a href="https://www.ncsc.gov.uk/news/critical-security-issue-affecting-php"
+                <p class="card-text fs-6 flex-grow-1">Supermarkets across Europe have been hit by a suspected
+                  cyber-attack affecting their fridges, raising concerns over internet-connected hardware
+                  vulnerabilities.</p>
+                <a href="https://www.bbc.co.uk/news/articles/ckpqg8lve73go"
                   class="btn btn-sm btn-outline-secondary mt-2" target="_blank" rel="noopener noreferrer">
-                  Read NCSC PHP Advisory <span class="visually-hidden">(opens in a new tab)</span>
+                  Read more <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Article 5 -->
+          <!-- <div class="col">
+            <article class="card shadow-sm h-100">
+              <img src="https://images.unsplash.com/photo-1510511459019-5d0194594ca5?auto=format&fit=crop&w=800&q=80"
+                class="card-img-top" alt="AI and data network concept">
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title h6">
+                  <strong>Hackers expose deep cybersecurity vulnerabilities in AI</strong>
+                </h3>
+                <p class="card-text fs-6 flex-grow-1">As businesses race to integrate artificial intelligence, security
+                  experts are warning about a new wave of sophisticated "Zero-Click" AI-driven attacks.</p>
+                <a href="https://www.bbc.co.uk/news" class="btn btn-sm btn-outline-secondary mt-2" target="_blank"
+                  rel="noopener noreferrer">
+                  Read more <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
+              </div>
+            </article>
+          </div> -->
+
+          <!-- Article 6 -->
+          <div class="col">
+            <article class="card shadow-sm h-100">
+              <img src="https://images.unsplash.com/photo-1621504450181-5d356f61d307?auto=format&fit=crop&w=800&q=80"
+                class="card-img-top" alt="Cryptocurrency coins" height="220">
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title h6">
+                  <strong>Crypto giant Binance hit by $6.3bn hack suspected to be largest in history</strong>
+                </h3>
+                <p class="card-text fs-6 flex-grow-1">Binance has suffered a massive breach resulting in the theft of
+                  billions in digital assets, rocking the foundations of the global crypto market.</p>
+                <a href="https://www.bbc.co.uk/news/articles/cm5yn8eqg3npo"
+                  class="btn btn-sm btn-outline-secondary mt-2" target="_blank" rel="noopener noreferrer">
+                  Read more <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Article 7 -->
+          <div class="col">
+            <article class="card shadow-sm h-100">
+              <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80"
+                class="card-img-top" alt="Padlock on keyboard">
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title h6">
+                  <strong>Ransomware attacks happening every day in UK, intelligence agents say</strong>
+                </h3>
+                <p class="card-text fs-6 flex-grow-1">GCHQ has warned that ransomware is now the most immediate cyber
+                  threat to the UK, with businesses facing daily digital extortion attempts.</p>
+                <a href="https://www.bbc.co.uk/news" class="btn btn-sm btn-outline-secondary mt-2" target="_blank"
+                  rel="noopener noreferrer">
+                  Read more <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Article 8 -->
+          <div class="col">
+            <article class="card shadow-sm h-100">
+              <img
+                src="https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/d3db/live/57d6aa20-d769-11f1-a956-ff083523ef77.jpg.webp"
+                class="card-img-top" alt="Meat processing plant">
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title h6">
+                  <strong>UK meat industry hit by cyber-attack targeting European freezers</strong>
+                </h3>
+                <p class="card-text fs-6 flex-grow-1">Businesses in the UK's food supply chain are suffering the
+                  knock-on effects of a coordinated digital strike against industrial refrigeration units.</p>
+                <a href="https://www.bbc.co.uk/news" class="btn btn-sm btn-outline-secondary mt-2" target="_blank"
+                  rel="noopener noreferrer">
+                  Read more <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Article 9 -->
+          <div class="col">
+            <article class="card shadow-sm h-100">
+              <img src="https://images.unsplash.com/photo-1584438784894-089d6a62b8fa?auto=format&fit=crop&w=800&q=80"
+                class="card-img-top" alt="Cyber map and connection lines">
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title h6">
+                  <strong>Security Minister speaks about “significant threat” posed by state hackers</strong>
+                </h3>
+                <p class="card-text fs-6 flex-grow-1">The UK government warns of a rising tide of state-sponsored cyber
+                  espionage targeting defense, research, and national infrastructure sectors.</p>
+                <a href="https://www.bbc.co.uk/news" class="btn btn-sm btn-outline-secondary mt-2" target="_blank"
+                  rel="noopener noreferrer">
+                  Read more <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Article 10 -->
+          <div class="col">
+            <article class="card shadow-sm h-100">
+              <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80"
+                class="card-img-top" alt="Hacker silhouette">
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title h6">
+                  <strong>Russian hackers accused of stealing millions - Cyber Hack: Evil Corp</strong>
+                </h3>
+                <p class="card-text fs-6 flex-grow-1">A notorious cyber-crime syndicate dubbed "Evil Corp" has been
+                  indicted for siphoning millions from bank accounts using specialized malware.</p>
+                <a href="https://www.bbc.co.uk/news" class="btn btn-sm btn-outline-secondary mt-2" target="_blank"
+                  rel="noopener noreferrer">
+                  Read more <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Article 11 -->
+          <div class="col">
+            <article class="card shadow-sm h-100">
+              <img src="https://images.unsplash.com/photo-1618060932014-4bcd7361a10a?auto=format&fit=crop&w=800&q=80"
+                class="card-img-top" alt="PHP Code">
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title h6">
+                  <strong>NCSC urges UK organisations to mitigate critical PHP vulnerabilities</strong>
+                </h3>
+                <p class="card-text fs-6 flex-grow-1">The National Cyber Security Centre has issued an urgent advisory
+                  regarding CVE-2026-109618, allowing attackers to execute commands on web servers.</p>
+                <a href="https://www.ncsc.gov.uk/news" class="btn btn-sm btn-outline-secondary mt-2" target="_blank"
+                  rel="noopener noreferrer">
+                  Read Advisory <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Article 12 -->
+          <div class="col">
+            <article class="card shadow-sm h-100">
+              <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80"
+                class="card-img-top" alt="Digital data leak concept">
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title h6">
+                  <strong>UK PM says there are 'serious questions' over Afghan data breach</strong>
+                </h3>
+                <p class="card-text fs-6 flex-grow-1">An investigation is underway after a significant data breach
+                  exposed sensitive operational information and personnel records from previous deployments.</p>
+                <a href="https://www.bbc.co.uk/news" class="btn btn-sm btn-outline-secondary mt-2" target="_blank"
+                  rel="noopener noreferrer">
+                  Read more <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Article 13 -->
+          <div class="col">
+            <article class="card shadow-sm h-100">
+              <img src="https://images.unsplash.com/photo-1551808525-51a94da548ce?auto=format&fit=crop&w=800&q=80"
+                class="card-img-top" alt="Abstract AI connections">
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title h6">
+                  <strong>Have we just entered a new era for cyber security?</strong>
+                </h3>
+                <p class="card-text fs-6 flex-grow-1">With AI now acting as both the ultimate hacker and the ultimate
+                  defender, cyber security experts believe the landscape of digital warfare is changing forever.</p>
+                <a href="https://www.bbc.co.uk/news" class="btn btn-sm btn-outline-secondary mt-2" target="_blank"
+                  rel="noopener noreferrer">
+                  Read more <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Article 14 -->
+          <div class="col">
+            <article class="card shadow-sm h-100">
+              <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80"
+                class="card-img-top" alt="Network router and cables">
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title h6">
+                  <strong>Why are big UK cyber attacks on the rise?</strong>
+                </h3>
+                <p class="card-text fs-6 flex-grow-1">The government is advising businesses to make analog fallback
+                  plans as the frequency and severity of digital infrastructure attacks continue to climb.</p>
+                <a href="https://www.bbc.co.uk/news" class="btn btn-sm btn-outline-secondary mt-2" target="_blank"
+                  rel="noopener noreferrer">
+                  Read more <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Article 15 -->
+          <div class="col">
+            <article class="card shadow-sm h-100">
+              <img src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&fit=crop&w=800&q=80"
+                class="card-img-top" alt="Military digital defense">
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title h6">
+                  <strong>Government Warns Cyber Warfare Threats Can Undermine Nations</strong>
+                </h3>
+                <p class="card-text fs-6 flex-grow-1">Officials warn that hostile actors can now inflict catastrophic
+                  damage on a nation's economy and infrastructure without firing a single physical shot.</p>
+                <a href="https://www.bbc.co.uk/news" class="btn btn-sm btn-outline-secondary mt-2" target="_blank"
+                  rel="noopener noreferrer">
+                  Read more <span class="visually-hidden">(opens in a new tab)</span>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Article 16 -->
+          <div class="col">
+            <article class="card shadow-sm h-100">
+              <img src="https://images.unsplash.com/photo-1624969862644-791f3dc98927?auto=format&fit=crop&w=800&q=80"
+                class="card-img-top" alt="Mobile banking security">
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title h6">
+                  <strong>New Scam That Steals EVERYTHING: Why Your Bank Can't Stop It</strong>
+                </h3>
+                <p class="card-text fs-6 flex-grow-1">A sophisticated new financial fraud mechanism is bypassing
+                  traditional two-factor authentication, prompting urgent alerts from banking regulators.</p>
+                <a href="https://www.bbc.co.uk/news" class="btn btn-sm btn-outline-secondary mt-2" target="_blank"
+                  rel="noopener noreferrer">
+                  Read more <span class="visually-hidden">(opens in a new tab)</span>
                 </a>
               </div>
             </article>
@@ -171,16 +409,61 @@
 
         </div>
       </div>
+
     </section>
 
+    <!-- === RSS Feed Section === -->
+
+    <!-- <div class="container justify-content-center my-5">
+      <h2 id="channel-title">Latest Updates</h2>
+      <ul id="rss-feed-container">
+        <li>Loading feed...</li>
+      </ul>
+
+      <script>
+        async function loadRSSFeed(feedUrl, containerId, maxItems = 5) {
+          const container = document.getElementById(containerId);
+          try {
+            const response = await fetch(feedUrl);
+            if (!response.ok) throw new Error(`HTTP error: ${response.status}`);
+            const xmlText = await response.text();
+            const xmlDoc = new DOMParser().parseFromString(xmlText, "application/xml");
+            if (xmlDoc.querySelector("parsererror")) {
+              throw new Error("Invalid XML format in RSS feed.");
+            }
+            const items = Array.from(xmlDoc.querySelectorAll("item")).slice(0, maxItems);
+            container.innerHTML = "";
+            items.forEach((item) => {
+              const title = item.querySelector("title") ? .textContent ? ? "Untitled";
+              const link = item.querySelector("link") ? .textContent ? ? "#";
+              const description = item.querySelector("description") ? .textContent ? ? "";
+              const pubDateRaw = item.querySelector("pubDate") ? .textContent;
+              const li = document.createElement("li");
+              const a = document.createElement("a");
+              a.href = link;
+              a.textContent = title;
+              const p = document.createElement("p");
+              p.textContent = description;
+              li.append(a, p);
+              container.appendChild(li);
+            });
+          } catch (error) {
+            console.error("Failed to load RSS feed:", error);
+            container.innerHTML = "<li>Unable to load the RSS feed right now.</li>";
+          }
+        }
+        loadRSSFeed("./feed.xml", "rss-feed-container");
+      </script>
+    </div> -->
+
     <!-- Contact Section -->
-    <section id="contact" class="container py-5">
+    <section id="contact" class="container py-5" aria-labelledby="contact-heading">
       <div class="row justify-content-center">
         <div class="col-12 col-md-8 col-lg-6">
 
           <!-- Section Header -->
           <div class="text-center mb-4">
-            <h2 class="h4">Get in Touch</h2>
+            <h2 id="contact-heading" class="h4">Get in Touch</h2>
             <p class="text-muted">Contact Us.</p>
 
             <div class="social-icons d-flex justify-content-center gap-3 mt-3">
@@ -188,12 +471,16 @@
                 <i class="bi bi-twitter-x fs-4"></i>
               </a>
 
-              <a href="https://facebook.com/sysensi" target="_blank" rel="noopener noreferrer">
+              <a href="https://facebook.com/sysensi.ai" target="_blank" rel="noopener noreferrer">
                 <i class="bi bi-facebook fs-4"></i>
               </a>
 
               <a href="https://instagram.com/sysensi.ai" target="_blank" rel="noopener noreferrer">
                 <i class="bi bi-instagram fs-4"></i>
+              </a>
+
+              <a href="https://linkedin.com/company/sysens" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-linkedin fs-4"></i>
               </a>
             </div>
           </div>
@@ -203,6 +490,7 @@
     </section>
 
   </main>
+
 
   <!-- ==== FOOTER ==== -->
 
