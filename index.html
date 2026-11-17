@@ -412,50 +412,6 @@
 
     </section>
 
-    <!-- === RSS Feed Section === -->
-
-    <!-- <div class="container justify-content-center my-5">
-      <h2 id="channel-title">Latest Updates</h2>
-      <ul id="rss-feed-container">
-        <li>Loading feed...</li>
-      </ul>
-
-      <script>
-        async function loadRSSFeed(feedUrl, containerId, maxItems = 5) {
-          const container = document.getElementById(containerId);
-          try {
-            const response = await fetch(feedUrl);
-            if (!response.ok) throw new Error(`HTTP error: ${response.status}`);
-            const xmlText = await response.text();
-            const xmlDoc = new DOMParser().parseFromString(xmlText, "application/xml");
-            if (xmlDoc.querySelector("parsererror")) {
-              throw new Error("Invalid XML format in RSS feed.");
-            }
-            const items = Array.from(xmlDoc.querySelectorAll("item")).slice(0, maxItems);
-            container.innerHTML = "";
-            items.forEach((item) => {
-              const title = item.querySelector("title") ? .textContent ? ? "Untitled";
-              const link = item.querySelector("link") ? .textContent ? ? "#";
-              const description = item.querySelector("description") ? .textContent ? ? "";
-              const pubDateRaw = item.querySelector("pubDate") ? .textContent;
-              const li = document.createElement("li");
-              const a = document.createElement("a");
-              a.href = link;
-              a.textContent = title;
-              const p = document.createElement("p");
-              p.textContent = description;
-              li.append(a, p);
-              container.appendChild(li);
-            });
-          } catch (error) {
-            console.error("Failed to load RSS feed:", error);
-            container.innerHTML = "<li>Unable to load the RSS feed right now.</li>";
-          }
-        }
-        loadRSSFeed("./feed.xml", "rss-feed-container");
-      </script>
-    </div> -->
-
     <!-- Contact Section -->
     <section id="contact" class="container py-5" aria-labelledby="contact-heading">
       <div class="row justify-content-center">
@@ -494,7 +450,7 @@
 
   <!-- ==== FOOTER ==== -->
 
-  <footer class="bg-dark text-white text-center py-3">
+  <footer class="bg-dark text-white text-center py-3 fixed-bottom">
     <div class="container">
       <small>&copy; 2026 Sysensi. All rights reserved.</small>
     </div>
